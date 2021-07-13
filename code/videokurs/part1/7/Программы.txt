@@ -1,3 +1,0 @@
-1. NodeJS (https://nodejs.org/en/)
-2. Visual Studio Code (https://code.visualstudio.com/)
-3. Git for Windows (https://git-scm.com/download/win)
