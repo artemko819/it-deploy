@@ -1,0 +1,14 @@
+<div class="collection">
+    <div *ngFor="let person of persons" class="collection-item">
+        <p>Имя: {{person.name}}</p>
+        <p>Email: {{person.email}}</p>
+        <p>Телефон: {{person.tel}}</p>
+        <p>Город: {{person.city}}</p>
+        <p>Курс: {{person.course}}</p>
+        <p>Дата: {{person.date}}    
+        <i class="material-icons red-text"
+            (click)="onDeletePosition($event,person)"
+         >delete</i>
+        </p>
+    </div>
+</div>

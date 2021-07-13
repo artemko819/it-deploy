@@ -1,0 +1,31 @@
+.progress{
+    height: 30px;
+  }
+  .determinate.selected{
+    transition-property: width;
+    transition-duration: 5s;
+    width: 100%;
+  }
+  .determinate{
+    transition-property: width;
+    transition-duration: 5s;
+    width: 0%;
+  }
+
+  .space2{
+    overflow: hidden;
+  }
+  .wrap-text-space{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -15px;
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .wrap-text-space.selected{
+    opacity: 1;
+    transition: all 1s;
+  }
+  

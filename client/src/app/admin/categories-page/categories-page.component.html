@@ -1,0 +1,31 @@
+<main class="content">
+    <div class="page-title">
+        <h4>Города it start</h4>
+        <a id='add-btn' 
+            class="waves-effect waves-light btn green darken-1"
+            routerLink="/admin/categories/new"
+            >Добавить город</a>
+    </div>
+
+    <div class="row" 
+        *ngIf="categories$ | async as categories;else loader"
+    >
+        <div class="col s12">
+            <div class="collection" *ngIf="categories.length !==0; else empty">
+                <a 
+                    *ngFor="let category of categories"
+                    [routerLink]="['/admin/categories',category._id]"
+                    class="collection-item"
+
+                >{{category.name}}</a>
+            </div>
+        </div>
+    </div>
+    <ng-template #empty>
+        <h3 class="center red-text">Нет городов, нужно добавить !</h3>
+    </ng-template>
+    <ng-template #loader>
+        <app-loader></app-loader>
+    </ng-template>
+
+</main>

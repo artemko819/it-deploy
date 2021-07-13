@@ -1,0 +1,15 @@
+#del{
+    width: 50px;
+    display: block;
+    float: right;
+
+}
+h4{
+    float: left;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.dn{
+    display: none;
+}

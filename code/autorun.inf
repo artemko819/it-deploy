@@ -1,0 +1,4 @@
+[autorun]
+OPEN=autorun.inf
+ShellExecute=start.html
+ICON=icon.ico

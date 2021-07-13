@@ -1,0 +1,107 @@
+<div class="city" id="city">
+  <a id="positions" [routerLink]="['/city']" class="btn-floating pulse btn-large waves-effect waves-light teal">
+    <i class="material-icons">navigation</i>
+  </a>
+  <div class="container">
+    <div *ngIf="positionFind.length === 0; else normal">
+      <div class="not-found-course">
+        <h3 class="center heading">В этом городе нет курсов.</h3>
+        <h3 class="center heading">Ждите, скоро откроемся.</h3>
+      </div>
+      
+    </div>
+    <ng-template #normal>
+      <h3 class="center heading">Выбери курс своей мечты </h3>
+      <div class="row building" *ngIf="positions$ |async as positions;else loader">
+        <div class="col s3 l3 jn">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">7-12</h3>
+          </div>
+          <img id="gl-jn" src="../../assets/city/gelicopter.png" alt="">
+          <a [routerLink]="[positions[0]._id]">
+            <img class="kyst" id="jn-kyst" src="../../assets/city/kyst.png" alt="">
+            <img id="jn" src="../../assets/city/jn.png" alt="">
+          </a>
+
+        </div>
+        <div class="col s3 l3 ev">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">12-18</h3>
+          </div>
+          <img class="kyst" src="../../assets/city/kyst.png" alt="">
+          <a [routerLink]="[positions[1]._id]">
+            <img id="ev" src="../../assets/city/ev.png" alt="">
+          </a>
+        </div>
+        <div class="col s3 l3 sn">
+          <img id="gl-sn" src="../../assets/city/gelicopter_1.png" alt="">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">40-75</h3>
+          </div>
+          <img class="kyst" src="../../assets/city/kyst.png" alt="">
+          <a [routerLink]="[positions[2]._id]">
+            <img id="sn" src="../../assets/city/sn.png" alt="">
+          </a>
+        </div>
+        <div class="col s3 l3 in">
+          <img id="gl-in" src="../../assets/city/gelicopter.png" alt="">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">6-60</h3>
+          </div>
+          <img class="kyst" src="../../assets/city/kyst.png" alt="">
+          <a [routerLink]="[positions[3]._id]">
+            <img id="in" src="../../assets/city/in.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row road">
+        <img src="../../assets/city/doroga_1.png" alt="">
+      </div>
+    </ng-template>
+    <ng-template #loader>
+      <div class="row building">
+        <div class="col s3 l3 jn">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">7-12</h3>
+          </div>
+          <img id="gl-jn" src="../../assets/city/gelicopter.png" alt="">
+
+          <img class="kyst" id="jn-kyst" src="../../assets/city/kyst.png" alt="">
+          <img id="jn" src="../../assets/city/jn.png" alt="">
+
+
+        </div>
+        <div class="col s3 l3 ev">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">12-18</h3>
+          </div>
+          <img class="kyst" src="../../assets/city/kyst.png" alt="">
+
+          <img id="ev" src="../../assets/city/ev.png" alt="">
+
+        </div>
+        <div class="col s3 l3 sn">
+          <img id="gl-sn" src="../../assets/city/gelicopter_1.png" alt="">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">40-75</h3>
+          </div>
+          <img class="kyst" src="../../assets/city/kyst.png" alt="">
+
+          <img id="sn" src="../../assets/city/sn.png" alt="">
+
+        </div>
+        <div class="col s3 l3 in">
+          <img id="gl-in" src="../../assets/city/gelicopter.png" alt="">
+          <div class="age animate__infinite 	infinite animate__animated animate__pulse">
+            <h3 class="center">6-60</h3>
+          </div>
+          <img class="kyst" src="../../assets/city/kyst.png" alt="">
+
+          <img id="in" src="../../assets/city/in.png" alt="">
+
+        </div>
+      </div>
+    </ng-template>
+  </div>
+
+</div>

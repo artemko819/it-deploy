@@ -1,0 +1,9 @@
+.collection a{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+}

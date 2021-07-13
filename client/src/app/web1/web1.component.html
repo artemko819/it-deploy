@@ -1,0 +1,47 @@
+<div class="space1" id="space1">
+    <div class="stars">
+        <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles> 
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="wrapper">
+                <div class="planet">
+                    <div class="col l12 s12">
+                        <div class="wrap-img">
+                            <img id="pl1" src="../../assets/planet2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l12 s12">
+                        <div class="wrap-img">
+                            <img id="pl2" src="../../assets/planet.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l12 s12">
+                        <div class="wrap-img">
+                            <img  id="pl3" src="../../assets/planet3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="row">
+                        <div class="col l12 s12">
+                            <h1>IT START</h1>
+                            <h3><span id="connnect">CONNECT</span>
+                                <span  class="border">
+                                    <button  id="start" 
+                                            class="btn" 
+                                            [class.selected]="select === true"
+                                            (click)="btnClick()"
+                                            ></button>
+                                </span>
+                            </h3>
+                            <a routerLink="/admin" class="btn green" id="login">login admin</a>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

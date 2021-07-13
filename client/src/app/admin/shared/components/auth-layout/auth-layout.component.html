@@ -1,0 +1,12 @@
+<nav class="green">
+    <div class="nav-wrapper">
+      <a routerLink="/" class="brand-logo">It Start</a>
+      <ul id="nav-mobile" class="right">
+        <li routerLinkActive="active"><a [routerLink]="['/admin','login']">Вход</a></li>
+        <!-- <li routerLinkActive="active"><a  [routerLink]="['/admin','register']"> Регистрация</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <div class="container" id="admin">
+      <router-outlet></router-outlet>
+  </div>

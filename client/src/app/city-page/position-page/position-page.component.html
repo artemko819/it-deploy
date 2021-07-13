@@ -1,0 +1,109 @@
+<div id="course" [class]="className">
+  <a id="positions" [routerLink]="['/city',categoryId]"
+    class="btn-floating pulse btn-large waves-effect waves-light green">
+    <i class="material-icons">navigation</i>
+  </a>
+  <div class="container">
+    <div class="wrap-content">
+      <div class="left-part">
+        <img src="../../assets/block1/999.png" alt="">
+      </div>
+      <div class="right-part" *ngIf="positions$ |async as positions">
+        <h1>{{positions.name}}</h1>
+        <button (click)="open()" class="btn-add">
+          Записаться на пробный урок
+        </button>
+        <h3>Цена: {{positions.cost}} <span *ngIf="positions.name == 'Individual';else elseBlock">грн/урок</span> </h3>
+        <ng-template #elseBlock> <span>грн/мес</span> </ng-template>
+
+      </div>
+    </div>
+    <div class="flex-row">
+      <div class="text-block">
+        <p>
+          <strong>Обучение</strong><br>
+          на практике
+        </p>
+      </div>
+      <div class="text-block">
+        <p>
+          <strong>Ребенок попробует</strong><br>
+          себя во всех сферах IT
+        </p>
+      </div>
+      <div class="text-block">
+        <p>
+          <strong>Постоянное </strong><br>
+          развитие
+        </p>
+      </div>
+      <div class="text-block">
+        <p>
+          <strong>Современная</strong><br>
+          методика обучения
+        </p>
+      </div>
+    </div>
+    <div class="flex-row-img">
+      <div class="img-block">
+        <img src="../../assets/block1/ai.png" alt="">
+      </div>
+      <div class="img-block">
+        <img src="../../assets/block1/ps.png" alt="">
+      </div>
+
+    </div>
+    <div class="search">
+      <img id="ss" src="../../../assets/qqq.png" alt="search">
+      <span class="typed-element"></span>
+    </div>
+
+    <div class="text-block">
+      <img id="left-img" src="../../assets/block1/icons-left.png" alt="">
+    </div>
+    <div class="text-block">
+      <img id="center-img" src="../../assets/block1/vs.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div #modal class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4 class="mb1">Ваши данные</h4>
+    <form [formGroup]="form" (ngSubmit)="submit()" class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input formControlName="name" id="icon_prefix" type="text"
+            [ngClass]="{'invalid':form.get('name').invalid && form.get('name').touched}">
+          <label for="icon_prefix">Имя</label>
+          <span class="helper-text red-text" *ngIf="form.get('name').invalid && form.get('name').touched">
+            <span *ngIf="form.get('name').errors['required']">Имя не может быть пустым</span>
+          </span>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">phone</i>
+          <input formControlName="tel" id="icon_telephone" type="tel"
+            [ngClass]="{'invalid':form.get('tel').invalid && form.get('tel').touched}">
+          <label for="icon_telephone">Номер телефона</label>
+          <span class="helper-text red-text" *ngIf="form.get('tel').invalid && form.get('tel').touched">
+            <span *ngIf="form.get('tel').errors['required']">Телефончик не может быть пустым</span>
+            <span *ngIf="form.get('tel').errors['pattern']">Телефончик то с циферок состоит</span>
+          </span>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input formControlName="email" id="icon_email" type="email"
+            [ngClass]="{'invalid':form.get('email').invalid && form.get('email').touched}">
+          <label for="icon_email">Еmail</label>
+          <span class="helper-text red-text" *ngIf="form.get('email').invalid && form.get('email').touched">
+            <span *ngIf="form.get('email').errors['required']">Email не может быть пустым</span>
+            <span *ngIf="form.get('email').errors['email']">Email не коректный</span>
+          </span>
+        </div>
+      </div>
+      <button type="submit" class="modal-action btn waves-effect"
+        [disabled]="form.invalid || form.disabled">Подтвердить</button>
+    </form>
+  </div>
+</div>

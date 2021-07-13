@@ -1,0 +1,101 @@
+<div class="space5">
+    <div class="container" >
+        <div class="map" id="map" *ngIf="categories$ |async as categories">
+            <div class="left-map">
+                <div class="row">                 
+                    <div class="col m4 l4">
+                        <div class="wrap-img img-1">
+                            <h3>{{categories[0].name}}</h3>
+                          <a  [routerLink]="['/city',categories[0]._id]">
+                            <img [src]="categories[0].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col m4 l4">
+                        <div class="wrap-img img-2">
+                          <h3>{{categories[1].name}}</h3>
+                          <a  [routerLink]="['/city',categories[1]._id]">
+                            <img [src]="categories[1].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col m4 l4">
+                        <div class="wrap-img img-3">
+                          <h3>{{categories[2].name}}</h3>
+                          <a  [routerLink]="['/city',categories[2]._id]">
+                            <img [src]="categories[2].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m4  l6">
+                        <div class="wrap-img img-4">                            
+                          <h3>{{categories[6].name}}</h3>
+                          <a  [routerLink]="['/city',categories[6]._id]">
+                            <img [src]="categories[6].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col m4 l4">
+                        <div class="wrap-img img-5">
+                          <h3>{{categories[7].name}}</h3>
+                          <a  [routerLink]="['/city',categories[7]._id]">
+                            <img [src]="categories[7].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-map">
+                <div class="row">
+                    <div class="col m4 l4">
+                        <div class="wrap-img img-6">
+                          <h3>{{categories[4].name}}</h3>
+                          <a  [routerLink]="['/city',categories[4]._id]">
+                            <img [src]="categories[4].imageSrc" alt="">
+                          </a>
+                        </div>
+                        <div class="wrap-img img-7">
+                          <h3>{{categories[3].name}}</h3>
+                          <a  [routerLink]="['/city',categories[3]._id]">
+                            <img [src]="categories[3].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col  m4 l4">
+                        <div class="wrap-img img-8">
+                          <h3>{{categories[5].name}}</h3>
+                          <a  [routerLink]="['/city',categories[5]._id]">
+                            <img [src]="categories[5].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m4 l4">
+
+                    </div>
+                    <div class="col  m4 l4">
+                        <div class="wrap-img img-9">
+                          <h3>{{categories[8].name}}</h3>
+                          <a  [routerLink]="['/city',categories[8]._id]">
+                            <img [src]="categories[8].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                    <div class="col m4 l4">
+                        <div class="wrap-img img-10">
+                          <h3>{{categories[9].name}}</h3>
+                          <a  [routerLink]="['/city',categories[9]._id]">
+                            <img [src]="categories[9].imageSrc" alt="">
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

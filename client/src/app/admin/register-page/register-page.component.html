@@ -1,0 +1,46 @@
+<form class="col s12  l12  card" 
+      id="login-form"
+      [formGroup]='form'
+      (ngSubmit)="onSubmit()"
+
+>
+    <h5 class="center green-text">Создать администратора</h5>
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="email" 
+                   type="email" 
+                   class="validate"
+                   formControlName="email"
+                   >
+            <label for="email">Email</label>
+            <span class="helper-text red-text"
+                  *ngIf="form.get('email').invalid && form.get('email').touched"        
+            >
+               <span *ngIf="form.get('email').errors['required']">Е-mail не может быть пустым</span>
+               <span *ngIf="form.get('email').errors['email']">Е-mail не коректный</span>
+            </span>
+          </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="password" 
+                   type="password" 
+                   class="validate"
+                   formControlName="password"
+                     
+                   >
+            <label for="password">Пароль</label>
+            <span class="helper-text red-text"
+                  *ngIf="form.get('password').invalid && form.get('password').touched"
+            >
+                  <span *ngIf="form.get('password').errors['required']">Пароль не может быть пустым </span> 
+                  <span *ngIf="form.get('password').errors['minlength']['requiredLength']"> Введите больше символов</span>
+            </span>
+            
+          </div>
+    </div>
+    <button type="submit"
+            class="btn green"
+            [disabled]="form.invalid || form.disabled"
+            >CONNECT</button>
+</form>
