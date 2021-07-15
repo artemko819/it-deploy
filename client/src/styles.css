@@ -38,6 +38,8 @@ body{
   /* overflow: hidden;   */
   overflow-x: hidden;
   font-family: 'Conv_ofont.ru_Aqum';
+  background : linear-gradient(0deg, rgba(27, 20, 100, 1) 21.51%, rgba(12, 8, 74, 1) 36.7%, rgba(6, 0, 63, 1) 67.99%);
+
 }
 .ov{
   overflow: hidden;

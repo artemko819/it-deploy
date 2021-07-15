@@ -8,7 +8,7 @@
       <div class="left-part">
         <img src="../../assets/block1/999.png" alt="">
       </div>
-      <div class="right-part" *ngIf="positions$ |async as positions">
+      <div class="right-part" *ngIf="positions$ |async as positions; else loader">
         <h1>{{positions.name}}</h1>
         <button (click)="open()" class="btn-add">
           Записаться на пробный урок
@@ -17,6 +17,25 @@
         <ng-template #elseBlock> <span>грн/мес</span> </ng-template>
 
       </div>
+      <ng-template #loader>
+        <div class="row">
+          <div class="col s12 center">
+              <div class="preloader-wrapper small active">
+                  <div class="spinner-layer spinner-green-only">
+                      <div class="circle-clipper left">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="gap-patch">
+                          <div class="circle"></div>
+                      </div>
+                      <div class="circle-clipper right">
+                          <div class="circle"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </ng-template>
     </div>
     <div class="flex-row">
       <div class="text-block">
