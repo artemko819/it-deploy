@@ -18,7 +18,7 @@
   padding-bottom: calc(10px + (100 - 10)*((100vw - 320px)/(1920 - 320)));
 }
 .road img{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
  width: calc(320px + (1920 - 320)*((100vw - 320px)/(1920 - 320)));
@@ -171,9 +171,7 @@
   position: relative;
 }
 
-.not-found-course{
 
-}
 
 #positions{
   position: absolute;
