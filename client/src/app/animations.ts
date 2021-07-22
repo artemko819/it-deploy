@@ -17,10 +17,10 @@ trigger('routeAnimations', [
     query(':leave', animateChild()),
     group([
       query(':leave', [
-        animate('1000ms linear', style({ top: '-100%' }))
+        animate('1000ms ease-in-out', style({ top: '-100%' }))
       ]),
       query(':enter', [
-        animate('1000ms linear', style({ top: '0%' }))
+        animate('1000ms ease-in-out', style({ top: '0%' }))
       ])
     ]),
     query(':enter', animateChild()),
@@ -40,10 +40,10 @@ trigger('routeAnimations', [
     query(':leave', animateChild()),
     group([
       query(':leave', [
-        animate('1000ms linear', style({ top: '-100%' }))
+        animate('1000ms ease-in-out', style({ top: '-100%' }))
       ]),
       query(':enter', [
-        animate('1000ms linear', style({ top: '0%' }))
+        animate('1000ms ease-in-out', style({ top: '0%' }))
       ])
     ]),
     query(':enter', animateChild()),
@@ -63,10 +63,10 @@ trigger('routeAnimations', [
     query(':leave', animateChild()),
     group([
       query(':leave', [
-        animate('1000ms linear', style({ top: '-100%' }))
+        animate('1000ms ease-in-out', style({ top: '-100%' }))
       ]),
       query(':enter', [
-        animate('1000ms linear', style({ top: '0%' }))
+        animate('1000ms ease-in-out', style({ top: '0%' }))
       ])
     ]),
     query(':enter', animateChild()),

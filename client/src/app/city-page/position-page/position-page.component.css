@@ -1,3 +1,9 @@
+.container{
+  width: calc(320px + (1920 - 320)*((100vw - 320px)/(1920 - 320))) !important;
+  margin:  0 auto;
+  padding: calc(10px + (30 - 10)*((100vw - 320px)/(1920 - 320))) !important;
+ }
+
 #course.Junior
 {
   font-family: 'Conv_Blogger Sans';
@@ -24,15 +30,26 @@
 }
 
 #course h1{
-  font-family: 'Conv_Peace Sans Webfont';
+  font-family: 'Conv_evo_1';
+  letter-spacing: 5px;  
+ 
   text-shadow: 0px 14px 4px rgb(0 0 0 / 49%);
 }
-#course .container img{
-  width: 100%;
+#course #comp{
+  width: calc(155px + (740 - 155)*((100vw - 320px)/(1920 - 320)));
+  max-width: 740px;
+  position: relative;
+  left: -10px;
 }
 #course .container .left-part{
-  width: 40%;
+  width: 50%;
   margin-top: 3%;
+}
+#course .right-part{
+  width: 50%;
+  text-align: center;
+  position: relative;
+  top: calc(5px + (250 - 5)*((100vw - 320px)/(1920 - 320)));
 }
 #course .container .wrap-content{
   display: flex;
@@ -40,6 +57,28 @@
   justify-content: space-between;
 }
 
+#course .right-part h1{
+  font-size: calc(23px + (150 - 23)*((100vw - 320px)/(1920 - 320)));
+  margin-top: 0;
+  color: #3c9b37;
+  margin-bottom: calc(20px + (50 - 20)*((100vw - 320px)/(1920 - 320)));
+  -webkit-text-stroke:  calc(1px + (4 - 1)*((100vw - 320px)/(1920 - 320))) #000;
+}
+#course .right-part .btn-add{
+    width: calc(100px + (380 - 100)*((100vw - 320px)/(1920 - 320)));
+    max-width: 380px;
+    padding: calc(5px + (25 - 5)*((100vw - 320px)/(1920 - 320))) ;
+    height:auto;
+    border: 4px solid #000;
+    background:#3c9b37;
+    color: #fff;
+    font-size: calc(13px + (23 - 13)*((100vw - 320px)/(1920 - 320)));
+    border-radius: 12px;
+    cursor: pointer;
+}
+.right-part h3{
+  font-size: calc(15px + (45 - 15)*((100vw - 320px)/(1920 - 320)));
+}
 .flex-row{
   display: flex;
   justify-content: space-between;
@@ -91,7 +130,7 @@
   display: block;
 }
 .flex-row .text-block{
-  width: 15%;
+  width: 25%;
   text-align: center;
 }
 strong {
@@ -99,35 +138,15 @@ strong {
 }
 
 .flex-row .text-block p{
-  font-size: 22px;
+  font-size: calc(13px + (23 - 13)*((100vw - 320px)/(1920 - 320)));
 }
 .text-block{
   /* margin-bottom: 35px; */
   position: relative;
 }
 
-#course .right-part h1{
-  font-size: 9em;
-  color: #3c9b37;
-  -webkit-text-stroke: 4px #000;
-}
-#course .right-part .btn-add{
-    width: 100%;
-    max-width: 450px;
-    height: 75px;
-    border: 4px solid #000;
-    background:#3c9b37;
-    color: #fff;
-    font-size: 23px;
-    border-radius: 12px;
-    cursor: pointer;
-}
-#course .right-part{
-  width: 60%;
-  text-align: center;
-  position: relative;
-  top:155px;
-}
+
+
 
 .note {
     position: relative;

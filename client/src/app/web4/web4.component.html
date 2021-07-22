@@ -3,16 +3,18 @@
         <div class="wrap-text1">
             <h3 class="animate__infinite infinite animate__animated animate__pulse">IT START ЭТО ...</h3>
         </div>
-        <div class="row">
-            <div class="col l6 s12">
-                <img id="sc1" src="../../assets/sky/1.png" alt="">
-            </div>
-            <div class="col l6 s12">
-                <img id="sc2" src="../../assets/sky/2.png" alt="">
-            </div>
+
+        <div class="wrap-img">
+            <img id="sc1" src="../../assets/sky/1.png" alt="">
+            <img id="sc5" class="animate__infinite infinite animate__animated  animate__pulse"
+                src="../../assets/sky/text.png" alt="">
+            <img id="sc2" src="../../assets/sky/2.png" alt="">
         </div>
+
+
+
         <div class="text-sky">
-            <img id="sc5" class="animate__infinite infinite animate__animated  animate__pulse" src="../../assets/sky/text.png" alt="">
+
             <img id="sc6" [class.selected]="select === true" src="../../assets/sky/plane.png" alt="">
         </div>
         <div class="row">
@@ -27,9 +29,9 @@
             <h3 class="animate__infinite infinite animate__animated animate__pulse">Выбери город</h3>
             <a routerLink="/city" class="btn-floating btn-large blue darcen-4 pulse">
                 <i class="large material-icons">arrow_downward</i>
-              </a>
+            </a>
         </div>
-            
-        
+
+
     </div>
 </div>

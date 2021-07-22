@@ -6,7 +6,7 @@
   <div class="container">
     <div class="wrap-content">
       <div class="left-part">
-        <img src="../../assets/block1/999.png" alt="">
+        <img id="comp" src="../../assets/block1/999.png" alt="">
       </div>
       <div class="right-part" *ngIf="positions$ |async as positions; else loader">
         <h1>{{positions.name}}</h1>

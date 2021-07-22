@@ -1,50 +1,158 @@
-.city .building img{
-  width: 75%;
+
+ .city .building img{
+  /* width: 75%; */
   position: relative;
   cursor: pointer ;
+  /* top:calc(72px + (70 - 72)*((100vw - 320px)/(1920 - 320))); */
+} 
+.city .building.selected{
+  align-items: center;
+  justify-content: center;
 }
-
 .city .building {
   display: flex;
-  align-items: flex-end;
-  max-width: 1250px;
-  height: 76vh;
+   align-items: flex-end;
+  justify-content: space-around;
+   max-width: 1800px;
+  height: 100vh; 
+  padding-bottom: calc(10px + (100 - 10)*((100vw - 320px)/(1920 - 320)));
+}
+.road img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ width: calc(320px + (1920 - 320)*((100vw - 320px)/(1920 - 320)));
+ height: calc(25px + (145 - 25)*((100vw - 320px)/(1920 - 320)));
+
 }
 
 .city .row .col{
   padding: 0;
 }
+.city h3{
+	font-family: 'Conv_vozrast_1';
+  -webkit-text-stroke:calc(0px + (1 - 0)*((100vw - 320px)/(1920 - 320)))  rgb(5, 83, 11);
+  color:rgb(206, 241, 6) ;
+  text-transform: uppercase;
+  position: relative;
+  font-size: calc(13px + (40 - 13)*((100vw - 320px)/(1920 - 320)));
+  margin: 0;
+ }
+ 
+ .city .heading{
+  font-size: calc(50px + (50 - 50)*((100vw - 320px)/(1920 - 320)));
+  position: absolute;
+  -webkit-text-stroke: 2px rgb(5, 83, 11);
+  width: 100%;
+  text-align: center;
+  top: calc(50px + (20 - 50)*((100vw - 320px)/(1920 - 320)));
+  letter-spacing: 2px;
+  z-index: 99;
+ }
+
+.jn .age{
+  left: calc(13px + (35 - 13)*((100vw - 320px)/(1920 - 320)));
+  width: 100%;
+  top: calc(3px + (30 - 3)*((100vw - 320px)/(1920 - 320)));
+  z-index: 999;
+}
+.ev .age h3{
+  font-size: calc(10px + (40 - 10)*((100vw - 320px)/(1920 - 320)));
+}
+.ev .age{
+  right: calc(-4px + (60 - 1)*((100vw - 320px)/(1920 - 320)));
+  width: 100%;
+  top: calc(3px + (30 - 3)*((100vw - 320px)/(1920 - 320)));
+}
+.sn .age h3{
+  font-size: calc(7px + (35 - 7)*((100vw - 320px)/(1920 - 320)));
+}
+.sn .age{
+  left: calc(17px + (90 - 17)*((100vw - 320px)/(1920 - 320)));
+  width: 100%;
+  top: calc(57px + (320 - 57)*((100vw - 320px)/(1920 - 320)));
+}
+
+.in .age{
+  left: calc(10px + (40 - 10)*((100vw - 320px)/(1920 - 320)));
+  width: 100%;
+  top: calc(7px + (35 - 7)*((100vw - 320px)/(1920 - 320)));
+  z-index: 999;
+}
+
+.in .age h3{
+  font-size: calc(9px + (40 - 9)*((100vw - 320px)/(1920 - 320)));
+}
 
 #jn{
-  top:40px;
-  width: 100%;
+  /* top:150px; */
+  width: calc(100px + (494 - 100)*((100vw - 320px)/(1920 - 320)));
   z-index: 99;
+  max-width: 494px;
 }
 #ev{
-  left: 0%;
-  top:40px;
-  width: 100%;
+  right:calc(10px + (124 - 10)*((100vw - 320px)/(1920 - 320)));
+  max-width: 441px;
+  /* top:0px; */
+  width: calc(80px + (441 - 80)*((100vw - 320px)/(1920 - 320)));
 /* height: 60vh;*/
   z-index: 1;
 }
 #sn{
   position: relative;
-  top:40px;
-  left: 0%;
-  width: 125%;
+  /* top:0px; */
+  right:calc(30px + (180 - 30)*((100vw - 320px)/(1920 - 320)));
+  width: calc(135px + (765 - 135)*((100vw - 320px)/(1920 - 320)));
+  max-width: 765px;
   z-index: 3;
  /* height: 60vh;*/
 }
 #in{
   position: relative;
   left: 0;
-  top:34px;
+  /* top:34px; */
   z-index: 1;
+  max-width:408px ;
+  width: calc(75px + (408 - 75)*((100vw - 320px)/(1920 - 320)));
   /*height:60vh;*/
-  float: right;
+  /* float: right; */
+  top: calc(3px + (7 - 3)*((100vw - 320px)/(1920 - 320)));
 }
 
+#city #gl-jn{
+  width: calc(75px + (178 - 75)*((100vw - 320px)/(1920 - 320)));
+  position: absolute;
+  right: calc(-10px + (300 - 10)*((100vw - 320px)/(1920 - 320)));
+  top: calc(-100px + (100 - 150)*((100vw - 320px)/(1920 - 320)));
+  cursor: default;
+  z-index:9999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  animation: shar1 2s infinite alternate;
+}
 
+#city #gl-sn{
+  width: calc(55px + (158 - 55)*((100vw - 320px)/(1920 - 320)));
+  position: absolute;
+  right: calc(10px + (300 - 10)*((100vw - 320px)/(1920 - 320)));
+  top: calc(-100px + (250 - 150)*((100vw - 320px)/(1920 - 320)));
+  cursor: default;
+  z-index:9999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)  1s;
+  transform-style: preserve-3d;
+  animation: shar1 3s infinite alternate;
+}
+
+#city #gl-in{
+  width: calc(55px + (178 - 55)*((100vw - 320px)/(1920 - 320)));
+  position: absolute;
+  left: -20px;
+  top:0px;
+  cursor: default;
+  z-index:9999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)  1s;
+  transform-style: preserve-3d;
+  animation: shar1 2.5s infinite alternate;
+}
 
 .jn h5{
   position: relative;
@@ -54,15 +162,7 @@
   font-size: 1.5em;
   font-style: italic;
 }
-.city h3{
-  -webkit-text-stroke: 2px  rgb(5, 83, 11);
-  color:rgb(206, 241, 6) ;
-  text-transform: uppercase;
-  position: relative;
-  top:20px;
-  margin: 0;
-  margin-bottom: 20px;
- }
+
 .age{opacity: 1; transition: all 0.5s; position: absolute;z-index: 99 }
 .jn:hover .age{
   opacity: 1;
@@ -72,7 +172,7 @@
 }
 
 .not-found-course{
-  margin-top: 10%;
+
 }
 
 #positions{
@@ -81,7 +181,9 @@
   right: 30px;
   opacity: 0.5;
   transition: 0.5s;
+  z-index: 999;
 }
 #positions:hover{
   opacity: 1;
 }
+

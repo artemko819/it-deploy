@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 import { MaterialInstance, MaterialService } from 'src/app/admin/shared/classes/material.service';
 import { Person } from 'src/app/admin/shared/interfaces';
 import { CategoriesService } from 'src/app/admin/shared/services/categories.service';
@@ -17,24 +19,27 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
   positions$
   categoryId
   positionId
-  className = ""
+  positionFind
+  className = null
   form: FormGroup
   persons
   catName
-  @ViewChild('modal') modalRef:ElementRef
+  @ViewChild('modal') modalRef: ElementRef
   modal: MaterialInstance
+  route: any;
   constructor(private positionService: PositionService,
     private activateRoute: ActivatedRoute,
-    private personService:PersonService,
-    private categoriesService:CategoriesService
+    private personService: PersonService,
+    private router: Router,
+    private categoriesService: CategoriesService
   ) { }
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
-      tel: new FormControl(null, [Validators.required,Validators.pattern('[- +()0-9]+')]),
+      tel: new FormControl(null, [Validators.required, Validators.pattern('[- +()0-9]+')]),
       email: new FormControl(null, [Validators.required, Validators.email]),
     })
-   
+
     const options = {
       strings: ['Обучайся!', 'Практикуйся!', 'Развивайся!'],
       typeSpeed: 50,
@@ -48,47 +53,54 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
     body.classList.remove("ov");
     this.categoryId = this.activateRoute.snapshot.params['id'];
     this.positionId = this.activateRoute.snapshot.params['position'];
+    console.log(this.positionId)
     this.positions$ = this.positionService.fetchFrontPosition(this.categoryId, this.positionId)
     this.positions$.subscribe(pos => {
       this.className = pos.name
+    },(error) => {
+      this.router.navigate(['/404'])
     })
-    this.categoriesService.getByIdFront(this.categoryId).subscribe(catname=>{
+    this.categoriesService.getByIdFront(this.categoryId).subscribe(catname => {
       this.catName = catname.name
       console.log(this.catName)
     })
+
+
+
+
   }
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.modal.destroy()
   }
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.modal = MaterialService.initModal(this.modalRef)
   }
-  open(){
+  open() {
     this.modal.open()
   }
-  close(){
+  close() {
     this.modal.close()
   }
-  submit(){
+  submit() {
     this.form.disable()
-    
+
     const newPerson: Person = {
       name: this.form.value.name,
-      email:this.form.value.email,
+      email: this.form.value.email,
       tel: this.form.value.tel,
-      city:this.catName,
-      course:this.className,
+      city: this.catName,
+      course: this.className,
       date: new Date(Date.now()).toLocaleString(),
     }
-   
-    this.personService.create(newPerson).subscribe(person=>{
-      MaterialService.toast("Ваша данные отправлены")
+
+    this.personService.create(newPerson).subscribe(person => {
+      MaterialService.toast("Ваша заявка отправлена. С вами свяжуться.")
       this.modal.close()
     },
-    err=>{
-      MaterialService.toast(err.error.message)
-      this.form.enable()
-    }
+      err => {
+        MaterialService.toast(err.error.message)
+        this.form.enable()
+      }
     )
   }
 }

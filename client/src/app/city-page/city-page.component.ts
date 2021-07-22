@@ -1,7 +1,8 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Observable, of } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { Observable, of, throwError } from 'rxjs';
+import { catchError, switchMap } from 'rxjs/operators';
 import { MaterialService } from '../admin/shared/classes/material.service';
 import { Position } from '../admin/shared/interfaces';
 import { CategoriesService } from '../admin/shared/services/categories.service';
@@ -21,7 +22,8 @@ export class CityPageComponent implements OnInit{
     private categoriesService: CategoriesService,
     private router: Router,
     private positionService: PositionService,
-    private activateRoute: ActivatedRoute
+    private activateRoute: ActivatedRoute,
+
   ) { }
 
   ngOnInit(): void {
@@ -30,38 +32,14 @@ export class CityPageComponent implements OnInit{
     
     //города
     this.categoryId = this.activateRoute.snapshot.params['id'];
-    console.log(this.categoryId)
     this.positions$ = this.positionService.fetchFront(this.categoryId)
     this.positions$.subscribe(pos=>{
       this.positionFind = pos
+     
+    },(error)=>{
+      this.router.navigate(['/404'])
     })
-    // //проверка на левый url
-    // this.route.params
-    //   .pipe(
-    //     switchMap(
-    //       (params: Params) => {//проверка редактирование или создание
-    //         if (params['id']) {
-    //           this.isNew = true
-    //           return this.categoriesService.getByIdFront(params['id'])
-    //         }
-    //         return of(null)
-    //       }
-    //     )
-    //   ).subscribe(
-    //     category => {//если редартирование то в инпут название категории
-    //       if (category) {
-    //         this.positionService.fetchFront(this.categoryId).subscribe(position => {
-    //           this.positionFind = position
-    //           if (this.positionFind.length == 0) {
-    //             this.router.navigate(['/404'])
-    //           }
-    //         })
-    //       }
-
-    //     },
-    //     error => this.router.navigate(['/404'])
-    //   )
-  
+    
 
     // let gelicopter = document.getElementById("gl-jn");
     // let gelicopter2 = document.getElementById("gl-sn");
