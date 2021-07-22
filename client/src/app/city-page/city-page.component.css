@@ -14,15 +14,18 @@
    align-items: flex-end;
   justify-content: space-around;
    max-width: 1800px;
-  height: 100vh; 
-  padding-bottom: calc(10px + (100 - 10)*((100vw - 320px)/(1920 - 320)));
+  height: 85vh; 
+  padding-bottom:0;
+  margin: 0;
+  position: relative;
+  top:35px
 }
 .road img{
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 0;
+  left: -7px;
  width: calc(320px + (1920 - 320)*((100vw - 320px)/(1920 - 320)));
- height: calc(25px + (145 - 25)*((100vw - 320px)/(1920 - 320)));
+ height: calc(125px + (145 - 125)*((100vw - 320px)/(1920 - 320)));
 
 }
 
@@ -53,7 +56,7 @@
 .jn .age{
   left: calc(13px + (35 - 13)*((100vw - 320px)/(1920 - 320)));
   width: 100%;
-  top: calc(3px + (30 - 3)*((100vw - 320px)/(1920 - 320)));
+  top: calc(5px + (30 - 5)*((100vw - 320px)/(1920 - 320)));
   z-index: 999;
 }
 .ev .age h3{
@@ -62,7 +65,7 @@
 .ev .age{
   right: calc(-4px + (60 - 1)*((100vw - 320px)/(1920 - 320)));
   width: 100%;
-  top: calc(3px + (30 - 3)*((100vw - 320px)/(1920 - 320)));
+  top: calc(5px + (30 - 5)*((100vw - 320px)/(1920 - 320)));
 }
 .sn .age h3{
   font-size: calc(7px + (35 - 7)*((100vw - 320px)/(1920 - 320)));
@@ -76,7 +79,7 @@
 .in .age{
   left: calc(10px + (40 - 10)*((100vw - 320px)/(1920 - 320)));
   width: 100%;
-  top: calc(7px + (35 - 7)*((100vw - 320px)/(1920 - 320)));
+  top: calc(9px + (35 - 9)*((100vw - 320px)/(1920 - 320)));
   z-index: 999;
 }
 
