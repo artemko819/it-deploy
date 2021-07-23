@@ -46,7 +46,7 @@ import { PersonPageComponent } from './person-page/person-page.component';
         path: '', component: AuthLayoutComponent, children: [
           { path: '', redirectTo: '/admin/login', pathMatch: 'full' },
           { path: 'login', component: LoginPageComponent },
-          { path: 'register', component: RegisterPageComponent },         
+          // { path: 'register', component: RegisterPageComponent },         
         ]
       },
       {

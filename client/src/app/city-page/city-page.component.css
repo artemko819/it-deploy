@@ -43,12 +43,12 @@
  }
  
  .city .heading{
-  font-size: calc(50px + (50 - 50)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
   position: absolute;
-  -webkit-text-stroke: 2px rgb(5, 83, 11);
+  -webkit-text-stroke: 1px rgb(5, 83, 11);
   width: 100%;
   text-align: center;
-  top: calc(50px + (20 - 50)*((100vw - 320px)/(1920 - 320)));
+  top: calc(90px + (20 - 50)*((100vw - 320px)/(1920 - 320)));
   letter-spacing: 2px;
   z-index: 99;
  }
@@ -137,7 +137,7 @@
   width: calc(55px + (158 - 55)*((100vw - 320px)/(1920 - 320)));
   position: absolute;
   right: calc(10px + (300 - 10)*((100vw - 320px)/(1920 - 320)));
-  top: calc(-100px + (250 - 150)*((100vw - 320px)/(1920 - 320)));
+  top: calc(-50px + (250 - 50)*((100vw - 320px)/(1920 - 320)));
   cursor: default;
   z-index:9999;
   transition: all cubic-bezier(0.19, 1, 0.22, 1)  1s;
@@ -174,7 +174,11 @@
   position: relative;
 }
 .not-found-course h1{
-  font-size: 50px;
+  font-size: 40px;
+  color: rgb(255, 208, 1) ;
+  z-index: 99;
+  -webkit-text-stroke: 2px  rgb(66, 66, 66);
+  padding: 10px;
 }
 
 

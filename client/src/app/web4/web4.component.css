@@ -68,7 +68,7 @@ img{width: 100%; position: relative;}
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: calc(100px + (-150 - 100)*((100vw - 320px)/(1920 - 320)));
+    top: calc(50px + (-150 - 50)*((100vw - 320px)/(1920 - 320)));
   }
 
 .wrap-text1{

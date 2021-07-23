@@ -61,7 +61,7 @@ img{
  float: left;
  margin: 0;
  white-space:nowrap;
-  font-size: calc(30px + (90 - 30)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(29px + (90 - 29)*((100vw - 320px)/(1920 - 320)));
 }
 .border{
     display: inline-block;
