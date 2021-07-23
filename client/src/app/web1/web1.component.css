@@ -61,7 +61,7 @@ img{
  float: left;
  margin: 0;
  white-space:nowrap;
-  font-size: calc(20px + (90 - 20)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(30px + (90 - 30)*((100vw - 320px)/(1920 - 320)));
 }
 .border{
     display: inline-block;
@@ -72,8 +72,8 @@ img{
     height: 38px;
     border-radius: calc(18px + (30 - 18)*((100vw - 320px)/(1920 - 320)));
     position: relative;
-    top: calc(5px + (20 - 5)*((100vw - 320px)/(1920 - 320)));
-    left: 5%;
+    top: calc(25px + (20 - 25)*((100vw - 320px)/(1920 - 320)));
+    left: calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
 }
 
 #start{
@@ -82,7 +82,7 @@ img{
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    top: 1px;
+    top: 0px;
     left: 1px;
     background-color: rgb(240, 243, 240);
     transition: all 1s;

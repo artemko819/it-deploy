@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -msbox-sizing: border-box;
+}
 @font-face {
 	font-family: 'Conv_ofont.ru_Aqum';
 	src: url('./assets/fonts/ofont.ru_Aqum.eot');
@@ -136,6 +141,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{overflow: hidden;}
 body{
   /* overflow: hidden;   */
   overflow-x: hidden;
@@ -180,14 +186,7 @@ body{
     max-width: 1920px !important;
 }
 
-.wrap-text{
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  top:-100px
-}
+
 
 
 @keyframes shar1 {
@@ -276,6 +275,9 @@ nav .brand-logo {
   } */
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+ #space1 #start{
+    top:2px
+  }
   #positions{
     position: absolute;
     top: 30px;
@@ -307,6 +309,7 @@ nav .brand-logo {
     width: 50%;
     flex-direction: column;
     align-items: center;
+    margin-left: 8%;
   }
   #map .right-map{
     display: flex;
@@ -334,13 +337,24 @@ nav .brand-logo {
     margin-top: 3%;
   }
   #map h3{
-    font-size: 1em;
-    -webkit-text-stroke: 1px  rgb(5, 83, 11);
+    font-size: 0.9em;
+    -webkit-text-stroke: 0.5px rgb(5, 83, 11);
   }
 
 
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 920px){ 
+  #map .wrap-img.img-9 h3{
+    margin-top: calc(30px + (-50 - 30)*((100vw - 320px)/(1920 - 320)));
+    font-size: calc(10px + (30 - 10)*((100vw - 320px)/(1920 - 320)));
+    margin-left: 1.2%;
+}
+#map .wrap-img.img-8 h3{
+  margin-top: calc(30px + (-50 - 30)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(10px + (30 - 10)*((100vw - 320px)/(1920 - 320)));
+  margin-left: 1.2%;
+}
+
   .city .heading{
     font-size: 35px !important;
     top:15px !important;

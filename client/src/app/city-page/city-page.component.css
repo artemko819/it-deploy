@@ -18,7 +18,7 @@
   padding-bottom:0;
   margin: 0;
   position: relative;
-  top:35px
+  top: calc(15px + (45 - 15)*((100vw - 320px)/(1920 - 320)));
 }
 .road img{
   position: relative;
@@ -173,7 +173,9 @@
 .jn,.ev,.sn,.in{
   position: relative;
 }
-
+.not-found-course h1{
+  font-size: 50px;
+}
 
 
 #positions{

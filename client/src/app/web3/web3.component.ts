@@ -21,7 +21,7 @@ export class Web3Component implements OnInit, OnDestroy {
         this.router.navigate(['web-4'])
     }, 1000);
     this.myStyle = {
-        'position': 'absolute',
+        'position': 'relative',
         'width': '100%',
         'height': '100%',
         'z-index': 1,

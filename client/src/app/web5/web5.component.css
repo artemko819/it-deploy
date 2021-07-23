@@ -92,8 +92,8 @@ img:hover{
 }
 
 .wrap-img.img-9 h3{
-    margin-top: 9.5%;
-    font-size: 2em;
+    margin-top: calc(30px + (116 - 30)*((100vw - 320px)/(1920 - 320)));
+    font-size: calc(13px + (30 - 13)*((100vw - 320px)/(1920 - 320)));
     margin-left: 1.2%;
 }
 
@@ -105,8 +105,8 @@ img:hover{
    
 }
 .wrap-img.img-10 h3{
-    margin-top: 7%;
-    font-size: 2em;
+    margin-top: calc(50px + (116 - 50)*((100vw - 320px)/(1920 - 320)));
+    font-size: calc(13px + (35 - 13)*((100vw - 320px)/(1920 - 320)));
     margin-left: 1%;
 }
 

@@ -1,4 +1,4 @@
-img{width: 100%;}
+img{width: 100%; position: relative;}
 .container{
     width: calc(320px + (1920 - 320)*((100vw - 320px)/(1920 - 320))) !important;
     margin:  0 auto;
@@ -8,34 +8,34 @@ img{width: 100%;}
     max-width: 459px;
     width: calc(50px + (459 - 50)*((100vw - 320px)/(1920 - 320)));
     height:calc(30px + (245 - 30)*((100vw - 320px)/(1920 - 320))); ;
-    margin-top: calc(30px + (150 - 30)*((100vw - 320px)/(1920 - 320)));
+    margin-top: calc(130px + (150 - 130)*((100vw - 320px)/(1920 - 320)));
 }
 #sc2{
     max-width: 212px;
     width: calc(50px + (212 - 50)*((100vw - 320px)/(1920 - 320)));
     height:calc(30px + (119 - 30)*((100vw - 320px)/(1920 - 320))); 
     float: right;
-    margin-top: calc(10px + (150 - 10)*((100vw - 320px)/(1920 - 320)));
+    margin-top: calc(120px + (150 - 120)*((100vw - 320px)/(1920 - 320)));
 }
 #sc3{
     max-width: 589px;
     width: calc(70px + (589 - 70)*((100vw - 320px)/(1920 - 320)));
-
     float: left;
-    margin-top: 15%;
+    top: calc(50px + (120 - 50)*((100vw - 320px)/(1920 - 320)));;
 }
 #sc4{
     max-width: 375px;
     width: calc(50px + (375 - 50)*((100vw - 320px)/(1920 - 320)));
     float: right;
-    margin-top: calc(10px + (250 - 10)*((100vw - 320px)/(1920 - 320)));
+    top: calc(10px + (250 - 10)*((100vw - 320px)/(1920 - 320)));
 }
 #sc5{
     max-width: 375px;
-    width: calc(50px + (375 - 50)*((100vw - 320px)/(1920 - 320)));
+    width: calc(100px + (375 - 100)*((100vw - 320px)/(1920 - 320)));
     /* margin-top: calc(10px + (50 - 10)*((100vw - 320px)/(1920 - 320))); */
     position: relative;
-    top:calc(10px + (350 - 10)*((100vw - 320px)/(1920 - 320)));
+    right: calc(-10px + (95 - 10)*((100vw - 320px)/(1920 - 320)));
+    top:calc(120px + (250 - 120)*((100vw - 320px)/(1920 - 320)));
 }
 .wrap-img{
     display: flex;
@@ -54,7 +54,7 @@ img{width: 100%;}
     max-width: 425px;
     position: absolute;
     width: calc(80px + (425 - 80)*((100vw - 320px)/(1920 - 320)));
-    top: calc(150px + (150 - 150)*((100vw - 320px)/(1920 - 320)));
+    top: calc(280px + (150 - 280)*((100vw - 320px)/(1920 - 320)));
     z-index: 99;
     transition: all 3s;
     left: -900px;
@@ -62,6 +62,14 @@ img{width: 100%;}
 #sc6.selected{
     left: 70% ;
 }
+.wrap-text{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: calc(100px + (-150 - 100)*((100vw - 320px)/(1920 - 320)));
+  }
 
 .wrap-text1{
     position: absolute;
