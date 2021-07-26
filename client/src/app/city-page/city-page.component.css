@@ -48,38 +48,38 @@
   -webkit-text-stroke: 1px rgb(5, 83, 11);
   width: 100%;
   text-align: center;
-  top: calc(90px + (20 - 50)*((100vw - 320px)/(1920 - 320)));
+  top: calc(90px + (-20 - 50)*((100vw - 320px)/(1920 - 320)));
   letter-spacing: 2px;
   z-index: 99;
  }
 
 .jn .age{
-  left: calc(13px + (35 - 13)*((100vw - 320px)/(1920 - 320)));
+  left: calc(13px + (33 - 13)*((100vw - 320px)/(1920 - 320)));
   width: 100%;
-  top: calc(5px + (30 - 5)*((100vw - 320px)/(1920 - 320)));
+  top: calc(5px + (33 - 5)*((100vw - 320px)/(1920 - 320)));
   z-index: 999;
 }
 .ev .age h3{
   font-size: calc(10px + (40 - 10)*((100vw - 320px)/(1920 - 320)));
 }
 .ev .age{
-  right: calc(-4px + (60 - 1)*((100vw - 320px)/(1920 - 320)));
+  right: calc(-4px + (70 - 1)*((100vw - 320px)/(1920 - 320)));
   width: 100%;
-  top: calc(5px + (30 - 5)*((100vw - 320px)/(1920 - 320)));
+  top: calc(5px + (33 - 5)*((100vw - 320px)/(1920 - 320)));
 }
 .sn .age h3{
   font-size: calc(7px + (35 - 7)*((100vw - 320px)/(1920 - 320)));
 }
 .sn .age{
-  left: calc(17px + (90 - 17)*((100vw - 320px)/(1920 - 320)));
+  left: calc(17px + (75 - 17)*((100vw - 320px)/(1920 - 320)));
   width: 100%;
-  top: calc(57px + (320 - 57)*((100vw - 320px)/(1920 - 320)));
+  top: calc(57px + (323 - 57)*((100vw - 320px)/(1920 - 320)));
 }
 
 .in .age{
-  left: calc(10px + (40 - 10)*((100vw - 320px)/(1920 - 320)));
+  left: calc(10px + (32 - 10)*((100vw - 320px)/(1920 - 320)));
   width: 100%;
-  top: calc(9px + (35 - 9)*((100vw - 320px)/(1920 - 320)));
+  top:  calc(8px + (38 - 8)*((100vw - 320px)/(1920 - 320)));
   z-index: 999;
 }
 

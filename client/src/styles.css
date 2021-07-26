@@ -157,7 +157,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{overflow: hidden;}
 body{
   /* overflow: hidden;   */
   overflow-x: hidden;
@@ -312,6 +311,7 @@ nav .brand-logo {
   #map .row{
     height: auto;
   }
+  
    #map{
     display: flex;
     width: 100%;

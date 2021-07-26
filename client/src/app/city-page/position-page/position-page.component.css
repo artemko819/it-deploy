@@ -1,8 +1,8 @@
-.container{
+/* .container{
   width: calc(320px + (1920 - 320)*((100vw - 320px)/(1920 - 320))) !important;
   margin:  0 auto;
   padding: calc(10px + (30 - 10)*((100vw - 320px)/(1920 - 320))) !important;
- }
+ } */
 
 #course.Junior
 {
@@ -28,7 +28,9 @@
   width: 100vw;
   background: linear-gradient(0deg,rgb(225 234 230) 1.51%,#dac61b 36.7%, #e4860b 67.99%);
 }
-
+#course {
+  height: auto;
+}
 #course h1{
   font-family: 'Conv_evo_1';
   letter-spacing: 5px;  
@@ -102,30 +104,36 @@
 .search{
   background: #ebebeb;
   max-width: 550px;
-  width: 100%;
-  height: 125px;
-  line-height: 125px;
-  padding-left: 20px;
+  width:calc(250px + (550 - 250)*((100vw - 320px)/(1920 - 320)));
   border-radius:30px;
+  padding:calc(10px + (30 - 10)*((100vw - 320px)/(1920 - 320)));
   box-shadow: 0 0 10px #000;
   margin: 0 auto;
-  font-size: 55px;
+  font-size: calc(20px + (55 - 20)*((100vw - 320px)/(1920 - 320)));
   position: relative;
 }
+#il{
+  width: calc(150px + (433 - 150)*((100vw - 320px)/(1920 - 320)));;
+}
+#ps{
+  width: calc(150px + (433 - 150)*((100vw - 320px)/(1920 - 320)));
+}
+
 #course #ss{
   position: absolute;
-  top:-70px;
-  width: 220px;
+  top: calc(-30px + (0 - 30)*((100vw - 320px)/(1920 - 320)));
+  width: calc(80px + (196 - 80)*((100vw - 320px)/(1920 - 320)));
   right: 0;
-  left: 350px;
+  left: calc(150px + (380 - 150)*((100vw - 320px)/(1920 - 320)));
 }
 #course #left-img{
-  width: 200px;
+  width: calc(40px + (195 - 40)*((100vw - 320px)/(1920 - 320)));
   position: absolute;
-  top:-300px
+  top: calc(-20px + (-300 - 20)*((100vw - 320px)/(1920 - 320)));
 }
 #course #center-img{
-  max-width: 440px;
+  max-width: 408px;
+  width: calc(100px + (408 - 100)*((100vw - 320px)/(1920 - 320)));
   margin: 0 auto;
   display: block;
 }
@@ -144,62 +152,6 @@ strong {
   /* margin-bottom: 35px; */
   position: relative;
 }
-
-
-
-
-.note {
-    position: relative;
-    z-index: 999;
-  }
-  .wrap-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-  }
-  .fleash {
-    position: absolute;
-    margin-left: 135%;
-    transition: all 3s;
-  }
-  .fleash.selected {
-    margin-left: 0;
-  }
-  .ruka.selected{
-    margin-left: 65%;
-  }
-  .ruka {
-    position: absolute;
-    margin-left: 199%;
-    transition: all 3s;
-    margin-top: -230px;
-  }
-  .ruka img {
-    width: 600px;
-    margin-top: 15px;
-  }
-  .determinate.selected{
-    transition-property: width;
-    transition-duration: 3s;
-    width: 100%;
-  }
-  .determinate{
-    transition-property: width;
-    transition-duration: 3s;
-    width: 0%;
-  }
-  .text-flash{
-    position: absolute;
-  }
-  .wrap-text h3{
-    -webkit-text-stroke: 2px rgb(5, 83, 11);
-    color: rgb(206, 241, 6);
-
-  }
-  .progress{
-    height: 30px;
-  }
 
   #positions{
     position: absolute;
