@@ -14,6 +14,7 @@ export class OverviewPageComponent implements OnInit {
   constructor() { }
 
   @ViewChild('pdfTable') pdfTable: ElementRef;
+   
   
   public downloadAsPDF() {
     const doc = new jsPDF();
