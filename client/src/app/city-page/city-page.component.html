@@ -1,11 +1,10 @@
 <div class="city" id="city">
   <a id="positions" [routerLink]="['/city']" class="btn-floating pulse btn-large waves-effect waves-light teal">
-    <i class="material-icons">navigation</i>
+    <i class="material-icons">arrow_downward</i>
   </a>
   <div class="container">
     <h3 class="center heading" *ngIf="positionFind.length > 0;">Выбери курс своей мечты </h3>
-    <div class="row building" [class.selected]="positionFind.length === 0"
-      *ngIf="positions$ |async as positions;else loader">
+    <div class="row building" [style.marginLeft] = 'move + "px"' *ngIf="positions$ |async as positions;else loader">
       <div *ngIf="positionFind.length === 0; else normal">
         <div class="not-found-course">
           <h1 class="center ">В этом городе нет курсов.</h1>
@@ -18,7 +17,9 @@
             <h3 class="center"> 7 - 12 лет</h3>
           </div>
           <img id="gl-jn" src="../../assets/city/gelicopter.png" alt="">
-
+          <a [routerLink]="[positions[0]._id]"  class="btn-floating arrow green darcen-4 pulse">
+            <i class="large material-icons">arrow_downward</i>
+          </a>
           <a [routerLink]="[positions[0]._id]">
             <img id="jn" src="../../assets/city/jn.png" alt="">
           </a>
@@ -28,7 +29,9 @@
           <div class="age animate__infinite 	infinite animate__animated animate__pulse">
             <h3 class="center"> 12 - 18 лет</h3>
           </div>
-
+          <a [routerLink]="[positions[1]._id]" class="btn-floating arrow yellow darcen-4 pulse">
+            <i class="large material-icons">arrow_downward</i>
+          </a>
           <a [routerLink]="[positions[1]._id]">
             <img id="ev" src="../../assets/city/ev.png" alt="">
           </a>
@@ -38,7 +41,9 @@
           <div class="age animate__infinite 	infinite animate__animated animate__pulse">
             <h3 class="center"> 40 - 75 лет</h3>
           </div>
-
+          <a [routerLink]="[positions[2]._id]" class="btn-floating arrow teal darcen-4 pulse">
+            <i class="large material-icons">arrow_downward</i>
+          </a>
           <a [routerLink]="[positions[2]._id]">
             <img id="sn" src="../../assets/city/sn.png" alt="">
           </a>
@@ -48,6 +53,9 @@
           <div class="age animate__infinite 	infinite animate__animated animate__pulse">
             <h3 class="center"> 6 - 60 лет</h3>
           </div>
+          <a [routerLink]="[positions[3]._id]" class="btn-floating arrow orange darcen-4 pulse">
+            <i class="large material-icons">arrow_downward</i>
+          </a>
           <a [routerLink]="[positions[3]._id]">
             <img id="in" src="../../assets/city/in.png" alt="">
           </a>
@@ -100,6 +108,12 @@
       </div>
     </ng-template>
     <div class="row road">
+      <button id='left-nav' (click)="moveLeft(move)" [disabled]='leftMove == true' class="btn-floating arrow-nav green darcen-4 ">
+        <i class="large material-icons">arrow_downward</i>
+      </button>
+      <button (click)="moveRight(move)" [disabled]='rightMove == true'  id='right-nav' class="btn-floating arrow-nav green darcen-4">
+        <i class="large material-icons">arrow_downward</i>
+      </button>
       <img src="../../assets/city/doroga_1.png" alt="">
     </div>
   </div>

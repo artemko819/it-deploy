@@ -1,3 +1,110 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  #city .arrow{
+    display: none;
+  }
+  #city  .road img{
+    width: 960px;
+  }
+  #city .building{
+    width: 960px !important
+  }
+  #city #jn{
+    width: calc(260px + (494 - 260)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .jn .age h3{
+    font-size: calc(25px + (40 - 25)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .jn .age{
+    left: calc(25px + (33 - 25)*((100vw - 320px)/(1920 - 320)));
+    top: calc(15px + (33 - 15)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city #ev{
+    width: calc(220px + (441 - 220)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .ev .age h3{
+    font-size: calc(25px + (40 - 25)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .ev .age{
+    left: calc(20px + (33 - 20)*((100vw - 320px)/(1920 - 320)));
+    top: calc(15px + (33 - 15)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city #sn{
+    width: calc(335px + (765 - 335)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .sn .age h3{
+    font-size: calc(19px + (40 - 19)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .sn .age{
+    left: calc(71px + (33 - 20)*((100vw - 320px)/(1920 - 320)));
+    top: calc(146px + (33 - 15)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city #in{
+    width: calc(205px + (408 - 205)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .in .age h3{
+    font-size: calc(22px + (40 - 22)*((100vw - 320px)/(1920 - 320)));
+  }
+  #city .in .age{
+    left: calc(17px + (32 - 10)*((100vw - 320px)/(1920 - 320)));
+  
+    top: calc(17px + (38 - 8)*((100vw - 320px)/(1920 - 320)));
+   
+  }
+  .building{
+    transition: all 0.3s ease-in-out;
+  }
+  #city .arrow-nav{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    z-index: 99999;
+  }
+  #city #left-nav{
+    left: 50px;
+    transform: rotateZ(90deg);
+  }
+  #city #right-nav{
+    right: 50px;
+    transform: rotateZ(-90deg);
+  }
+}
+.arrow-nav{
+  display: none;
+}
+#jn{
+  /* top:150px; */
+  width: calc(100px + (494 - 100)*((100vw - 320px)/(1920 - 320)));
+  z-index: 99;
+  max-width: 494px;
+}
+#ev{
+  right:calc(10px + (124 - 10)*((100vw - 320px)/(1920 - 320)));
+  max-width: 441px;
+  /* top:0px; */
+  width: calc(80px + (441 - 80)*((100vw - 320px)/(1920 - 320)));
+/* height: 60vh;*/
+  z-index: 1;
+}
+#sn{
+  position: relative;
+  /* top:0px; */
+  right:calc(30px + (180 - 30)*((100vw - 320px)/(1920 - 320)));
+  width: calc(135px + (765 - 135)*((100vw - 320px)/(1920 - 320)));
+  max-width: 765px;
+  z-index: 3;
+ /* height: 60vh;*/
+}
+#in{
+  position: relative;
+  left: 0;
+  /* top:34px; */
+  z-index: 1;
+  max-width:408px ;
+  width: calc(75px + (408 - 75)*((100vw - 320px)/(1920 - 320)));
+  /*height:60vh;*/
+  /* float: right; */
+  top: calc(3px + (7 - 3)*((100vw - 320px)/(1920 - 320)));
+}
 
  .city .building img{
   /* width: 75%; */
@@ -8,6 +115,29 @@
 .city .building.selected{
   align-items: center;
   justify-content: center;
+}
+#city .arrow{
+  position: absolute;
+  transform: rotateZ(-90deg);
+  z-index: 99;
+}
+#city .jn .arrow{
+top:20px;
+left: 10px;
+}
+#city .ev .arrow{
+  top:20px;
+  left: -40px;
+  }
+#city .sn .arrow{
+  left: calc(17px + (305 - 17)*((100vw - 320px)/(1920 - 320)));
+  top: calc(57px + (213 - 57)*((100vw - 320px)/(1920 - 320)));
+  transform: rotateZ(0deg);
+}
+#city .in .arrow{
+  left: calc(10px + (262 - 10)*((100vw - 320px)/(1920 - 320)));
+  top:  calc(8px + (-65 - 8)*((100vw - 320px)/(1920 - 320)));
+  transform: rotateZ(0deg);
 }
 .city .building {
   display: flex;
@@ -87,40 +217,7 @@
   font-size: calc(9px + (40 - 9)*((100vw - 320px)/(1920 - 320)));
 }
 
-#jn{
-  /* top:150px; */
-  width: calc(100px + (494 - 100)*((100vw - 320px)/(1920 - 320)));
-  z-index: 99;
-  max-width: 494px;
-}
-#ev{
-  right:calc(10px + (124 - 10)*((100vw - 320px)/(1920 - 320)));
-  max-width: 441px;
-  /* top:0px; */
-  width: calc(80px + (441 - 80)*((100vw - 320px)/(1920 - 320)));
-/* height: 60vh;*/
-  z-index: 1;
-}
-#sn{
-  position: relative;
-  /* top:0px; */
-  right:calc(30px + (180 - 30)*((100vw - 320px)/(1920 - 320)));
-  width: calc(135px + (765 - 135)*((100vw - 320px)/(1920 - 320)));
-  max-width: 765px;
-  z-index: 3;
- /* height: 60vh;*/
-}
-#in{
-  position: relative;
-  left: 0;
-  /* top:34px; */
-  z-index: 1;
-  max-width:408px ;
-  width: calc(75px + (408 - 75)*((100vw - 320px)/(1920 - 320)));
-  /*height:60vh;*/
-  /* float: right; */
-  top: calc(3px + (7 - 3)*((100vw - 320px)/(1920 - 320)));
-}
+
 
 #city #gl-jn{
   width: calc(75px + (178 - 75)*((100vw - 320px)/(1920 - 320)));
@@ -189,6 +286,7 @@
   opacity: 0.5;
   transition: 0.5s;
   z-index: 999;
+  transform: rotateZ(180deg);
 }
 #positions:hover{
   opacity: 1;

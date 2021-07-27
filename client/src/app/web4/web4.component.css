@@ -30,8 +30,8 @@ img{width: 100%; position: relative;}
     top: calc(10px + (250 - 10)*((100vw - 320px)/(1920 - 320)));
 }
 #sc5{
-    max-width: 375px;
     width: calc(100px + (375 - 100)*((100vw - 320px)/(1920 - 320)));
+    height: calc(120px + (410 - 120)*((100vw - 320px)/(1920 - 320)));
     /* margin-top: calc(10px + (50 - 10)*((100vw - 320px)/(1920 - 320))); */
     position: relative;
     right: calc(-10px + (95 - 10)*((100vw - 320px)/(1920 - 320)));

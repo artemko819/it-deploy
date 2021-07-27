@@ -159,8 +159,8 @@
 }
 body{
   /* overflow: hidden;   */
-  overflow-x: hidden;
-  font-family: 'Conv_ofont.ru_Aqum';
+  /* overflow-x: hidden; */
+  font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
 }
 .ov{
   overflow: hidden;
@@ -290,6 +290,7 @@ nav .brand-logo {
   } */
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+
  #space1 #start{
     top:2px
   }

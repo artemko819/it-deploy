@@ -159,6 +159,7 @@ strong {
     right: 30px;
     opacity: 0.5;
     transition: 0.5s;
+    transform: rotateZ(90deg);
   }
   #positions:hover{
     opacity: 1;
