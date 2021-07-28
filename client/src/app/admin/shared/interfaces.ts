@@ -12,6 +12,17 @@ export interface Person{
     date:string
 }
 
+export interface Consult{
+    _id?:string
+    name:string
+    email: string,
+    tel: string,
+    city:string,
+    course:string,
+    date:string
+}
+
+
 export interface Message{
     message:string
 }

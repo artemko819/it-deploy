@@ -6,7 +6,8 @@
     width: 960px;
   }
   #city .building{
-    width: 960px !important
+    width: 960px !important;
+    top:29px;
   }
   #city #jn{
     width: calc(260px + (494 - 260)*((100vw - 320px)/(1920 - 320)));
@@ -56,7 +57,7 @@
   #city .arrow-nav{
     display: block;
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     z-index: 99999;
   }
   #city #left-nav{
@@ -276,6 +277,11 @@ left: 10px;
   z-index: 99;
   -webkit-text-stroke: 2px  rgb(66, 66, 66);
   padding: 10px;
+}
+
+.not-found-course{
+  position: absolute;
+  top:0
 }
 
 

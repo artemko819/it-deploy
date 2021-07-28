@@ -159,7 +159,7 @@
 }
 body{
   /* overflow: hidden;   */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
 }
 .ov{
