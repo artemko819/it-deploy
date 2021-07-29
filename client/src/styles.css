@@ -222,12 +222,12 @@ nav .brand-logo {
   color: rgb(206, 241, 6);
 }
 #admin a{
-  -webkit-text-stroke: 1px rgb(5, 83, 11);
-  color: rgb(1, 233, 90);
+  font-family: 'Conv_Blogger Sans' !important;
+
 }
 #admin{
-  -webkit-text-stroke: 1px rgb(5, 83, 11);
-  color: rgb(6, 241, 6);
+  font-family: 'Conv_Blogger Sans' !important;
+
 }
 #admin button{
   width: 100%;

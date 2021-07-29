@@ -8,7 +8,7 @@ import { AuthLayoutComponent } from './shared/components/auth-layout/auth-layout
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { AuthGuard } from './shared/classes/auth.guard';
 import { OverviewPageComponent } from './overview-page/overview-page.component';
-import { AnalyticsPageComponent } from './analytics-page/analytics-page.component';
+
 import { HistoryPageComponent } from './history-page/history-page.component';
 import { OrderPageComponent } from './order-page/order-page.component';
 import { CategoriesPageComponent } from './categories-page/categories-page.component';
@@ -18,6 +18,7 @@ import { PositionsFormComponent } from './categories-page/categories-form/positi
 import { OrderCategoriesComponent } from './order-page/order-categories/order-categories.component';
 import { OrderPositionsComponent } from './order-page/order-positions/order-positions.component';
 import { PersonPageComponent } from './person-page/person-page.component';
+import { ConsultPageComponent } from './consult-page/consult-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,6 @@ import { PersonPageComponent } from './person-page/person-page.component';
         AuthLayoutComponent, 
         RegisterPageComponent, 
         OverviewPageComponent, 
-        AnalyticsPageComponent, 
         HistoryPageComponent, 
         OrderPageComponent, 
         CategoriesPageComponent, 
@@ -35,7 +35,8 @@ import { PersonPageComponent } from './person-page/person-page.component';
         PositionsFormComponent,
         OrderCategoriesComponent, 
         OrderPositionsComponent,
-        PersonPageComponent
+        PersonPageComponent,
+        ConsultPageComponent
   ],
   imports: [
     CommonModule,
@@ -52,13 +53,12 @@ import { PersonPageComponent } from './person-page/person-page.component';
       {
         path:'',component: AdminLayoutComponent,canActivate:[AuthGuard],children:[
           { path: 'owerview', component: OverviewPageComponent },
-          { path: 'analytics', component: AnalyticsPageComponent },
-          { path: 'history', component: HistoryPageComponent },
+          { path: 'consult', component: ConsultPageComponent },
           {path:"person", component:PersonPageComponent},
-          { path: 'order', component: OrderPageComponent, children:[
-            {path:"",component:OrderCategoriesComponent},
-            {path:":id",component:OrderPositionsComponent}
-          ]},
+          // { path: 'order', component: OrderPageComponent, children:[
+          //   {path:"",component:OrderCategoriesComponent},
+          //   {path:":id",component:OrderPositionsComponent}
+          // ]},
           { path: 'categories', component: CategoriesPageComponent },
           { path: 'categories/new', component: CategoriesFormComponent },
           { path: 'categories/:id', component: CategoriesFormComponent },

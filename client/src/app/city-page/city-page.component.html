@@ -4,7 +4,10 @@
   </a>
   <div class="container">
     <h3 class="center heading" *ngIf="positionFind.length > 0;">Выбери курс своей мечты </h3>
-    <div class="row building" [style.marginLeft] = 'move + "px"' *ngIf="positions$ |async as positions;else loader">
+    <div class="row building" [style.marginLeft] = 'move + "px"' 
+         *ngIf="positions$ |async as positions; else loader"
+          [class.not]="positionFind.length === 0"
+        >
       <div *ngIf="positionFind.length === 0; else normal">
         <div class="not-found-course">
           <h1 class="center ">В этом городе нет курсов.</h1>
@@ -107,7 +110,7 @@
         </div>
       </div>
     </ng-template>
-    <div class="row road">
+    <div class="row road" [class.not]="positionFind.length === 0">
       <button id='left-nav' (click)="moveLeft(move)" [disabled]='leftMove == true' class="btn-floating arrow-nav green darcen-4 ">
         <i class="large material-icons">arrow_downward</i>
       </button>

@@ -117,6 +117,51 @@
     </div>
   </div>
 
+  <div class="wrap-lesson">
+    <div class="les info">
+      <h4> Стоимость обучения </h4>
+    </div>
+    <div class="les form">
+      <h4 class="mb1">Записаться на курс или получить бесплатную консультацию</h4>
+      <form [formGroup]="formConsult" (ngSubmit)="submitConsult()" class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input formControlName="name" id="icon_prefix" type="text"
+              [ngClass]="{'invalid':formConsult.get('name').invalid && formConsult.get('name').touched}">
+            <label for="icon_prefix">Имя</label>
+            <span class="helper-text red-text" *ngIf="formConsult.get('name').invalid && formConsult.get('name').touched">
+              <span *ngIf="formConsult.get('name').errors['required']">Имя не может быть пустым</span>
+            </span>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <input formControlName="tel" id="icon_telephone" type="tel"
+              [ngClass]="{'invalid':formConsult.get('tel').invalid && formConsult.get('tel').touched}">
+            <label for="icon_telephone">Номер телефона</label>
+            <span class="helper-text red-text" *ngIf="formConsult.get('tel').invalid && formConsult.get('tel').touched">
+              <span *ngIf="formConsult.get('tel').errors['required']">Телефончик не может быть пустым</span>
+              <span *ngIf="formConsult.get('tel').errors['pattern']">Телефончик то с циферок состоит</span>
+            </span>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input formControlName="email" id="icon_email" type="email"
+              [ngClass]="{'invalid':formConsult.get('email').invalid && formConsult.get('email').touched}">
+            <label for="icon_email">Еmail</label>
+            <span class="helper-text red-text" *ngIf="formConsult.get('email').invalid && formConsult.get('email').touched">
+              <span *ngIf="formConsult.get('email').errors['required']">Email не может быть пустым</span>
+              <span *ngIf="formConsult.get('email').errors['email']">Email не коректный</span>
+            </span>
+          </div>
+        </div>
+        <button type="submit" class="modal-action btn waves-effect"
+          [disabled]="formConsult.invalid || formConsult.disabled">Записаться</button>
+      </form>
+    </div>
+  </div>
+
+  
 </div>
 
 <div #modal class="modal modal-fixed-footer">

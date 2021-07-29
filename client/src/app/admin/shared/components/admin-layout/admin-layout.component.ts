@@ -10,10 +10,8 @@ import { AuthService } from '../../services/auth.service';
 export class AdminLayoutComponent implements OnInit {
   links= [
     {url:"/admin/owerview",name:"Oбзор" },
-    {url:"/admin/analytics",name:"Аналитика" },
-    {url:"/admin/history",name:"История заказов" },
-    {url:"/admin/person",name:"Заявки на пробный урок" },
-    {url:"/admin/order",name:"Добавить заказ" },
+    {url:"/admin/person",name:"Заявки на пробный урок"},
+    {url:"/admin/consult",name:"Заявки на курс"},
     {url:"/admin/categories",name:"Города IT START" }
   ]
   constructor(private router: Router,

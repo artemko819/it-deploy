@@ -6,13 +6,14 @@ import { Message,Consult} from "../interfaces";
 @Injectable({
     providedIn:'root'
 })
-export  class PersonService{
+export  class ConsultService{
     constructor(private http:HttpClient ){}
 
     fetch():Observable<Consult[]>{
         return this.http.get<Consult[]>('/api/consult/get-consult')
     }
     create(consult:Consult):Observable<Consult>{
+        console.log(consult)
         return this.http.post<Consult>('/api/consult/add-consult',consult)
     }
     delete(consult:Consult):Observable<Message>{
