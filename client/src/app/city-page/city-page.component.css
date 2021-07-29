@@ -1,6 +1,29 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
   #city .arrow{
-    display: none;
+    /* display: none; */
+  }
+  #city #gl-in{
+   
+    left: 88px !important;
+    top: -105px !important;
+  }
+  #city .in .arrow{
+    left: calc(108px + (262 - 10)*((100vw - 320px)/(1920 - 320))) !important;
+    top: calc(-43px + (-65 - 8)*((100vw - 320px)/(1920 - 320))) !important;
+  }
+ #city .jn .arrow{
+    top: -50px;
+    left: calc(116px + (235 - 50)*((100vw - 320px)/(1920 - 320))) !important;
+    transform: rotateZ(0deg);
+  }
+  #city .ev .arrow{
+    top: -50px;
+    left: calc(110px + (235 - 50)*((100vw - 320px)/(1920 - 320))) !important;
+    transform: rotateZ(0deg);
+  }
+  #city .sn .arrow{
+    left: calc(161px + (305 - 17)*((100vw - 320px)/(1920 - 320))) !important;
+    top: calc(69px + (213 - 57)*((100vw - 320px)/(1920 - 320))) !important;
   }
   #city  .road img{
     width: 960px;
@@ -21,6 +44,7 @@
   }
   #city #ev{
     width: calc(220px + (441 - 220)*((100vw - 320px)/(1920 - 320)));
+    height: auto;
   }
   #city .ev .age h3{
     font-size: calc(25px + (40 - 25)*((100vw - 320px)/(1920 - 320)));
@@ -57,7 +81,7 @@
   #city .arrow-nav{
     display: block;
     position: fixed;
-    bottom: 15px;
+    bottom: 10px;
     z-index: 99999;
   }
   #city #left-nav{
@@ -83,6 +107,7 @@
   max-width: 441px;
   /* top:0px; */
   width: calc(80px + (441 - 80)*((100vw - 320px)/(1920 - 320)));
+  height: calc(450px + (762 - 450)*((100vh - 560px)/(1200 - 560)));
 /* height: 60vh;*/
   z-index: 1;
 }
@@ -123,12 +148,14 @@
   z-index: 99;
 }
 #city .jn .arrow{
-top:20px;
-left: 10px;
+  top: -50px;
+  left: calc(50px + (235 - 50)*((100vw - 320px)/(1920 - 320)));
+  transform: rotateZ(0deg);
 }
 #city .ev .arrow{
-  top:20px;
-  left: -40px;
+  top: -50px;
+  left: calc(50px + (135 - 50)*((100vw - 320px)/(1920 - 320)));
+  transform: rotateZ(0deg);
   }
 #city .sn .arrow{
   left: calc(17px + (305 - 17)*((100vw - 320px)/(1920 - 320)));
