@@ -118,8 +118,30 @@
   </div>
 
   <div class="wrap-lesson">
-    <div class="les info">
+    <div class="les info" *ngIf="positions$ |async as positions;">
       <h4> Стоимость обучения </h4>
+      <div class="wrap-price">
+        <img id="baks" src="../../../assets/block1/baks.png" alt="baks">
+        <h4 *ngIf="positions.name == 'Evolution'">{{(positions.cost)/10/2.5}} грн в час </h4>
+        <h4 *ngIf="positions.name == 'Junior'">{{(positions.cost)/10}} грн в час  </h4>
+        <h4 *ngIf="positions.name == 'Seniors'">{{(positions.cost)/10}} грн в час  </h4>
+        <h4 *ngIf="positions.name == 'Individual'">{{(positions.cost)/2}} грн в час  </h4>
+        <h4>2 урока в неделю 
+          <span *ngIf="positions.name == 'Evolution'">
+            по 2.5 часа
+          </span> 
+          <span *ngIf="positions.name == 'Junior'">
+            по 1 часу
+          </span>
+          <span *ngIf="positions.name == 'Seniors'">
+            по 2 часа
+          </span>
+          <span *ngIf="positions.name == 'Individual'">
+            по 2 часа
+          </span>
+        </h4>
+        <h5>полный месячный абонимент {{positions.cost}} грн</h5>
+      </div>
     </div>
     <div class="les form">
       <h4 class="mb1">Записаться на курс или получить бесплатную консультацию</h4>

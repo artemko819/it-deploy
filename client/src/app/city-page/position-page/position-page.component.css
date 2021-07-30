@@ -16,11 +16,12 @@
 }
 .les{
   background: #fff;
-  width: 45%;
+  width: calc(300px + (600 - 300)*((100vw - 320px)/(1920 - 320)));
   margin: 30px;
   border-radius: 25px;
   padding: 30px;
   box-shadow: 0 0 10px rgb(93, 93, 93);
+  text-align: center;
 }
 .wrap-lesson{
   display: flex;
@@ -85,6 +86,21 @@
   letter-spacing: 5px;  
  
   text-shadow: 0px 14px 4px rgb(0 0 0 / 49%);
+}
+.wrap-price h4{
+font-size: calc(20px + (30 - 20)*((100vw - 320px)/(1920 - 320)));
+font-weight: bold;
+text-align: center;
+}
+.wrap-price h5{
+  font-size: 15px;
+  text-align: center;
+}
+#baks{
+  width: calc(50px + (100 - 50)*((100vw - 320px)/(1920 - 320)));
+  height: calc(50px + (100 - 50)*((100vw - 320px)/(1920 - 320)));
+  display: block;
+  margin: 0 auto;
 }
 #course #comp{
   width: calc(155px + (740 - 155)*((100vw - 320px)/(1920 - 320)));
