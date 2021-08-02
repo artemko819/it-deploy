@@ -65,30 +65,30 @@
     </div>
     <div class="flex-row-img">
       <div class="img-block">
-        <img id="il" src="../../assets/block1/ai.png" alt="">
+        <img id="il" src="../../assets/block1/ai.png" loading="lazy" alt="1">
       </div>
       <div class="img-block">
-        <img id="ps" src="../../assets/block1/ps.png" alt="">
+        <img id="ps" src="../../assets/block1/ps.png" loading="lazy" alt="2">
       </div>
 
     </div>
     <div class="search">
-      <img id="ss" src="../../../assets/qqq.png" alt="search">
+      <img id="ss" src="../../../assets/qqq.png" loading="lazy" alt="search">
       <span class="typed-element"></span>
     </div>
 
     <div class="text-block">
-      <img id="left-img" src="../../assets/block1/icons-left.png" alt="">
+      <img id="left-img" src="../../assets/block1/icons-left.png"  loading="lazy" alt="3">
     </div>
     <div class="text-block">
-      <img id="center-img" src="../../assets/block1/vs.png" alt="">
+      <img id="center-img" src="../../assets/block1/vs.png"  loading="lazy" alt="5">
     </div>
   </div>
   <div class="wrap-evo">
     <h1 class="center">Кому подойдёт этот курс </h1>
     <div class="flex-row-img-2">
       <div class="block">
-        <img src="../../../assets/block1/1.png" alt="">
+        <img src="../../../assets/block1/1.png" loading="lazy" alt="123">
         <div class="wrap-text">
           <h3>Новичкам в IT сфере</h3>
           <ul #tabs class="collapsible popout">
@@ -109,7 +109,7 @@
         </div>
       </div>
       <div class="block">
-        <img src="../../../assets/block1/2.png" alt="">
+        <img src="../../../assets/block1/2.png" loading="lazy" alt="">
         <div class="wrap-text">
           <h3>Начинающим дизайнерам</h3>
           <ul #tabs2 class="collapsible popout">
@@ -129,7 +129,7 @@
         </div>
       </div>
       <div class="block">
-        <img src="../../../assets/block1/3.png" alt="">
+        <img src="../../../assets/block1/3.png" loading="lazy" alt="">
         <div class="wrap-text">
           <h3>Разработчикам</h3>
           <ul #tabs3 class="collapsible popout">
@@ -154,7 +154,7 @@
     <div class="les info" *ngIf="positions$ |async as positions;">
       <h4> Стоимость обучения </h4>
       <div class="wrap-price">
-        <img id="baks" src="../../../assets/block1/baks.png" alt="baks">
+        <img id="baks" src="../../../assets/block1/baks.png" loading="lazy" alt="baks">
         <h4 *ngIf="positions.name == 'Evolution'">{{(positions.cost)/10/2.5}} грн в час </h4>
         <h4 *ngIf="positions.name == 'Junior'">{{(positions.cost)/10}} грн в час  </h4>
         <h4 *ngIf="positions.name == 'Seniors'">{{(positions.cost)/10}} грн в час  </h4>
