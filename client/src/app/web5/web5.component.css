@@ -3,12 +3,18 @@ img{
     transition: all 0.5s;
     width: 100%;
 }
-img:hover{
+/* img:hover{
     transform: scale(1.1);
     cursor: pointer;
+} */
+.wrap-img:hover h3{
+    transform: scale(1.1);
 }
-
+.wrap-img:hover img{
+    transform: scale(1.1);
+}
 .wrap-img h3{
+    transition: all 0.5s;
  position: absolute;  
  z-index: 99;
  -webkit-text-stroke: 2px rgb(5, 83, 11);
