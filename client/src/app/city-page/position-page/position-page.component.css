@@ -24,8 +24,8 @@
      text-shadow: 0px calc(5px + (15 - 5)*((100vw - 320px)/(1920 - 320))) 4px rgb(0 0 0 / 49%) !important;
    }
    #course .right-part .btn-add{
-     height: 40px !important;
-    width: calc(200px + (380 - 200)*((100vw - 320px)/(1920 - 320))) !important;
+     height: 45px !important;
+    width: calc(230px + (380 - 230)*((100vw - 320px)/(1920 - 320))) !important;
    }
    .flex-row{
      margin-top: 50px;

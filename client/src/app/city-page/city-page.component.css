@@ -82,7 +82,7 @@
   #city .arrow-nav{
     display: block;
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     z-index: 99999;
   }
   #city #left-nav{
