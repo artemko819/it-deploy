@@ -33,7 +33,7 @@ export class Web2Component implements OnInit , OnDestroy {
             this.router.navigate(['web-3'])
         }, 1000);
     this.myStyle = {
-        'position': 'absolute',
+        'position': 'relative',
         'width': '100%',
         'height': '100%',
         'z-index': 1,

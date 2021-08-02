@@ -81,7 +81,7 @@
   }
   #city .arrow-nav{
     display: block;
-    position: fixed;
+    position: absolute;
     top: 30px;
     z-index: 99999;
   }
