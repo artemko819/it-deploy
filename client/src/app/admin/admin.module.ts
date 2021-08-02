@@ -10,13 +10,10 @@ import { AuthGuard } from './shared/classes/auth.guard';
 import { OverviewPageComponent } from './overview-page/overview-page.component';
 
 import { HistoryPageComponent } from './history-page/history-page.component';
-import { OrderPageComponent } from './order-page/order-page.component';
 import { CategoriesPageComponent } from './categories-page/categories-page.component';
 import { LoaderComponent } from './shared/components/loader/loader.component';
 import { CategoriesFormComponent } from './categories-page/categories-form/categories-form.component';
 import { PositionsFormComponent } from './categories-page/categories-form/positions-form/positions-form.component';
-import { OrderCategoriesComponent } from './order-page/order-categories/order-categories.component';
-import { OrderPositionsComponent } from './order-page/order-positions/order-positions.component';
 import { PersonPageComponent } from './person-page/person-page.component';
 import { ConsultPageComponent } from './consult-page/consult-page.component';
 
@@ -28,13 +25,11 @@ import { ConsultPageComponent } from './consult-page/consult-page.component';
         RegisterPageComponent, 
         OverviewPageComponent, 
         HistoryPageComponent, 
-        OrderPageComponent, 
+
         CategoriesPageComponent, 
         LoaderComponent,
         CategoriesFormComponent, 
         PositionsFormComponent,
-        OrderCategoriesComponent, 
-        OrderPositionsComponent,
         PersonPageComponent,
         ConsultPageComponent
   ],
@@ -55,10 +50,6 @@ import { ConsultPageComponent } from './consult-page/consult-page.component';
           { path: 'owerview', component: OverviewPageComponent },
           { path: 'consult', component: ConsultPageComponent },
           {path:"person", component:PersonPageComponent},
-          // { path: 'order', component: OrderPageComponent, children:[
-          //   {path:"",component:OrderCategoriesComponent},
-          //   {path:":id",component:OrderPositionsComponent}
-          // ]},
           { path: 'categories', component: CategoriesPageComponent },
           { path: 'categories/new', component: CategoriesFormComponent },
           { path: 'categories/:id', component: CategoriesFormComponent },
