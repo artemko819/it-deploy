@@ -24,17 +24,16 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
   className = null
   form: FormGroup
   formConsult: FormGroup
-
   persons
   catName
   @ViewChild('modal') modalRef: ElementRef
   @ViewChild('tabs') tabsRef: ElementRef
-  @ViewChild('tabs2') tabs2Ref: ElementRef
-  @ViewChild('tabs3') tabs3Ref: ElementRef
+  // @ViewChild('tabs2') tabs2Ref: ElementRef
+  // @ViewChild('tabs3') tabs3Ref: ElementRef
   modal: MaterialInstance
   tabs:MaterialInstance
-  tabs2:MaterialInstance
-  tabs3:MaterialInstance
+  // tabs2:MaterialInstance
+  // tabs3:MaterialInstance
   route: any;
   constructor(private positionService: PositionService,
     private activateRoute: ActivatedRoute,
@@ -86,8 +85,8 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
   ngAfterViewInit() {
     this.modal = MaterialService.initModal(this.modalRef)
     this.tabs = MaterialService.initTabs(this.tabsRef)
-    this.tabs2 = MaterialService.initTabs(this.tabs2Ref)
-    this.tabs3 = MaterialService.initTabs(this.tabs3Ref)
+    // this.tabs2 = MaterialService.initTabs(this.tabs2Ref)
+    // this.tabs3 = MaterialService.initTabs(this.tabs3Ref)
   }
 
   open() {

@@ -31,6 +31,7 @@ export class Web3Component implements OnInit, OnDestroy {
         'bottom': 0,
     };
 
+    
 this.myParams = {
         particles: {
             number: {

@@ -64,6 +64,23 @@
   box-shadow: 0 0 10px rgb(93, 93, 93);
   text-align: center;
 }
+.wrap-prog{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.collapsible-header i{
+  font-size: calc(13px + (20 - 13)*((100vw - 320px)/(1920 - 320)));
+}
+.wrap-prog h3{
+  font-size: calc(20px + (30 - 20)*((100vw - 320px)/(1920 - 320)));
+  line-height: 0;
+  margin: 0;
+}
+#course .wrap-prog h1{
+  margin-bottom: 60px;
+  font-size: calc(20px + (100 - 20)*((100vw - 320px)/(1920 - 320)));
+}
 .wrap-lesson{
   display: flex;
   justify-content: center;
@@ -91,8 +108,26 @@
 .block .wrap-text{
   text-align: center;
 }
+.block .wrap-text p{
+  font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1920 - 320)));
+
+}
+.collapsible-header{
+  /* justify-content: center; */
+  
+}
+.collapsible-body{
+  padding: 0;
+  /* text-align: center; */
+  font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1920 - 320)));
+  font-weight: bold;
+}
+.collapsible-body ol li{
+  padding:15PX 35PX 15PX 35PX ;
+}
+
 .block .wrap-text h3{
-  font-size: calc(20px + (40 - 20)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(20px + (35 - 20)*((100vw - 320px)/(1920 - 320)));
   font-weight: bold;
 }
 #course.Junior

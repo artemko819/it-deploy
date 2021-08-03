@@ -43,6 +43,7 @@ export class Web2Component implements OnInit , OnDestroy {
         'bottom': 0,
     };
 
+    
 this.myParams = {
         particles: {
             number: {

@@ -82,15 +82,15 @@
   #city .arrow-nav{
     display: block;
     position: absolute;
-    top: 30px;
+    bottom: -30px;
     z-index: 99999;
   }
   #city #left-nav{
-    left: 90px;
+    left: 50px;
     transform: rotateZ(90deg);
   }
   #city #right-nav{
-    right: 90px;
+    right: 50px;
     transform: rotateZ(-90deg);
   }
 }

@@ -78,77 +78,447 @@
     </div>
 
     <div class="text-block">
-      <img id="left-img" src="../../assets/block1/icons-left.png"  loading="lazy" alt="3">
+      <img id="left-img" src="../../assets/block1/icons-left.png" loading="lazy" alt="3">
     </div>
     <div class="text-block">
-      <img id="center-img" src="../../assets/block1/vs.png"  loading="lazy" alt="5">
+      <img id="center-img" src="../../assets/block1/vs.png" loading="lazy" alt="5">
     </div>
   </div>
   <div class="wrap-evo">
-    <h1 class="center">Кому подойдёт этот курс </h1>
+    <h1 class="center">Кому подойдёт этот курс ?</h1>
     <div class="flex-row-img-2">
       <div class="block">
         <img src="../../../assets/block1/1.png" loading="lazy" alt="123">
         <div class="wrap-text">
           <h3>Новичкам в IT сфере</h3>
-          <ul #tabs class="collapsible popout">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-          </ul>
-                
+          <p>IT мир очень расширен, и в нем есть много професий.
+            На этом курсе ваш ребенок, ваш ребеонок изучит каждую тему
+            и в конце курса, определиться с будущей професией.
+          </p>
+
         </div>
       </div>
       <div class="block">
         <img src="../../../assets/block1/2.png" loading="lazy" alt="">
         <div class="wrap-text">
           <h3>Начинающим дизайнерам</h3>
-          <ul #tabs2 class="collapsible popout">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-          </ul>
+          <p>IT мир очень расширен, и в нем есть много професий.
+            На этом курсе ваш ребенок, ваш ребеонок изучит каждую тему
+            и в конце курса, определиться с будущей професией.
+          </p>
         </div>
       </div>
       <div class="block">
         <img src="../../../assets/block1/3.png" loading="lazy" alt="">
         <div class="wrap-text">
           <h3>Разработчикам</h3>
-          <ul #tabs3 class="collapsible popout">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-          </ul>
+          <p>IT мир очень расширен, и в нем есть много професий.
+            На этом курсе ваш ребенок, ваш ребеонок изучит каждую тему
+            и в конце курса, определиться с будущей професией.
+          </p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="wrap-prog">
+    <h1 class="center">Что будем изучать ?</h1>
+  
+    <ul #tabs class="collapsible popout">
+      <li *ngIf="className == 'Evolution' || className == 'Individual'">
+        <div class="collapsible-header">
+          <h3 ><i class="material-icons">image</i>Photoshop</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li class="collection-item">
+              <p>1. Работать с масками и слоями </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Делать ретушь и цветокоррекцию</p>
+            </li>
+            <li  class="collection-item"> 
+              <p>3. Рисовать дизайн-макеты</p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Использовать кисти на профессиональном уровне</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Работать с текстом и шрифтами</p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Работать с различными эффектами и фильтрами </p>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Evolution' || className == 'Individual'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">format_color_fill</i>IllUSTRATOR</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection" >
+            <li  class="collection-item">
+              <p>1. Настройка рабочей среды, инструменты  </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Работа с точками и кривыми </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Работа с контурами </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Работа со шрифтами</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Сетки</p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Сложная графика  </p>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Evolution' || className == 'Individual'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">computer</i>HTML, CSS</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li  class="collection-item">
+              <p>1. Введение </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Работа с изображением , таблицами , списками </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Каскадные таблицы стилей </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Позиционирование элементов</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Формы </p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Адаптивная верстка сайтов</p>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Evolution' || className == 'Individual'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">developer_mode</i> JavaScript</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li  class="collection-item">
+              <p>1. Переменные и строгий режим </p>
+            </li>
+            <li  class="collection-item"> 
+              <p>2. Классификация типов данных в JavaScript </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Простое общение с пользователем </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Интерполяция (ES6)</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Операторы в JS  </p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Условия, циклы</p>
+            </li>
+            <li  class="collection-item">
+              <p>7. Функции, стрелочные ф-ции  </p>
+            </li>
+            <li  class="collection-item">
+              <p>8. Методы и свойства строк и чисел </p>
+            </li>
+            <li  class="collection-item">
+              <p>9. Callback- функции </p>
+            </li>
+            <li  class="collection-item">
+              <p>10. Массивы и псевдомассивы </p>
+            </li>
+            <li  class="collection-item">
+              <p>11. Передача по ссылке или по значению, Spread оператор</p>
+            </li>
+            <li  class="collection-item">
+              <p>12. Основы ООП, прототипно-ориентированное наследование  </p>
+            </li>
+            <li  class="collection-item">
+              <p>13. Получение элементов со страницы </p>
+            </li>
+            <li  class="collection-item">
+              <p>14. Действия с элементами на странице </p>
+            </li>
+            <li  class="collection-item">
+              <p>15. События и их обработчики </p>
+            </li>
+            <li  class="collection-item">
+              <p>16. Навигация по DOM - элементам, data-атрибуты, преимущество for/of </p>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Evolution' || className == 'Individual'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">ondemand_video</i>After Effects </h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li  class="collection-item">
+              <p>1. Слои </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Композинг </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Текст </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Шейпы </p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Футажи </p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Искажения </p>
+            </li>
+            <li  class="collection-item">
+              <p>7. Трекинг и стабилизация видео </p>
+            </li>
+            <li  class="collection-item">
+              <p>8. 3D-сцены </p>
+            </li>
+            <li  class="collection-item">
+              <p>9. Обзор плагинов </p>
+            </li>
+            <li  class="collection-item">
+              <p>10. Шейповая анимация </p>
+            </li>
+            <li  class="collection-item">
+              <p>11. Работа с параметрами текста </p>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Evolution' || className == 'Individual'">
+        <div class="collapsible-header">
+          <h3 ><i class="material-icons">3d_rotation</i>Cinema 4d</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li class="collection-item">
+              <p>1. Основы и интерфейс в Cinema 4d</p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Моделирование </p>
+            </li>
+            <li  class="collection-item"> 
+              <p>3. Деформеры</p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Анимация</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. MoGraph</p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Материалы</p>
+            </li>
+            <li  class="collection-item">
+              <p>7. Рендер и визуализация </p>
+            </li>
+            <li  class="collection-item">
+              <p>8. Динамика </p>
+            </li>
+            <li  class="collection-item">
+              <p>9. Симуляция</p>
+            </li>           
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Junior'">
+        <div class="collapsible-header">
+          <h3 ><i class="material-icons">image</i>Photoshop</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li class="collection-item">
+              <p>1. Работать с масками и слоями </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Делать ретушь и цветокоррекцию</p>
+            </li>
+            <li  class="collection-item"> 
+              <p>3. Рисовать дизайн-макеты</p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Использовать кисти на профессиональном уровне</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Работать с текстом и шрифтами</p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Работать с различными эффектами и фильтрами </p>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Junior'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">format_color_fill</i>IllUSTRATOR</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection" >
+            <li  class="collection-item">
+              <p>1. Настройка рабочей среды, инструменты  </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Работа с точками и кривыми </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Работа с контурами </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Работа со шрифтами</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Сетки</p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Сложная графика  </p>
+            </li>
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Junior'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">computer</i>HTML, CSS</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li  class="collection-item">
+              <p>1. Введение </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Работа с изображением , таблицами , списками </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Каскадные таблицы стилей </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Позиционирование элементов</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Формы </p>
+            </li>          
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Junior'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">developer_mode</i> Разработчик игр на Unity</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li  class="collection-item">
+              <p>1. Введение в Unity: установка, интерфейс, работы с примитивами </p>
+            </li>
+            <li  class="collection-item"> 
+              <p>2. Работа с ассетами на сцене </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Текстовый квест: знакомство с интерфейсами </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Текстовый квест: знакомство с С#</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Практикум C#: узнаём о переменных, типах данных, массивах, циклах и методах, отрабатываем навыки на игре «Крестики-нолики» </p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Разбираем, что такое игровой цикл, игровое время в Unity и фоновая музыка. </p>
+            </li>
+            <li  class="collection-item">
+              <p>7. Пишем методы игрового цикла и настраиваем игровые процессы. </p>
+            </li>
+            <li  class="collection-item">
+              <p>8. Перемещение и вращение. </p>
+            </li>
+           
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Junior'">
+        <div class="collapsible-header">
+          <h3><i class="material-icons">ondemand_video</i>CОЗДАНИЕ САЙТОВ НА WORDPRESS </h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li  class="collection-item">
+              <p>1. Установка Wordpress на локальный хостинг  </p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Установка темы оформления. </p>
+            </li>
+            <li  class="collection-item">
+              <p>3. Первый пост  </p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Первая рубрика  </p>
+            </li>
+            <li  class="collection-item">
+              <p>5. Статические страницы и меню </p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Виджеты </p>
+            </li>
+            <li  class="collection-item">
+              <p>7. Комментарии и форма обратной связи  </p>
+            </li>            
+          </ol>
+        </div>
+      </li>
+      <li *ngIf="className == 'Junior'">
+        <div class="collapsible-header">
+          <h3 ><i class="material-icons">3d_rotation</i>Cinema 4d</h3>
+        </div>
+        <div class="collapsible-body">
+          <ol class="collection">
+            <li class="collection-item">
+              <p>1. Основы и интерфейс в Cinema 4d</p>
+            </li>
+            <li  class="collection-item">
+              <p>2. Моделирование </p>
+            </li>
+            <li  class="collection-item"> 
+              <p>3. Деформеры</p>
+            </li>
+            <li  class="collection-item">
+              <p>4. Анимация</p>
+            </li>
+            <li  class="collection-item">
+              <p>5. MoGraph</p>
+            </li>
+            <li  class="collection-item">
+              <p>6. Материалы</p>
+            </li>
+            <li  class="collection-item">
+              <p>7. Рендер и визуализация </p>
+            </li>
+            <li  class="collection-item">
+              <p>8. Динамика </p>
+            </li>
+            <li  class="collection-item">
+              <p>9. Симуляция</p>
+            </li>           
+          </ol>
+        </div>
+      </li>
+    </ul>
   </div>
   <div class="wrap-lesson">
     <div class="les info" *ngIf="positions$ |async as positions;">
@@ -156,18 +526,18 @@
       <div class="wrap-price">
         <img id="baks" src="../../../assets/block1/baks.png" loading="lazy" alt="baks">
         <h4 *ngIf="positions.name == 'Evolution'">{{(positions.cost)/10/2.5}} грн в час </h4>
-        <h4 *ngIf="positions.name == 'Junior'">{{(positions.cost)/10}} грн в час  </h4>
-        <h4 *ngIf="positions.name == 'Seniors'">{{(positions.cost)/10}} грн в час  </h4>
-        <h4 *ngIf="positions.name == 'Individual'">{{(positions.cost)/2}} грн в час  </h4>
-        <h4>2 урока в неделю 
+        <h4 *ngIf="positions.name == 'Junior'">{{(positions.cost)/10}} грн в час </h4>
+        <h4 *ngIf="positions.name == 'Seniors'">{{(positions.cost)/10}} грн в час </h4>
+        <h4 *ngIf="positions.name == 'Individual'">{{(positions.cost)/2}} грн в час </h4>
+        <h4>2 урока в неделю
           <span *ngIf="positions.name == 'Evolution'">
             по 2.5 часа
-          </span> 
+          </span>
           <span *ngIf="positions.name == 'Junior'">
             по 1 часу
           </span>
           <span *ngIf="positions.name == 'Seniors'">
-            по 2 часа
+            по 1 часу
           </span>
           <span *ngIf="positions.name == 'Individual'">
             по 2 часа
@@ -185,7 +555,8 @@
             <input formControlName="name" id="icon_prefix" type="text"
               [ngClass]="{'invalid':formConsult.get('name').invalid && formConsult.get('name').touched}">
             <label for="icon_prefix">Имя</label>
-            <span class="helper-text red-text" *ngIf="formConsult.get('name').invalid && formConsult.get('name').touched">
+            <span class="helper-text red-text"
+              *ngIf="formConsult.get('name').invalid && formConsult.get('name').touched">
               <span *ngIf="formConsult.get('name').errors['required']">Имя не может быть пустым</span>
             </span>
           </div>
@@ -204,7 +575,8 @@
             <input formControlName="email" id="icon_email" type="email"
               [ngClass]="{'invalid':formConsult.get('email').invalid && formConsult.get('email').touched}">
             <label for="icon_email">Еmail</label>
-            <span class="helper-text red-text" *ngIf="formConsult.get('email').invalid && formConsult.get('email').touched">
+            <span class="helper-text red-text"
+              *ngIf="formConsult.get('email').invalid && formConsult.get('email').touched">
               <span *ngIf="formConsult.get('email').errors['required']">Email не может быть пустым</span>
               <span *ngIf="formConsult.get('email').errors['email']">Email не коректный</span>
             </span>
@@ -216,7 +588,7 @@
     </div>
   </div>
 
-  
+
 </div>
 
 <div #modal class="modal modal-fixed-footer">
