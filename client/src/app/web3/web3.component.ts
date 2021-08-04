@@ -19,7 +19,7 @@ export class Web3Component implements OnInit, OnDestroy {
   ngOnInit() {
     setTimeout(()=>{
         this.router.navigate(['web-4'])
-    }, 1000);
+    }, 1300);
     this.myStyle = {
         'position': 'relative',
         'width': '100%',

@@ -31,7 +31,7 @@ export class Web2Component implements OnInit , OnDestroy {
     //   }, 7500);
       setTimeout(()=> {
             this.router.navigate(['web-3'])
-        }, 1000);
+        }, 1300);
     this.myStyle = {
         'position': 'relative',
         'width': '100%',
