@@ -5,7 +5,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
   templateUrl: './web1.component.html',
   styleUrls: ['./web1.component.css']
 })
-export class Web1Component implements OnInit, OnDestroy {
+export class Web1Component implements OnInit{
 
   constructor( private router:Router) { }
     myStyle: object = {};
@@ -64,9 +64,6 @@ export class Web1Component implements OnInit, OnDestroy {
       this.router.navigate(['web-2'])
     }, 1000);
   }
-  ngOnDestroy(){
-    this.myParams = {}
-    this.myStyle = {}
-}
+ 
 
 }

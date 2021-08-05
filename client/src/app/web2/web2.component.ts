@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './web2.component.html',
   styleUrls: ['./web2.component.css']
 })
-export class Web2Component implements OnInit , OnDestroy {
+export class Web2Component implements OnInit {
 
   constructor(private router:Router) { }
 
@@ -59,9 +59,5 @@ this.myParams = {
 };
 }
 
-ngOnDestroy(){
-    this.myParams = {}
-    this.myStyle = {}
-}
 
 }

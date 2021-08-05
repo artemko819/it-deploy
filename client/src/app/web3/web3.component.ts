@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './web3.component.html',
   styleUrls: ['./web3.component.css']
 })
-export class Web3Component implements OnInit, OnDestroy {
+export class Web3Component implements OnInit {
 
   constructor(private router:Router) { }
 
@@ -46,11 +46,5 @@ this.myParams = {
     }
 };
 }
-
-ngOnDestroy(){
-    this.myParams = {}
-    this.myStyle = {}
-}
-
 
 }
