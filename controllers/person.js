@@ -1,4 +1,5 @@
 const Person = require("../models/Person")
+const errorHandler = require("../utils/errorHandller")
 module.exports.addPerson = async function(req,res){
     const candidate = await Person.findOne({ email: req.body.email })
     if (candidate) {

@@ -112,10 +112,10 @@
     </ng-template>
     <div class="row road" [class.not]="positionFind.length === 0">
       <button id='left-nav' (click)="moveLeft(move)" [disabled]='leftMove == true' class="btn-floating arrow-nav green darcen-4 ">
-        <i class="large material-icons">arrow_downward</i>
+        <i class="large material-icons">chevron_left</i>
       </button>
       <button (click)="moveRight(move)" [disabled]='rightMove == true'  id='right-nav' class="btn-floating arrow-nav green darcen-4">
-        <i class="large material-icons">arrow_downward</i>
+        <i class="large material-icons">chevron_right</i>
       </button>
       <img src="../../assets/city/doroga_1.png" alt="">
     </div>

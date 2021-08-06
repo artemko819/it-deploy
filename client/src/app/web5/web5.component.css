@@ -7,6 +7,12 @@ img{
     transform: scale(1.1);
     cursor: pointer;
 } */
+
+.space5 h1{
+    font-size: calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color: rgb(206, 241, 6);
+}
 .wrap-img:hover h3{
     transform: scale(1.1);
 }
@@ -119,4 +125,5 @@ img{
 .map{
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: calc(10px + (105 -10)*((100vw - 320px)/(1920 - 320)));;
 }

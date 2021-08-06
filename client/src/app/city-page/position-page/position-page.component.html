@@ -1,9 +1,19 @@
 <div id="course" [class]="className">
-  <a id="positions" [routerLink]="['/city',categoryId]"
-    class="btn-floating pulse btn-large waves-effect waves-light green">
-    <i class="material-icons">arrow_downward</i>
-  </a>
-  <div class="container">
+  <nav>
+    <div class="nav-wrapper">
+    <a id="positions" [routerLink]="['/city',categoryId]"
+      class="btn-floating pulse btn-large waves-effect waves-light green">
+      <i class="material-icons">arrow_downward</i>
+    </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a [routerLink]="['/']">Главная</a></li>
+        <li><a [routerLink]="['/city']">Города</a></li>
+        <li><a [routerLink]="['/city',categoryId]">Курсы</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <div  class="container animate__animated animate__bounceInLeft animate__delay-1s">
     <div class="wrap-content">
       <div class="left-part">
         <img id="comp" src="../../assets/block1/999.png" alt="">
@@ -84,7 +94,7 @@
       <img id="center-img" src="../../assets/block1/vs.png" loading="lazy" alt="5">
     </div>
   </div>
-  <div class="wrap-evo">
+  <div class="wrap-evo ">
     <h1 class="center">Кому подойдёт этот курс ?</h1>
     <div class="flex-row-img-2">
       <div class="block">

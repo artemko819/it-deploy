@@ -9,6 +9,9 @@
     flex-direction: column !important;
     justify-content: center !important;
   }
+  #course #positions{
+    top:10px;
+  }
   #course .container .wrap-content .left-part{
    width: 100% !important;
   }
@@ -297,8 +300,8 @@ strong {
 
   #positions{
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 3px;
+    left: 0px;
     opacity: 0.5;
     transition: 0.5s;
     transform: rotateZ(90deg);
@@ -306,4 +309,12 @@ strong {
   #positions:hover{
     opacity: 1;
   }
- 
+nav{
+  background: #eeea6e;
+}
+.nav-wrapper{
+  width: 90%;
+}
+#course .hide-on-med-and-down{
+  display: block !important;
+}

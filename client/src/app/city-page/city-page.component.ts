@@ -7,7 +7,7 @@ import { MaterialService } from '../admin/shared/classes/material.service';
 import { Position } from '../admin/shared/interfaces';
 import { CategoriesService } from '../admin/shared/services/categories.service';
 import { PositionService } from '../admin/shared/services/position.service';
-
+import { Title, Meta } from '@angular/platform-browser';  
 @Component({
   selector: 'app-city-page',
   templateUrl: './city-page.component.html',
@@ -24,6 +24,8 @@ export class CityPageComponent implements OnInit{
   positionFind = []
   constructor(private route: ActivatedRoute,
     private categoriesService: CategoriesService,
+    private titleService: Title,  
+    private metaTagService: Meta,
     private router: Router,
     private positionService: PositionService,
     private activateRoute: ActivatedRoute,
@@ -75,7 +77,15 @@ export class CityPageComponent implements OnInit{
     },(error)=>{
       this.router.navigate(['/404'])
     })
-    
+    this.categoriesService.getByIdFront(this.categoryId).subscribe(city=>{
+      this.titleService.setTitle(`IT-START - ${city.name}`);  
+    })
+
+    this.metaTagService.addTags([  
+      { name: 'keywords', content: 'IT-START - школа компьютерных технологий, Ромны, Ахтырка, Первомайск,Харьков,Мерефа,Чугуев,Миргород,Лубны,Константиновка,Бахмут' },  
+      { name: 'robots', content: 'index, follow' },  
+      { charset: 'UTF-8' }  
+    ]);  
 
     // let gelicopter = document.getElementById("gl-jn");
     // let gelicopter2 = document.getElementById("gl-sn");

@@ -1,29 +1,30 @@
 <div class="space5">
     <div class="container" >
+        <h1 class="center animate__animated animate__bounceInLeft">Выбери свой город</h1>
         <div class="map" id="map" *ngIf="categories$ |async as categories; else loader">
-            <div class="left-map">
+            <div class="left-map animate__animated animate__bounceInLeft">
                 <div class="row">                 
                     <div class="col m4 l4">
                         <div class="wrap-img img-1">
-                            <h3>{{categories[0].name}}</h3>
+                          <a  [routerLink]="['/city',categories[0]._id]"> <h3>{{categories[0].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[0]._id]">
-                            <img  [src]="categories[0].imageSrc" loading="lazy" alt="1">
+                            <img  src="../../assets/map/romnu.png" loading="lazy" alt="1">
                           </a>
                         </div>
                     </div>
                     <div class="col m4 l4">
                         <div class="wrap-img img-2">
-                          <h3>{{categories[1].name}}</h3>
+                          <a  [routerLink]="['/city',categories[1]._id]"> <h3>{{categories[1].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[1]._id]">
-                            <img [src]="categories[1].imageSrc" loading="lazy" alt="2">
+                            <img src="../../assets/map/ohtyrka.png" loading="lazy" alt="2">
                           </a>
                         </div>
                     </div>
                     <div class="col m4 l4">
                         <div class="wrap-img img-3">
-                          <h3>{{categories[2].name}}</h3>
+                          <a  [routerLink]="['/city',categories[2]._id]"> <h3>{{categories[2].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[2]._id]">
-                            <img [src]="categories[2].imageSrc" loading="lazy" alt="3">
+                            <img  src="../../assets/map/pervomaisk.png" loading="lazy" alt="3">
                           </a>
                         </div>
                     </div>
@@ -31,43 +32,43 @@
                 <div class="row">
                     <div class="col m4  l6">
                         <div class="wrap-img img-4">                            
-                          <h3>{{categories[6].name}}</h3>
+                          <a  [routerLink]="['/city',categories[6]._id]"> <h3>{{categories[6].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[6]._id]">
-                            <img [src]="categories[6].imageSrc" loading="lazy" alt="4">
+                            <img  src="../../assets/map/mirgorod.png" loading="lazy" alt="4">
                           </a>
                         </div>
                     </div>
                     <div class="col m4 l4">
                         <div class="wrap-img img-5">
-                          <h3>{{categories[7].name}}</h3>
+                          <a  [routerLink]="['/city',categories[7]._id]"><h3>{{categories[7].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[7]._id]">
-                            <img [src]="categories[7].imageSrc" loading="lazy" alt="5">
+                            <img src="../../assets/map/lybnu.png" loading="lazy" alt="5">
                           </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right-map">
+            <div class="right-map animate__animated animate__bounceInRight ">
                 <div class="row">
                     <div class="col m4 l4">
                         <div class="wrap-img img-6">
-                          <h3>{{categories[4].name}}</h3>
+                          <a  [routerLink]="['/city',categories[4]._id]"><h3>{{categories[4].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[4]._id]">
-                            <img [src]="categories[4].imageSrc" loading="lazy" alt="6">
+                            <img src="../../assets/map/merefa.png" loading="lazy" alt="6">
                           </a>
                         </div>
                         <div class="wrap-img img-7">
-                          <h3>{{categories[3].name}}</h3>
+                          <a  [routerLink]="['/city',categories[3]._id]"><h3>{{categories[3].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[3]._id]">
-                            <img [src]="categories[3].imageSrc" loading="lazy" alt="7">
+                            <img  src="../../assets/map/kharkov.png" loading="lazy" alt="7">
                           </a>
                         </div>
                     </div>
                     <div class="col  m4 l4">
                         <div class="wrap-img img-8">
-                          <h3>{{categories[5].name}}</h3>
+                          <a  [routerLink]="['/city',categories[5]._id]"><h3>{{categories[5].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[5]._id]">
-                            <img [src]="categories[5].imageSrc" loading="lazy" alt="8">
+                            <img src="../../assets/map/chyguev.png" loading="lazy" alt="8">
                           </a>
                         </div>
                     </div>
@@ -78,17 +79,17 @@
                     </div>
                     <div class="col  m4 l4">
                         <div class="wrap-img img-9">
-                          <h3>{{categories[8].name}}</h3>
+                          <a  [routerLink]="['/city',categories[8]._id]"><h3>{{categories[8].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[8]._id]">
-                            <img [src]="categories[8].imageSrc" loading="lazy" alt="9">
+                            <img src="../../assets/map/konstantinovka.png" loading="lazy" alt="9">
                           </a>
                         </div>
                     </div>
                     <div class="col m4 l4">
                         <div class="wrap-img img-10">
-                          <h3>{{categories[9].name}}</h3>
+                          <a  [routerLink]="['/city',categories[9]._id]"> <h3>{{categories[9].name}}</h3></a>
                           <a  [routerLink]="['/city',categories[9]._id]">
-                            <img [src]="categories[9].imageSrc" loading="lazy" alt="10">
+                            <img src="../../assets/map/bahmyt.png" loading="lazy" alt="10">
                           </a>
                         </div>
                     </div>

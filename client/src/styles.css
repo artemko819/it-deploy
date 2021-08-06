@@ -170,7 +170,6 @@ body{
     width: 100vw;
     overflow: hidden;
     height: 100vh;
-
     background : linear-gradient(0deg, rgba(27, 20, 100, 1) 21.51%, rgba(12, 8, 74, 1) 36.7%, rgba(6, 0, 63, 1) 67.99%);
     }
 .space3{
@@ -182,7 +181,7 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: hidden; 
-    background: linear-gradient(0deg, rgb(3, 156, 245) 37.6%,rgba(41, 10, 123, 1) 95.25%); }
+    background: linear-gradient(0deg, rgb(3, 156, 245) 37.6%,rgba(27, 20, 100, 1) 90.25%); }
 .space5{
     width: 100vw;
     height: 100vh;
@@ -312,6 +311,10 @@ nav .brand-logo {
   #map .row{
     height: auto;
   }
+
+  .space5 h1{
+   display: none;
+  }
   
    #map{
     display: flex;
@@ -361,7 +364,9 @@ nav .brand-logo {
 
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 920px){ 
-
+  .space5 h1{
+    display: none;
+   }
   .wrap-text{
     width: 100%;
     max-width: 800px;

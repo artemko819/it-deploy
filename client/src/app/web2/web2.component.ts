@@ -30,7 +30,7 @@ export class Web2Component implements OnInit {
     //     this.goTo = false
     //   }, 7500);
       setTimeout(()=> {
-            this.router.navigate(['web-3'])
+            this.router.navigate(['web-4'])
         }, 1300);
     this.myStyle = {
         'position': 'absolute',

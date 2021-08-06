@@ -25,7 +25,7 @@ trigger('routeAnimations', [
     ]),
     query(':enter', animateChild()),
   ]),
-  transition('web2 <=> web3', [
+  transition('web2 <=> web4', [
     query(':enter, :leave', [
       style({
         position: 'absolute',
@@ -150,13 +150,13 @@ trigger('routeAnimations', [
     ]),
     group([
       query(':enter', [
-        animate('800ms ease-in-out', keyframes([
+        animate('900ms ease-in-out', keyframes([
           style({ opacity: 0, offset: 0 }),
           style({ opacity: 1,  offset: 1 }),
         ])),
       ]),
       query(':leave', [
-        animate('800ms ease-in-out', keyframes([
+        animate('900ms ease-in-out', keyframes([
           style({ opacity: 1, offset: 0 }),
           style({ opacity: 0,  offset: 1 }),
         ])),

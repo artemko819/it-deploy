@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';  
 @Component({
   selector: 'app-web1',
   templateUrl: './web1.component.html',
@@ -7,7 +8,10 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class Web1Component implements OnInit{
 
-  constructor( private router:Router) { }
+  constructor( private router:Router,
+               private titleService: Title,  
+               private metaTagService: Meta  
+    ) { }
     myStyle: object = {};
     myParams: object = {};
     width: number = 100;
@@ -15,6 +19,14 @@ export class Web1Component implements OnInit{
     select:boolean = false;
 
     ngOnInit() {
+      this.titleService.setTitle("IT-START - Школа компьютерных технологий");  
+      this.metaTagService.addTags([  
+        { name: 'keywords', content: 'IT-START школа компьютерных технологий' },  
+        { name: 'robots', content: 'index, follow' },  
+        { name: 'writer', content: 'John Smith' },  
+        { charset: 'UTF-8' }  
+      ]);  
+      
       const body = document.getElementById("app-main")
       body.classList.add("ov");
       this.myStyle = {

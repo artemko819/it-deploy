@@ -1,4 +1,5 @@
 const Consult = require("../models/Consult")
+const errorHandler = require("../utils/errorHandller")
 module.exports.addConsult = async function(req,res){
     const candidate = await Consult.findOne({ email: req.body.email })
     if (candidate) {
