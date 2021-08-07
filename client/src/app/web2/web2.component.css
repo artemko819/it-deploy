@@ -1,6 +1,15 @@
 .progress{
     height: 30px;
   }
+  .hide-bg{
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+   transition: all 1s ease-in-out;
+  }
+  .hide-bg.active{
+    margin-top:-100vh
+   }
   .determinate.selected{
     transition-property: width;
     transition-duration: 5s;

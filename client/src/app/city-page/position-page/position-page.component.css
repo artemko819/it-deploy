@@ -9,11 +9,15 @@
     flex-direction: column !important;
     justify-content: center !important;
   }
+  #course #logo{
+    display: none !important;
+  }
   #course #positions{
-    top:10px;
+    top:17px;
   }
   #course .container .wrap-content .left-part{
    width: 100% !important;
+   margin-top: 80px !important;
   }
   #course .container .wrap-content .right-part{
     width: 100% !important;
@@ -48,6 +52,13 @@
 
   }
  }
+nav{
+   position: fixed;
+   z-index: 9999;
+ }
+ .nav-wrapper ul a{
+   font-size: calc(15px + (30 - 15)*((100vw - 320px)/(1920 - 320)));;
+ }
 .flex-row-img-2{
   display: flex;
   justify-content: center;
@@ -76,7 +87,7 @@
   font-size: calc(13px + (20 - 13)*((100vw - 320px)/(1920 - 320)));
 }
 .wrap-prog h3{
-  font-size: calc(20px + (30 - 20)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(15px + (30 - 15)*((100vw - 320px)/(1920 - 320)));
   line-height: 0;
   margin: 0;
 }

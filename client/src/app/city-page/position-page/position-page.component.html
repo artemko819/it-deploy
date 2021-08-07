@@ -5,6 +5,7 @@
       class="btn-floating pulse btn-large waves-effect waves-light green">
       <i class="material-icons">arrow_downward</i>
     </a>
+    <a href="#" id="logo" class="brand-logo center">+3(80)-66-38-38-123, +3(80)-68-38-38-123</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a [routerLink]="['/']">Главная</a></li>
         <li><a [routerLink]="['/city']">Города</a></li>
@@ -73,7 +74,7 @@
         </p>
       </div>
     </div>
-    <div class="flex-row-img">
+    <div class="flex-row-img" *ngIf="className == 'Evolution' || className == 'Individual' || className == 'Junior'">
       <div class="img-block">
         <img id="il" src="../../assets/block1/ai.png" loading="lazy" alt="1">
       </div>
@@ -112,19 +113,19 @@
         <img src="../../../assets/block1/2.png" loading="lazy" alt="">
         <div class="wrap-text">
           <h3>Начинающим дизайнерам</h3>
-          <p>IT мир очень расширен, и в нем есть много професий.
-            На этом курсе ваш ребенок, ваш ребеонок изучит каждую тему
-            и в конце курса, определиться с будущей професией.
+          <p>Самое главное в изучение - это практика
+            и правильное взаимодействие с программой. На этом курсе ваш ребёнок
+            соберёт большое портфолио из работ и накопит опыт в веб-дизайне
           </p>
         </div>
       </div>
-      <div class="block">
+      <div class="block" *ngIf="className == 'Evolution' || className == 'Individual'">
         <img src="../../../assets/block1/3.png" loading="lazy" alt="">
         <div class="wrap-text">
           <h3>Разработчикам</h3>
-          <p>IT мир очень расширен, и в нем есть много професий.
-            На этом курсе ваш ребенок, ваш ребеонок изучит каждую тему
-            и в конце курса, определиться с будущей професией.
+          <p>На этом курсе ребёнок создаст 
+            множество проектов на JS и его 
+            фреймворках.
           </p>
         </div>
       </div>

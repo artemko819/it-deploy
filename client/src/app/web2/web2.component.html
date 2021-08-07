@@ -1,5 +1,6 @@
 <div class="space2">
-    <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+    <particles class="hide-bg" [class.active]="goTo == true" [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+  
     <!-- <div class="wrap-text-space" [class.selected]="goTo == true">
         <div class="progress blue darken-4">
             <div class="determinate blue accent-4" [class.selected]="loader == true"></div>

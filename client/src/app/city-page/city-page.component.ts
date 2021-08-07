@@ -22,6 +22,7 @@ export class CityPageComponent implements OnInit{
   move = 0
   couter = 0;
   positionFind = []
+  activeBuild:boolean = true
   constructor(private route: ActivatedRoute,
     private categoriesService: CategoriesService,
     private titleService: Title,  
@@ -34,7 +35,6 @@ export class CityPageComponent implements OnInit{
   moveRight(move){
     move = this.move + -200
     this.move = move
-    this.couter +=1
     if(this.move === -600 ){
       this.rightMove = true
     }
@@ -67,7 +67,7 @@ export class CityPageComponent implements OnInit{
   ngOnInit(): void {
     const body = document.getElementById("app-main")
     body.classList.add("ov");
-    
+   
     //города
     this.categoryId = this.activateRoute.snapshot.params['id'];
     this.positions$ = this.positionService.fetchFront(this.categoryId)
@@ -78,11 +78,12 @@ export class CityPageComponent implements OnInit{
       this.router.navigate(['/404'])
     })
     this.categoriesService.getByIdFront(this.categoryId).subscribe(city=>{
-      this.titleService.setTitle(`IT-START - ${city.name}`);  
+      this.titleService.setTitle(`Ваш город ${city.name}, IT-курсы Харьков, Ахтырка, Полтава, Чугуев, Бахмут, Константиновка, обучение ИТ-специалистов 【IT-START】 с нуля, стоимость курсов в IT-школе в Харькове 2021"`);  
+    
     })
 
     this.metaTagService.addTags([  
-      { name: 'keywords', content: 'IT-START - школа компьютерных технологий, Ромны, Ахтырка, Первомайск,Харьков,Мерефа,Чугуев,Миргород,Лубны,Константиновка,Бахмут' },  
+      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Константиновке ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
       { name: 'robots', content: 'index, follow' },  
       { charset: 'UTF-8' }  
     ]);  

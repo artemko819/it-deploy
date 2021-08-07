@@ -87,17 +87,17 @@
   }
   #city .arrow-nav i{
     font-size: 50px;
-    line-height: 80px;
+    line-height: 75px;
   }
   #city #left-nav{
     left: 5px;
-    width: 85px;
-    height: 85px
+    width: 75px;
+    height: 75px
   }
   #city #right-nav{
     right: 5px;
-    width: 85px;
-    height: 85px;
+    width: 75px;
+    height: 75px;
  
 
   }

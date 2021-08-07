@@ -14,7 +14,7 @@ img{width: 100%; position: relative;}
 #sc2{
     max-width: 212px;
     width: calc(100px + (312 - 100)*((100vw - 320px)/(1920 - 320)));
-    height:calc(50px + (189 - 50)*((100vw - 320px)/(1920 - 320))); 
+    height:calc(50px + (142 - 50)*((100vw - 320px)/(1920 - 320))); 
     float: right;
     margin-top: calc(120px + (150 - 120)*((100vw - 320px)/(1920 - 320)));
 }
@@ -78,7 +78,7 @@ img{width: 100%; position: relative;}
 }
 .sky-3 p{
     position: relative;
-    top:calc(-30px + (-50 - 30)*((100vw - 320px)/(1920 - 320)));
+    top:calc(-30px + (-20 - 30)*((100vw - 320px)/(1920 - 320)));
 }
 .sky-4 p{
     position: relative;

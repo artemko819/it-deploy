@@ -4,10 +4,10 @@
     </div>
     
     <div class="container">
-        <div class="language">
+        <!-- <div class="language">
             <div class="ru">ru</div>
             <div class="ua">ua</div>
-        </div>
+        </div> -->
         <div class="row">
             <div class="wrapper">
                 <div class="planet">
@@ -47,8 +47,11 @@
                 </div>
             </div>
         </div>
-        <a id="start1" class="start btn-floating btn-large indigo darcen-4 pulse" 
-        (click)="btnClick()">
+        <a id="start1" 
+        class="start btn-floating btn-large indigo darcen-4 pulse" 
+        (click)="btnClick()"
+        [class.selected2]="select === true"
+        >
             <i class="large material-icons">arrow_downward</i>
         </a>    
     </div>

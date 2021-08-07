@@ -6,16 +6,18 @@ import { Router } from '@angular/router';
   templateUrl: './web2.component.html',
   styleUrls: ['./web2.component.css']
 })
-export class Web2Component implements OnInit {
+export class Web2Component implements OnInit, OnDestroy {
 
   constructor(private router:Router) { }
-
+    hide 
+    route
   myStyle: object = {};
   myParams: object = {};
   width: number = 100;
   height: number = 100;
   loader: boolean = false
   goTo:boolean =false
+ 
   ngOnInit() {
     // setTimeout(()=> {
     //     this.router.navigate(['web-3'])
@@ -29,9 +31,13 @@ export class Web2Component implements OnInit {
     //   setTimeout(() => {
     //     this.goTo = false
     //   }, 7500);
-      setTimeout(()=> {
-            this.router.navigate(['web-4'])
-        }, 1300);
+    this.hide =  setTimeout(()=> {
+            // this.router.navigate(['web-4'])
+            this.goTo = true
+        }, 1500);
+     this.route =  setTimeout(()=> {
+              this.router.navigate(['web-4'])
+        }, 2500);
     this.myStyle = {
         'position': 'absolute',
         'width': '100%',
@@ -58,6 +64,9 @@ this.myParams = {
     }
 };
 }
-
+ngOnDestroy(){
+    window.clearTimeout(this.hide);
+    window.clearTimeout(this.route);
+}
 
 }

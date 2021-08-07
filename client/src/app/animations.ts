@@ -121,24 +121,47 @@ trigger('routeAnimations', [
     query(':enter, :leave', [
       style({
         position: 'absolute',
-        top: 0,
         left: 0,
-        width: '100%'
-      })
+        width: '100%',
+      }),
     ]),
-    query(':enter', [
-      style({ top: '100%' })
-    ]),
-    query(':leave', animateChild()),
     group([
-      query(':leave', [
-        animate('1300ms ease-in-out', style({ top: '-100%' }))
-      ]),
       query(':enter', [
-        animate('1300ms ease-in-out', style({ top: '0%' }))
+        animate('900ms ease-in-out', keyframes([
+          style({ opacity: 0, offset: 0 }),
+          style({ opacity: 1,  offset: 1 }),
+        ])),
+      ]),
+      query(':leave', [
+        animate('900ms ease-in-out', keyframes([
+          style({ opacity: 1, offset: 0 }),
+          style({ opacity: 0,  offset: 1 }),
+        ])),
       ])
     ]),
-    query(':enter', animateChild()),
+  ]),
+  transition('course <=> web1', [
+    query(':enter, :leave', [
+      style({
+        position: 'absolute',
+        left: 0,
+        width: '100%',
+      }),
+    ]),
+    group([
+      query(':enter', [
+        animate('900ms ease-in-out', keyframes([
+          style({ opacity: 0, offset: 0 }),
+          style({ opacity: 1,  offset: 1 }),
+        ])),
+      ]),
+      query(':leave', [
+        animate('900ms ease-in-out', keyframes([
+          style({ opacity: 1, offset: 0 }),
+          style({ opacity: 0,  offset: 1 }),
+        ])),
+      ])
+    ]),
   ]),
   transition('city <=> course', [
     query(':enter, :leave', [
