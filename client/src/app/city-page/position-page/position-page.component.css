@@ -72,7 +72,7 @@ nav{
 .les{
   background: #fff;
   width: calc(300px + (600 - 300)*((100vw - 320px)/(1920 - 320)));
-  margin: 30px;
+  margin: 25px;
   border-radius: 25px;
   padding: 30px;
   box-shadow: 0 0 10px rgb(93, 93, 93);
@@ -107,7 +107,7 @@ nav{
 }
 .block{
   width: calc(300px + (382 - 300)*((100vw - 320px)/(1920 - 320)));
-  margin: calc(1px + (33 - 1)*((100vw - 320px)/(1920 - 320)));;
+  margin: calc(1px + (28 - 1)*((100vw - 320px)/(1920 - 320)));;
 }
 .block img{
   width: calc(300px + (382 - 300)*((100vw - 320px)/(1920 - 320)));
