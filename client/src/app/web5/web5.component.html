@@ -1,6 +1,9 @@
 <div class="space5">
-    <div class="container" >
+    <div class="container">
         <h1 class="center animate__animated animate__bounceInLeft">Выбери свой город</h1>
+        <a id="positions" [routerLink]="['/web-4']" class="btn-floating pulse btn-large waves-effect waves-light teal">
+          <i class="material-icons">arrow_downward</i>
+        </a>
         <div class="map" id="map" *ngIf="categories$ |async as categories; else loader">
             <div class="left-map animate__animated animate__bounceInLeft">
                 <div class="row">                 

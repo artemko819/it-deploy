@@ -52,6 +52,13 @@
 
   }
  }
+
+ nav #logo{
+  font-family: 'Conv_Blogger Sans';
+  font-weight: normal;
+   font-size: calc(15px + (30 - 15)*((100vw - 320px)/(1920 - 320)));
+   color: #000;
+ }
 nav{
    position: fixed;
    z-index: 9999;

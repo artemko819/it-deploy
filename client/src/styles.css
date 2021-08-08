@@ -208,10 +208,10 @@ body{
   to  { transform: scale(1);}
  }
 
-nav .brand-logo {
+/* nav .brand-logo {
   -webkit-text-stroke: 2px rgb(5, 83, 11);
  
-}
+} */
 .nav-wrapper{
   width: 70%;
   margin: 0 auto;
@@ -305,7 +305,7 @@ nav .brand-logo {
     line-height: 25px;
   }
   #positions i{
-    font-size: 15px !important;
+    font-size: 13px !important;
     line-height: 25px;
   }
   #map .row{

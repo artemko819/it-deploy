@@ -7,7 +7,18 @@ img{
     transform: scale(1.1);
     cursor: pointer;
 } */
-
+#positions{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 0.5;
+    transition: 0.5s;
+    z-index: 999;
+    transform: rotateZ(180deg);
+  }
+  #positions:hover{
+    opacity: 1;
+  }
 .space5 h1{
     font-size: calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
     -webkit-text-stroke: 2px rgb(0, 0, 0);

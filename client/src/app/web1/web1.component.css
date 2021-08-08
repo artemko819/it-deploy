@@ -1,8 +1,11 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
     #space1 .start{
-        bottom: 0px;
+        bottom: 20px;
        left: 44%;
+    }
+    .planet{
+        margin-top: -80px;
     }
     #space1 h5{
         margin-top: -10px;
