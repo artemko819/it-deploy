@@ -313,7 +313,8 @@ body{
   }
 
   .space5 h1{
-   display: none;
+   /* display: none; */
+   margin-bottom: -100px;
   }
   
    #map{

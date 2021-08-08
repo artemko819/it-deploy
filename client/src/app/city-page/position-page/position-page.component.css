@@ -209,6 +209,11 @@ text-align: center;
   width: 50%;
   margin-top: 8%;
 }
+
+#nav-mobile{
+  margin: 0 auto;
+  width: calc(220px + (350 - 220)*((100vw - 320px)/(1920 - 320)));
+}
 #course .right-part{
   width: 50%;
   text-align: center;
@@ -220,7 +225,9 @@ text-align: center;
   flex-direction: row;
   justify-content: space-between;
 }
-
+.page-footer .col{
+  text-align: center;
+}
 #course .right-part h1{
   font-size: calc(23px + (150 - 23)*((100vw - 320px)/(1920 - 320)));
   margin-top: 0;
@@ -327,9 +334,7 @@ strong {
   #positions:hover{
     opacity: 1;
   }
-nav{
-  background: #eeea6e;
-}
+
 .nav-wrapper{
   width: 90%;
 }

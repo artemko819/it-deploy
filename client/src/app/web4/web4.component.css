@@ -1,3 +1,8 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+     #space4 .container{
+         margin-top: -100px;
+     }
+}
 img{width: 100%; position: relative;}
 .container{
     width: calc(320px + (1920 - 320)*((100vw - 320px)/(1920 - 320))) !important;
@@ -55,7 +60,7 @@ img{width: 100%; position: relative;}
     max-width: 425px;
     position: absolute;
     width: calc(80px + (425 - 80)*((100vw - 320px)/(1920 - 320)));
-    top: calc(350px + (350 - 350)*((100vw - 320px)/(1920 - 320)));
+    top: calc(250px + (350 - 250)*((100vw - 320px)/(1920 - 320)));
     z-index: 99;
     transition: all 3s;
     left: -900px;
@@ -102,7 +107,7 @@ img{width: 100%; position: relative;}
     position: absolute;
     text-align: center;
     width: 100%;
-    top:calc(130px + (50 - 130)*((100vw - 320px)/(1920 - 320)));
+    top:calc(80px + (50 - 80)*((100vw - 320px)/(1920 - 320)));
     -webkit-text-stroke: 2px rgb(0,0,0);
     color: rgb(206, 241, 6);
   
