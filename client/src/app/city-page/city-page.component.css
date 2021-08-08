@@ -1,7 +1,10 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
   #city #gl-in{   
-    left: 88px !important;
-    top: -105px !important;
+    left: -23px !important;
+    top: -47px !important;
+  }
+  #city #link-ev {
+    left: 61px;
   }
   #city .in .arrow{
     left: calc(108px + (262 - 10)*((100vw - 320px)/(1920 - 320))) !important;
@@ -68,6 +71,7 @@
   }
   #city .in .age h3{
     font-size: calc(22px + (40 - 22)*((100vw - 320px)/(1920 - 320)));
+    left: 17px;
   }
   #city .in .age{
     left: calc(17px + (32 - 10)*((100vw - 320px)/(1920 - 320)));
@@ -93,7 +97,7 @@
     left: 185px;
   }
   #city .s3.ev{
-    left: 220px;
+    left: 190px;
   }
   #city .s3.sn{
     left: 230px;
@@ -123,6 +127,31 @@
 }
 .road.not{
   display: none;
+}
+#link-jn{
+  display: inline-block;
+  position: absolute;
+  width: calc(150px + (250 - 150)*((100vw - 320px)/(1920 - 320)));
+  height: 100%;
+  z-index: 999;
+  left: 65px;
+}
+#link-ev{
+  display: inline-block;
+  position: absolute;
+  width: calc(150px + (200 - 150)*((100vw - 320px)/(1920 - 320)));
+  height: 100%;
+  z-index: 999;
+  left: 24px;
+}
+#link-sn{
+  display: inline-block;
+  position: absolute;
+  width: calc(200px + (765 - 200)*((100vw - 320px)/(1920 - 320)));
+  height: 80%;
+  z-index: 999;
+  left: 24px;
+  bottom: 0;
 }
 #jn{
   /* top:150px; */
@@ -234,7 +263,7 @@
   -webkit-text-stroke: 1px rgb(5, 83, 11);
   width: 100%;
   text-align: center;
-  top: calc(90px + (-20 - 50)*((100vw - 320px)/(1920 - 320)));
+  top: calc(65px + (-20 - 50)*((100vw - 320px)/(1920 - 320)));
   letter-spacing: 2px;
   z-index: 99;
  }

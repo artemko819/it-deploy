@@ -72,9 +72,7 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
     };
     const typed = new Typed('.typed-element', options);
     const body = document.getElementById("app-main")
-    body.classList.remove("ov");
-    const html = document.getElementById("app-scroll")
-    html.classList.remove("ov");
+    body.classList.remove("ov"); 
     this.categoryId = this.activateRoute.snapshot.params['id'];
     this.positionId = this.activateRoute.snapshot.params['position'];
     console.log(this.positionId)
