@@ -1,12 +1,38 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
     #space1 .start{
-        bottom: 60px;
+        bottom: 45px;
        left: 44%;
     }
     #space1 h5{
         margin-top: -10px;
     }
+    #space1 .wrapper{
+        flex-direction: column;
+    }
+    #space1 #pl1 {
+        position: relative;
+        width: calc(100px + (162 - 100)*((100vw - 320px)/(1920 - 320)));
+        right: -30%;
+        top:-70px;
+        margin-top: calc(-1px + (20 - 1)*((100vw - 320px)/(1920 - 320)));
+    }
+    #space1 #pl2{
+        width:calc(150px + (460 - 150)*((100vw - 320px)/(1920 - 320)));
+        top:-50px;
+        position: relative;
+    }
+    #space1 #pl3 {
+        width: calc(80px + (260 - 80)*((100vw - 320px)/(1920 - 320)));
+        position: relative;
+        right: -40%;
+        top:-50px;
+    }
+    .text{
+        margin-top: -60px;
+        text-align: center;
+    }
+    #space1 .border{text-align: left;    top: 0px;}
 }
 img{
     transition: all 1.5s;
@@ -52,7 +78,7 @@ img{
  
 }
 #space1 h5{
-    font-size: calc(15px + (25 - 15)*((100vw - 320px)/(1920 - 320)));
+    font-size: calc(17px + (25 - 17)*((100vw - 320px)/(1920 - 320)));
     -webkit-text-stroke: calc(0.5px + (1 - 0.5)*((100vw - 320px)/(1920 - 320))) #fff;
 }
 .language div{
