@@ -26,10 +26,11 @@
   }
   #city  .road img{
     width: 960px;
+    margin-top: -26px;
   }
   #city .building{
     width: 960px !important;
-    top:29px;
+    top:0px;
   }
   #city .building.not{
     width:auto !important;
@@ -68,10 +69,12 @@
   }
   #city #in{
     width: calc(205px + (408 - 205)*((100vw - 320px)/(1920 - 320)));
+    height: 370px;
   }
   #city .in .age h3{
     font-size: calc(22px + (40 - 22)*((100vw - 320px)/(1920 - 320)));
     left: 17px;
+    top: -4px;
   }
   #city .in .age{
     left: calc(17px + (32 - 10)*((100vw - 320px)/(1920 - 320)));
