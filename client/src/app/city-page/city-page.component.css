@@ -1,6 +1,5 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
-  #city #gl-in{
-   
+  #city #gl-in{   
     left: 88px !important;
     top: -105px !important;
   }
@@ -81,23 +80,40 @@
   }
   #city .arrow-nav{
     display: block;
-    position: fixed;
-    bottom: 30%;
+    position: absolute;
+    bottom: 35%;
     z-index: 99999;
   }
+  #city .s3{
+    margin-left: 50px;
+    left: 180px;
+    margin-right: 50px;
+  }
+  #city .s3.jn{
+    left: 185px;
+  }
+  #city .s3.ev{
+    left: 220px;
+  }
+  #city .s3.sn{
+    left: 230px;
+  }
+  #city .s3.in{
+    left: 250px;
+  }
   #city .arrow-nav i{
-    font-size: 50px;
-    line-height: 75px;
+    font-size: 40px;
+    line-height: 55px;
   }
   #city #left-nav{
     left: 5px;
-    width: 75px;
-    height: 75px
+    width: 55px;
+    height: 55px
   }
   #city #right-nav{
     right: 5px;
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
  
 
   }

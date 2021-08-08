@@ -33,32 +33,32 @@ export class CityPageComponent implements OnInit{
 
   ) { }
   moveRight(move){
-    move = this.move + -200
+    move = this.move + -350
     this.move = move
-    if(this.move === -600 ){
+    if(this.move === -1050 ){
       this.rightMove = true
     }
-    if(this.move === -200 ){
+    if(this.move === -350 ){
       this.leftMove = false
     }
-    if(this.move === -400){
+    if(this.move === -700){
       this.rightMove = false
     }
     
   }
   moveLeft(move){
-    move = this.move + 200
+    move = this.move + 350
     this.move = move
-    if(this.move === -600 ){
+    if(this.move === -1050 ){
       this.rightMove = true
     }
-    if(this.move === -200 ){
+    if(this.move === -350 ){
       this.leftMove = false
     }
     if(this.move === 0){
       this.leftMove = true
     }
-    if(this.move === -400){
+    if(this.move === -700){
       this.rightMove = false
     }
   }
@@ -67,7 +67,8 @@ export class CityPageComponent implements OnInit{
   ngOnInit(): void {
     const body = document.getElementById("app-main")
     body.classList.add("ov");
-   
+   const html = document.getElementById("app-scroll")
+   html.classList.add("ov");
     //города
     this.categoryId = this.activateRoute.snapshot.params['id'];
     this.positions$ = this.positionService.fetchFront(this.categoryId)
