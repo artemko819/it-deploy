@@ -216,10 +216,10 @@ body{
   width: 70%;
   margin: 0 auto;
 }
-.nav-wrapper ul a{
+/* .nav-wrapper ul a{
   -webkit-text-stroke: 1px rgb(5, 83, 11);
   color: rgb(206, 241, 6);
-}
+} */
 #admin a{
   font-family: 'Conv_Blogger Sans' !important;
 
@@ -275,10 +275,10 @@ body{
   color: rgb(8, 206, 41);
 }
 @media only screen and (min-device-width: 1100px) and (max-device-width: 1600px){
-  #city .heading{
+  /* #city .heading{
     font-size: 35px !important;
     top:10px
-  }
+  } */
   /* #city #ev{
     max-height: 480px;
   } */

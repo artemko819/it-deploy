@@ -47,21 +47,18 @@
     left: calc(165px + (380 - 150)*((100vw - 320px)/(1920 - 320))) !important;
   }
   #course #center-img{
-
     width: calc(150px + (408 - 150)*((100vw - 320px)/(1920 - 320))) !important;
 
   }
  }
-
+ nav #logo i{
+   line-height: 42px;
+ }
  nav #logo{
   font-family: 'Conv_Blogger Sans';
   font-weight: normal;
-   font-size: calc(15px + (30 - 15)*((100vw - 320px)/(1920 - 320)));
+   font-size: calc(15px + (25 - 15)*((100vw - 320px)/(1920 - 320)));
    color: #000;
- }
-nav{
-   position: fixed;
-   z-index: 9999;
  }
  .nav-wrapper ul a{
    font-size: calc(15px + (30 - 15)*((100vw - 320px)/(1920 - 320)));;
@@ -210,10 +207,22 @@ text-align: center;
   margin-top: 8%;
 }
 
-#nav-mobile{
+/* #nav-mobile{
   margin: 0 auto;
   width: calc(220px + (350 - 220)*((100vw - 320px)/(1920 - 320)));
+} */
+#nav-mobile{
+  line-height: 40px;
+  height: 40px;
 }
+#nav-mobile li a{
+  font-family: 'Conv_Blogger Sans';
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 #course .right-part{
   width: 50%;
   text-align: center;
@@ -322,10 +331,12 @@ strong {
   /* margin-bottom: 35px; */
   position: relative;
 }
-
+#positions i{
+  line-height: 43px;
+}
   #positions{
     position: absolute;
-    top: 3px;
+    top: 0px;
     left: 0px;
     opacity: 0.5;
     transition: 0.5s;

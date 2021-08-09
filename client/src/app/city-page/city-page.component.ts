@@ -77,14 +77,13 @@ export class CityPageComponent implements OnInit{
       this.router.navigate(['/404'])
     })
     this.categoriesService.getByIdFront(this.categoryId).subscribe(city=>{
-      this.titleService.setTitle(`Ваш город ${city.name}, IT-курсы Харьков, Ахтырка, Полтава, Чугуев, Бахмут, Константиновка, обучение ИТ-специалистов 【IT-START】 с нуля, стоимость курсов в IT-школе в Харькове 2021"`);  
+      this.titleService.setTitle(`${city.name}, IT-курсы Харьков, Ахтырка, Полтава, Лубны, Изюм, Чугуев, Бахмут, Первомайский, Прилуки, Покровск, обучение ИТ-специалистов 【IT-START】 с нуля. Дизайн, 3d моделирование, Программирование.`);  
     
     })
 
+    this.titleService.setTitle(" ");  
     this.metaTagService.addTags([  
-      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Константиновке ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
-      { name: 'robots', content: 'index, follow' },  
-      { charset: 'UTF-8' }  
+      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Лубнах, Покровске, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
     ]);  
 
     // let gelicopter = document.getElementById("gl-jn");

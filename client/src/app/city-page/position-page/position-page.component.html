@@ -1,12 +1,14 @@
 <div id="course" [class]="className">
-  <nav class="yellow">
+  <nav class="yellow"  id="nav-mobile">
     <div class="nav-wrapper">
     <a id="positions" [routerLink]="['/city',categoryId]"
-      class="btn-floating pulse btn-large waves-effect waves-light green">
+      class="btn-floating pulse  waves-effect waves-light green">
       <i class="material-icons">arrow_downward</i>
     </a>
-    <!-- <a href="#" id="logo" class="brand-logo center">+3(80)-66-38-38-123, +3(80)-68-38-38-123</a> -->
-      <ul id="nav-mobile" class="center hide-on-med-and-down">
+    <a href="tel:+380663838123" id="logo" class="brand-logo center">
+      <i class="material-icons">contact_phone</i> +3(80)-66-38-38-123
+    </a>
+      <ul class="right hide-on-med-and-down">
         <li><a [routerLink]="['/']">Главная</a></li>
         <li><a [routerLink]="['/city']">Города</a></li>
         <li><a [routerLink]="['/city',categoryId]">Курсы</a></li>
@@ -604,16 +606,16 @@
         <div class="col l12 s12">
           <h5 class="white-text">Адреса филиалов, и контакты</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#">Улица пушкина, дом колотушкина, оифс 105</a></li>
-            <li><a class="grey-text text-lighten-3" href="#">+380 66 38 38 123</a></li>
-            <li><a class="grey-text text-lighten-3" href="#">+380 68 38 38 123</a></li>
+            <li><a class="grey-text text-lighten-3" > г.Харьков, улица 23-го августа, 36А.</a></li>
+            <li><a class="grey-text text-lighten-3" >+380 66 38 38 123</a></li>
+            <li><a class="grey-text text-lighten-3" >+380 68 38 38 123</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <p class="center">© 2021 IT-START Школа компъютерных технологий</p>      
+        <p class="center">©2021 IT-START Школа компъютерных технологий</p>      
       </div>
     </div>
   </footer>

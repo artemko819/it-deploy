@@ -23,6 +23,8 @@ img{
     font-size: calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
     -webkit-text-stroke: 2px rgb(0, 0, 0);
     color: rgb(206, 241, 6);
+    font-family: 'Conv_evo_1';
+    letter-spacing: 5px;
 }
 .wrap-img:hover h3{
     transform: scale(1.1);
@@ -31,6 +33,8 @@ img{
     transform: scale(1.1);
 }
 .wrap-img h3{
+
+ 
     transition: all 0.5s;
  position: absolute;  
  z-index: 99;

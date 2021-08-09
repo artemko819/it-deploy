@@ -19,11 +19,10 @@ export class Web1Component implements OnInit{
     select:boolean = false;
 
     ngOnInit() {
-      this.titleService.setTitle("IT-курсы Харьков, Ахтырка, Полтава, Чугуев, Бахмут, Константиновка, обучение ИТ-специалистов 【IT-START】 с нуля, стоимость курсов в IT-школе в Харькове 2021");  
+      this.titleService.setTitle("IT-курсы Харьков, Ахтырка, Полтава, Лубны, Изюм, Первомайский, Чугуев, Бахмут ,Прилуки, Покровск, обучение ИТ-специалистов 【IT-START】 с нуля. Дизайн, 3d моделирование, Программирование");  
       this.metaTagService.addTags([  
-        { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Константиновке ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
+        { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Первомайский, Полтаве, Чугуеве, Бахмуте, Лубнах, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
         { name: 'robots', content: 'index, follow' },  
-        { charset: 'UTF-8' }  
       ]);  
       
       const body = document.getElementById("app-main")

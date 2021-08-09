@@ -112,6 +112,9 @@
     font-size: 40px;
     line-height: 55px;
   }
+  #city #link-sn{
+    left:24px
+  }
   #city #left-nav{
     left: 5px;
     width: 55px;
@@ -123,6 +126,12 @@
     height: 55px;
  
 
+  }
+  #city  #gl-ev1{
+    display: block;
+  }
+  #city  #gl-ev2{
+    display: block;
   }
 }
 .arrow-nav{
@@ -150,10 +159,10 @@
 #link-sn{
   display: inline-block;
   position: absolute;
-  width: calc(200px + (765 - 200)*((100vw - 320px)/(1920 - 320)));
+  width: calc(200px + (465 - 200)*((100vw - 320px)/(1920 - 320)));
   height: 80%;
   z-index: 999;
-  left: 24px;
+  left: -40px;
   bottom: 0;
 }
 #jn{
@@ -266,9 +275,10 @@
   -webkit-text-stroke: 1px rgb(5, 83, 11);
   width: 100%;
   text-align: center;
-  top: calc(65px + (-20 - 50)*((100vw - 320px)/(1920 - 320)));
+  top: calc(65px + (0 - 50)*((100vw - 320px)/(1920 - 320)));
   letter-spacing: 2px;
   z-index: 99;
+  font-family: 'Conv_evo_1';
  }
 
 .jn .age{
@@ -319,6 +329,30 @@
   z-index:9999;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   animation: shar1 2s infinite alternate;
+}
+
+ #gl-ev1{
+  display: none;
+  width: calc(75px + (178 - 75)*((100vw - 320px)/(1920 - 320)));
+  position: absolute;
+  right: calc(163px + (300 - 10)*((100vw - 320px)/(1920 - 320)));
+  top: calc(-70px + (100 - 0)*((100vw - 320px)/(1920 - 320)));
+  cursor: default;
+  z-index:9999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  animation: shar1 1.5s infinite alternate;
+}
+ #gl-ev2{
+  display: none;
+  width: calc(75px + (178 - 75)*((100vw - 320px)/(1920 - 320)));
+  position: absolute;
+  right: calc(-80px + (300 - 10)*((100vw - 320px)/(1920 - 320)));
+  top: calc(-80px + (100 - 0)*((100vw - 320px)/(1920 - 320)));
+  cursor: default;
+  z-index:9999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  animation: shar1 2s infinite alternate;
+ 
 }
 
 #city #gl-sn{
