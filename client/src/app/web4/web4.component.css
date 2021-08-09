@@ -117,8 +117,8 @@ img{width: 100%; position: relative;}
 }
 .wrap-text h3, .wrap-text1 h3{
     font-size:calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
-    color: #d500f9;
+    -webkit-text-stroke: 1px rgb(5, 83, 11);;
+    color: rgb(206, 241, 6);
     font-family: 'Conv_evo_1';
     letter-spacing: 5px;
    }

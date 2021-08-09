@@ -22,9 +22,9 @@ export class Web5Component implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle("Выбор города, IT-курсы Харьков, Ахтырка, Полтава, Лубны, Изюм, Чугуев, Бахмут, Первомайский, Прилуки, Покровск, обучение ИТ-специалистов 【IT-START】 с нуля, стоимость курсов в IT-школе в Харькове 2021");  
-    this.metaTagService.addTags([  
-      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Лубнах, Покровске, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' }, 
-    ]);  
+    this.metaTagService.updateTag(  
+      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Лубнах, Покровске, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },   
+    );   
     const body = document.getElementById("app-main")
     body.classList.add("ov");
     this.categories$ =  this.categoriesService.fetchFront()

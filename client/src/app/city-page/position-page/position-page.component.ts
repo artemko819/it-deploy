@@ -45,12 +45,10 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
     private metaTagService: Meta  
   ) { }
   ngOnInit(): void {
-    this.titleService.setTitle("IT-курсы Харьков, Ахтырка, Полтава, Лубны, Изюм, Первомайский, Чугуев, Бахмут ,Прилуки, Покровск, обучение ИТ-специалистов 【IT-START】 с нуля. Дизайн, 3d моделирование, Программирование");  
-    this.metaTagService.addTags([  
-      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Первомайский, Полтаве, Чугуеве, Бахмуте, Лубнах, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
-      { name: 'robots', content: 'index, follow' },  
-      { charset: 'UTF-8' }  
-    ]);  
+    this.titleService.setTitle("Записаться на курс IT-курсы Харьков, Ахтырка, Полтава, Лубны, Изюм, Первомайский, Чугуев, Бахмут ,Прилуки, Покровск, обучение ИТ-специалистов 【IT-START】 с нуля. Дизайн, 3d моделирование, Программирование");  
+    this.metaTagService.updateTag(  
+      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Лубнах, Покровске, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },   
+    );  
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
       tel: new FormControl(null, [Validators.required, Validators.pattern('[- +()0-9]+')]),

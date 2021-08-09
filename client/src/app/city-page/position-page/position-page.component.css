@@ -9,11 +9,14 @@
     flex-direction: column !important;
     justify-content: center !important;
   }
+  #course #positions i{
+    line-height: 26px;
+  }
   #course #logo{
     display: none !important;
   }
   #course #positions{
-    top:17px;
+    top:8px;
   }
   #course .container .wrap-content .left-part{
    width: 100% !important;
@@ -51,6 +54,20 @@
 
   }
  }
+ .up{
+   display: inline-block;
+   float: right;
+   font-size: 30px !important;
+   line-height: 20px !important;
+ }
+ .popout li i{
+  transition: all 0.5s;
+ }
+ .popout li.active .up{
+ 
+  transform: rotateZ(-180deg);
+ }
+
  nav #logo i{
    line-height: 42px;
  }

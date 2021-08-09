@@ -82,9 +82,9 @@ export class CityPageComponent implements OnInit{
     })
 
     this.titleService.setTitle(" ");  
-    this.metaTagService.addTags([  
-      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Лубнах, Покровске, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
-    ]);  
+    this.metaTagService.updateTag(  
+      { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Полтаве, Чугуеве, Бахмуте, Лубнах, Покровске, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },   
+    ); 
 
     // let gelicopter = document.getElementById("gl-jn");
     // let gelicopter2 = document.getElementById("gl-sn");
