@@ -12,7 +12,6 @@ import { Web5Component } from './web5/web5.component';
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 import { CityPageComponent } from './city-page/city-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { BackButtonDisableModule } from 'angular-disable-browser-back-button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './admin/shared/classes/token.interceptor';
@@ -42,7 +41,6 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BackButtonDisableModule.forRoot()
   ],
   providers: [
     {
