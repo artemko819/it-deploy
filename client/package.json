@@ -11,13 +11,10 @@
     "postinstall": "ngcc"
   },
   "private": true,
-  "dependencies": {
-    "@angular-devkit/build-angular": "~0.1102.0",
+  "dependencies": {    
     "@angular/animations": "~11.2.0",
-    "@angular/cli": "~11.2.0",
     "@angular/common": "~11.2.0",
-    "@angular/compiler": "~11.2.0",
-    "@angular/compiler-cli": "~11.2.0",
+    "@angular/compiler": "~11.2.0",   
     "@angular/core": "~11.2.0",
     "@angular/forms": "~11.2.0",
     "@angular/platform-browser": "~11.2.0",
@@ -36,6 +33,9 @@
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1102.0",
+    "@angular/cli": "~11.2.0",
+    "@angular/compiler-cli": "~11.2.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
