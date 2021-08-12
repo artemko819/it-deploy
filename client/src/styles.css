@@ -143,7 +143,9 @@
 	font-style: normal;
   font-display: swap;
 }
-
+#bingc-phone-button{
+  bottom: 1% !important;
+}
 /* #city *{
 	font-family: 'Conv_vozrast_2';
 } */
@@ -314,7 +316,7 @@ body{
 
   .space5 h1{
    /* display: none; */
-   margin-bottom: -50px;
+   margin-bottom: -80px;
   }
   
    #map{

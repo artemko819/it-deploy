@@ -3,4 +3,19 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
+    background-position-x: 0;
+    
+}
+.wrap-quiz-container{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.wrap-quiz-container h1{
+    font-size: 30px;
+}
+
+.wrap-quiz-container h3{
+    font-size: 20px;
 }
