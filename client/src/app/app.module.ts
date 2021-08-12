@@ -19,6 +19,7 @@ import { TokenInterceptor } from './admin/shared/classes/token.interceptor';
 import { PositionPageComponent } from './city-page/position-page/position-page.component';
 import { CommonModule } from '@angular/common';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,6 @@ import { CommonModule } from '@angular/common';
     CityPageComponent,
     PageNotFoundComponent,
     PositionPageComponent,
-  
   ],
   imports: [
     CommonModule,
