@@ -1,22 +1,23 @@
 <div id="quiz">
-    <div class="wrap-quiz-container">
+    <div  class="wrap-quiz-container">
         <div class="questions">
             <h1 class="center">{{quizzes[quizCouter].question}}</h1>
             <h3 class="center">Вопрос номер {{quizCouter + 1}} из {{quizzes.length}} </h3>
         </div>
         <div class="block">
             <ul class="collection">
-                <li class="collection-item" *ngFor="let  quiz of quizzes[quizCouter].answer">
+                <li class="collection-item" *ngFor="let  quiz of quizzes[quizCouter].answer;index as i">
                     <p>
                         <label>
                           <input class="with-gap" name="group3" type="radio" (change)="onAnswer(quiz.correct)"/>
                           <span>{{quiz.option}}</span>
                         </label>
                       </p>
-                      
                 </li>
             </ul>
-            <button [disabled]="answerSelected"  class="btn" (click)="nextQuiz()">NEXT QUIZ</button>
+            <button [disabled]="answerSelected" *ngIf="quizCouter<2" class="btn green" (click)="nextQuiz()">Следующий</button>
+            <button [disabled]="answerSelected" *ngIf="quizCouter==2" class="btn green" (click)="rezultQuiz()">Посмотреть результат</button>
         </div>
     </div>
+    
 </div>

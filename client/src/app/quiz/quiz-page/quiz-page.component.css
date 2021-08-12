@@ -14,8 +14,38 @@
 
 .wrap-quiz-container h1{
     font-size: 30px;
+    background: #c6e0ff;
+    border-radius: 10px;
+    padding: 15px 0 15px 0;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Conv_evo_1';
 }
-
+.wrap-quiz-container h3{
+    background: #c6e0ff;
+    border-radius: 10px;
+    padding: 15px 0 15px 0;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Conv_evo_1';
+}
+.block{
+    background: #c6e0ff;
+    border-radius: 10px;
+    padding: 15px;
+}
 .wrap-quiz-container h3{
     font-size: 20px;
+}
+.circle-item{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
 }

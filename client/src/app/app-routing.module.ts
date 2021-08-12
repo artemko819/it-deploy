@@ -21,6 +21,9 @@ const routes: Routes = [
       { path: 'web-4', component: Web4Component, data: {animation: 'web4'} },
       { path: 'city', component: Web5Component, data: {animation: 'web5'} },
       { path: 'city/:id', component: CityPageComponent, data: {animation: 'city'} },
+      {
+        path: 'city/:id/quiz', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
+      },
       { path: 'city/:id/:position', component: PositionPageComponent, data: {animation: 'course'} },
       // { path: 'city/:id/junior', component: JuniorPageComponent, data: {animation: 'course'}},
       // { path: 'city/:id/evolution', component: EvolutionPageComponent, data: {animation: 'course'}},
@@ -29,9 +32,7 @@ const routes: Routes = [
       {
         path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
       },
-      {
-        path: 'quiz', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
-      },
+     
       { path: '404', component: PageNotFoundComponent},
       {path: '**', redirectTo: '/404'}
 

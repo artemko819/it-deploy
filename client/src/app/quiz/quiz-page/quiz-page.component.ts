@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Quiz } from '../quiz.model';
 import { QuizService } from '../quiz.service';
 
@@ -11,7 +12,13 @@ export class QuizPageComponent implements OnInit {
   quizzes:Quiz [] = [];
   quizCouter=0;
   answerSelected = true
-  constructor(private quizService:QuizService) {
+  correctAnswer = 0
+  incorrectAnswer = 0
+  rezult = false
+  constructor(
+    private quizService:QuizService, 
+     private router:Router,
+     private route: ActivatedRoute) {
 
    }
 
@@ -20,9 +27,17 @@ export class QuizPageComponent implements OnInit {
   }
   onAnswer(option: boolean){
     this.answerSelected = false
+    if(option === true){
+      this.correctAnswer++
+    }else{
+      this.incorrectAnswer++
+    }
   }
   nextQuiz(){
     this.quizCouter++
     this.answerSelected = true
+  }
+  rezultQuiz(){
+    this.router.navigate(['rezult'], { relativeTo: this.route })
   }
 }

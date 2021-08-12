@@ -1,0 +1,37 @@
+#rez{
+    width: 300px;
+    display: block;
+    margin: 50px auto;
+}
+
+#quiz-rezult{
+    background: url("../../../assets/quiz/bg-main.png") center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.go-to{
+    display: block;
+    margin: 0 auto;
+}
+
+.rez{
+    background: #c6e0ff;
+    border-radius: 10px;
+    padding: 15px;
+
+    width: 300px;
+    margin: 0 auto 50px;
+}
+.rez h1{
+    font-size: 30px;
+    background: #c6e0ff;
+    border-radius: 10px;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Conv_evo_1';
+}

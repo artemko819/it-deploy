@@ -1,0 +1,45 @@
+img{
+    display: block;
+    margin: 0 auto;
+}
+#quiz-index{
+    background: url("../../../assets/quiz/bg-main.png") center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#quiz-index .wrap-content{
+    margin: 0 auto;
+    width: 300px;
+}
+
+#logo{
+    width: 100px;
+    margin-top: 50px;
+}
+#rocket{
+    position:absolute;
+    width: 70px;
+    left: 10px;
+    z-index: 0;
+}
+#quiz-index .wrap-content h1{
+    font-size: 30px;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Conv_evo_1';
+    line-height: 45px;
+}
+#people{
+    width: 250px;
+}
+.go-to{
+    display: block;
+    width: 80%;
+    margin: 50px auto;
+}
