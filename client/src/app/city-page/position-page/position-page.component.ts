@@ -95,8 +95,7 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
     // this.tabs3 = MaterialService.initTabs(this.tabs3Ref)
   }
 
-  open() {
-  
+  open() {  
     this.modal.open()
   }
   close() {

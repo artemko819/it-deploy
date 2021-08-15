@@ -1,5 +1,5 @@
 #rez{
-    width: 300px;
+    width: 320px;
     display: block;
     margin: 50px auto;
 }
@@ -11,6 +11,18 @@
     height: 100vh;
     overflow: hidden;
     display: flex;
+}
+.podarok{
+    box-shadow: 0 0 10px #000;
+    width: 300px;
+    padding: 50px;
+    margin-top: -100px;
+    border-radius: 10px;
+}
+.podarok img{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
 }
 #quiz-rezult .wrap-content{
     margin: 0 auto;
@@ -24,25 +36,48 @@
     display: block;
     margin: 0 auto;
 }
+#pdfTable{
+    
+    border-radius: 10px;
+    padding: 15px 0 15px 0;
+  
+}
+#pdfTable h1{
+ font-size: 20px;
 
+ color: rgb(255, 255, 255);
+ font-family:Arial, Helvetica, sans-serif;
+ text-align: center;
+}
+.btn{
+    width: 100%;
+}
+#pdfTable h2{
+    font-size: 20px;  
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+   }
 .rez{
-    background: #c6e0ff;
+    /* background: #c6e0ff;
     border-radius: 10px;
     padding: 15px;
 
-    width: 300px;
+    width: 300px; */
     margin: 0 auto 50px;
 }
-jdiv{
-    display: none !important;
-}
+
 .rez h1{
-    font-size: 30px;
-    background: #c6e0ff;
+    font-size: 13px;
+    /* background: #c6e0ff; */
     border-radius: 10px;
     margin: 0;
     padding: 15px 0 15px 0;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
+    color: rgb(47 91 191);
     font-family: 'Conv_evo_1';
+    position: relative;
+    top: -200px;
+    letter-spacing: 2px;
+
 }

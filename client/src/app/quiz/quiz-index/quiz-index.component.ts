@@ -16,6 +16,6 @@ export class QuizIndexComponent implements OnInit {
     body.classList.add("quiz"); 
   }
   goQuiz(){
-    this.router.navigate(['register-quiz'], { relativeTo: this.route })
+    this.router.navigate(['quiz-page'], { relativeTo: this.route })
   }
 }

@@ -17,11 +17,65 @@
         justify-content: center;
     
 }
+option {
+    font-size: 13px;
+    line-height: 16px !important;
+    padding: 0;
+    text-align: center; 
+    color: rgb(24, 24, 24) !important;
+    background: #c6e0ff;
+}
+select{
+    font-size: 13px;
+    background: #c6e0ff;
+    border-radius: 5px;
+    line-height: 16px !important;  
+    color: rgb(24, 24, 24);
+    font-family: 'Conv_evo_1';
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+option {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Conv_evo_1';
+    letter-spacing: 2px;
+}
+.register{
+    margin-top: -100px;
+}
 
 .wrap-quiz-container > *{
     width: 100%;
 }
+.wrap-btn .btn{
+    width: 40%;
+    margin-bottom: 20px;
+}
+.wrap-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrap-btn .btn{
+    font-family: 'Conv_evo_1';
+    font-size: 18px;
+    background-color: #868a89;
+    letter-spacing: 2px;
 
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid #14b41c;
+}
+label span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+}
 .wrap-quiz-container h1{
     font-size: 30px;
     background: #c6e0ff;
@@ -30,24 +84,28 @@
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-family: 'Conv_evo_1';
+    letter-spacing: 2px;
+    line-height: 40px;
 }
-
+.wrap-rez{
+    display: none;
+}
 .wrap-quiz-container h3{
+    font-size: 30px;
     background: #c6e0ff;
     border-radius: 10px;
     padding: 15px 0 15px 0;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-family: 'Conv_evo_1';
+    letter-spacing: 2px;
 }
 .block{
     background: #c6e0ff;
     border-radius: 10px;
     padding: 15px;
 }
-.wrap-quiz-container h3{
-    font-size: 20px;
-}
+
 .circle-item{
     display: inline-block;
     width: 50px;

@@ -15,6 +15,9 @@ export class QuizPageComponent implements OnInit {
   correctAnswer = 0
   incorrectAnswer = 0
   rezult = false
+  questionOn = false
+  city = ''
+  course=''
   constructor(
     private quizService:QuizService, 
      private router:Router,
@@ -27,6 +30,9 @@ export class QuizPageComponent implements OnInit {
     body.classList.add("quiz"); 
     this.quizzes = this.quizService.getQuizzes()
   }
+  goTest(){
+    this.questionOn = true
+  }
   onAnswer(option: boolean){
     this.answerSelected = false
     if(option === true){
@@ -38,6 +44,20 @@ export class QuizPageComponent implements OnInit {
   nextQuiz(){
     this.quizCouter++
     this.answerSelected = true
+  }
+  juniorSelect(course){
+    this.course = 'junior'
+  }
+  junior2Select(course){
+    this.course = 'junior2'
+  }
+  evoSelect(course){
+    this.course = 'evo'
+    this.quizzes=this.quizService.getQuizzesEvo()
+  }
+  evo2Select(course){
+    this.course = 'evo2'
+    this.quizzes=this.quizService.getQuizzesEvo()
   }
   rezultQuiz(){
     this.router.navigate(['rezult'], { relativeTo: this.route })

@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: 'city', component: Web5Component, data: {animation: 'web5'} },
       { path: 'city/:id', component: CityPageComponent, data: {animation: 'city'} },
       {
-        path: 'quiz', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
+        path: 'test', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
       },
       { path: 'city/:id/:position', component: PositionPageComponent, data: {animation: 'course'} },
       // { path: 'city/:id/junior', component: JuniorPageComponent, data: {animation: 'course'}},
