@@ -153,6 +153,13 @@
   display: flex;
   justify-content: space-around;
 }
+body.quiz jdiv{
+  display: none !important;
+}
+body.quiz #bingc-phone-button{
+  display: none !important;
+
+}
 h1.hide{
   font-size: 0px;
 }

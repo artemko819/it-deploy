@@ -23,6 +23,8 @@ export class QuizPageComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    const body = document.getElementById("app-main")
+    body.classList.add("quiz"); 
     this.quizzes = this.quizService.getQuizzes()
   }
   onAnswer(option: boolean){

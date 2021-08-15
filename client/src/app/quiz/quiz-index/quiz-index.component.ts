@@ -12,8 +12,10 @@ export class QuizIndexComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    const body = document.getElementById("app-main")
+    body.classList.add("quiz"); 
   }
   goQuiz(){
-    this.router.navigate(['quiz-page'], { relativeTo: this.route })
+    this.router.navigate(['register-quiz'], { relativeTo: this.route })
   }
 }

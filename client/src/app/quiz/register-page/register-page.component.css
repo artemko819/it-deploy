@@ -1,18 +1,13 @@
-#rez{
-    width: 300px;
-    display: block;
-    margin: 50px auto;
-}
-
-#quiz-rezult{
+#quiz-index{
     background: url("../../../assets/quiz/bg-main.png") center no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
+
 }
-#quiz-rezult .wrap-content{
+#quiz-index .wrap-content{
     margin: 0 auto;
     width: 300px;
     display: flex;
@@ -20,29 +15,27 @@
     align-items: center;
     justify-content: center;
 }
-.go-to{
-    display: block;
-    margin: 0 auto;
-}
-
-.rez{
-    background: #c6e0ff;
-    border-radius: 10px;
-    padding: 15px;
-
-    width: 300px;
-    margin: 0 auto 50px;
-}
-jdiv{
-    display: none !important;
-}
-.rez h1{
+#quiz-index .wrap-content h1{
     font-size: 30px;
-    background: #c6e0ff;
-    border-radius: 10px;
-    margin: 0;
-    padding: 15px 0 15px 0;
+    position: relative;
+    z-index: 5;
+    text-align: center;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-family: 'Conv_evo_1';
+    line-height: 45px;
+}
+.les{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+.input-field.col label{
+    color: rgb(255, 255, 255);
+    font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica;
+    letter-spacing: 2px;
+}
+
+#quiz-reg{
+    width: 100%;
 }

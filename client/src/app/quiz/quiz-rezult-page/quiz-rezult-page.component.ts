@@ -10,6 +10,8 @@ export class QuizRezultPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const body = document.getElementById("app-main")
+    body.classList.add("quiz"); 
   }
 
 }

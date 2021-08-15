@@ -5,11 +5,21 @@
     width: 100vw;
     overflow: hidden;
     background-position-x: 0;
+    display: flex;
     
 }
 .wrap-quiz-container{
-    width: 300px;
+   width: 300px;
     margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+}
+
+.wrap-quiz-container > *{
+    width: 100%;
 }
 
 .wrap-quiz-container h1{
@@ -21,6 +31,7 @@
     color: rgb(255, 255, 255);
     font-family: 'Conv_evo_1';
 }
+
 .wrap-quiz-container h3{
     background: #c6e0ff;
     border-radius: 10px;

@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: 'city', component: Web5Component, data: {animation: 'web5'} },
       { path: 'city/:id', component: CityPageComponent, data: {animation: 'city'} },
       {
-        path: 'city/:id/quiz', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
+        path: 'quiz', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
       },
       { path: 'city/:id/:position', component: PositionPageComponent, data: {animation: 'course'} },
       // { path: 'city/:id/junior', component: JuniorPageComponent, data: {animation: 'course'}},
@@ -33,8 +33,8 @@ const routes: Routes = [
         path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
       },
      
-      { path: '404', component: PageNotFoundComponent},
-      {path: '**', redirectTo: '/404'}
+      // { path: '404', component: PageNotFoundComponent},
+      // {path: '**', redirectTo: '/404'}
 
     ]
   },
