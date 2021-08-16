@@ -1,8 +1,9 @@
 <div id="quiz-rezult">
     <div class="wrap-content" *ngIf='ticket === "";else templateTicket'>        
         <div class="rez">
+            <h5 class="center">Ваш результат</h5>
             <img src="../../../assets/quiz/rez.png" id="rez" loading="lazy" alt="logo">
-            <h1 class="center">программіст</h1>
+            <h1 class="center">розробник Ігор</h1>
         </div>
         <div class="podarok">
             <img (click)='open()' class="animate__animated animate__tada animate__infinite	infinite" src="../../../assets/quiz/giftbox.png" loading="lazy" alt="logo">

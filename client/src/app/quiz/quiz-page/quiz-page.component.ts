@@ -60,6 +60,7 @@ export class QuizPageComponent implements OnInit {
     this.quizzes=this.quizService.getQuizzesEvo()
   }
   rezultQuiz(){
-    this.router.navigate(['rezult'], { relativeTo: this.route })
+    this.rezult = true
+    // this.router.navigate(['rezult'], { relativeTo: this.route })
   }
 }

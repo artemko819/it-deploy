@@ -1,4 +1,4 @@
-<div id="quiz">
+<div id="quiz" [class.reg]='questionOn == false'>
     <div class="wrap-quiz-container">
         <div class="register" *ngIf="questionOn == false">
             <h1 class="center">В якому місті ви знаходитесь?</h1>
@@ -14,24 +14,35 @@
                 <option value="Первомайский">Первомайський</option>
                 <option value="Прилуки">Прилуки</option>
                 <option value="Покровск">Покровск</option>
-            </select>           
+            </select>
             <h3 class="center">Обери свій вік</h3>
             <div class="wrap-btn">
                 <button class="btn" [class.green]="course == 'junior'" (click)='juniorSelect(course)'>6-8</button>
                 <button class="btn" [class.green]="course == 'junior2'" (click)='junior2Select(course)'>9-12</button>
-                <button class="btn" [class.green]="course == 'evo'" (click)='evoSelect(course)' >13-15</button>
+                <button class="btn" [class.green]="course == 'evo'" (click)='evoSelect(course)'>13-15</button>
                 <button class="btn" [class.green]="course == 'evo2'" (click)='evo2Select(course)'>16-18</button>
             </div>
 
 
 
-            <button class="btn green" [disabled]='course == "" || city == ""' (click)="goTest()">ПОЧАТИ ТЕСТ</button>
+            <button id="go-test" class="btn green" [disabled]='course == "" || city == ""' (click)="goTest()">Перейти до
+                тесту</button>
 
         </div>
-        <div class="wrap-qustions" *ngIf="questionOn">
+        <div class="wrap-qustions" *ngIf="questionOn == true && rezult == false">
+            <div class="wrap-q">
+                <img id="q" src="../../../assets/quiz/111.png" alt="1">
+                <img id="q2" src="../../../assets/quiz/222.png" alt="1">
+                <img id="q3"src="../../../assets/quiz/111.png" alt="1">
+                <img id="q4"src="../../../assets/quiz/222.png" alt="1">
+                <img id="q5" src="../../../assets/quiz/111.png" alt="1">
+                <img id="q6" src="../../../assets/quiz/222.png" alt="1">
+            </div>         
             <div class="questions">
-                <h1 class="center">{{quizzes[quizCouter].question}}</h1>
-                <h3 class="center">Вопрос номер {{quizCouter + 1}}  </h3>
+                <div class="progress green darken-4">
+                    <div class="determinate green accent-4"  [style.width] = 'quizCouter*10 + "%"'></div>
+                </div>
+                <h1 class="center">{{quizzes[quizCouter].question}}</h1>                    
             </div>
             <div class="block">
                 <ul class="collection">
@@ -45,12 +56,27 @@
                     </li>
                 </ul>
                 <button [disabled]="answerSelected" *ngIf="quizCouter<9" class="btn green"
-                    (click)="nextQuiz()">Следующий</button>
+                    (click)="nextQuiz()">Далі</button>
                 <button [disabled]="answerSelected" *ngIf="quizCouter==9" class="btn green"
-                    (click)="rezultQuiz()">Посмотреть результат</button>
+                    (click)="rezultQuiz()">Результат</button>
             </div>
         </div>
-      
+        <div id="rezult" *ngIf='rezult'>
+            <div class="wrap-content">        
+                <div class="rez">
+                    <h5>Ваш результат:</h5>
+                    <img src="../../../assets/quiz/rez.png" id="rez" loading="lazy" alt="logo">
+                    <h1 class="center">розробник Ігор</h1>
+                </div>
+                <div id="prof">
+                    <p>Це програміст, який спеціалізується на створенні комп'ютерних ігор (відеоігор).  Кожен учень отримає базові навички моделювання, графіки, розробки та дизайну відеоігор.</p>
+                </div>
+                <!-- <div class="podarok">
+                    <img id='pod' class="animate__animated animate__tada animate__infinite	infinite" src="../../../assets/quiz/giftbox.png" loading="lazy" alt="logo">
+                </div> -->
+            </div>
+        </div>
+        
     </div>
 
 </div>
