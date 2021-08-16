@@ -18,13 +18,14 @@ export class QuizPageComponent implements OnInit {
   questionOn = false
   city = ''
   course=''
+  
   constructor(
     private quizService:QuizService, 
      private router:Router,
      private route: ActivatedRoute) {
 
    }
-
+   
   ngOnInit(): void {
     const body = document.getElementById("app-main")
     body.classList.add("quiz"); 

@@ -4,7 +4,6 @@
   -msbox-sizing: border-box;
 }
 
-
 @font-face {
 	font-family: 'Conv_ofont.ru_Aqum';
 	src: url('./assets/fonts/ofont.ru_Aqum.eot');
@@ -13,6 +12,7 @@
 	font-style: normal;
   font-display: swap;
 }
+
 @font-face {
 	font-family: 'Conv_Peace Sans Webfont';
 	src: url('./assets/fonts/Peace Sans Webfont.eot');
@@ -121,6 +121,7 @@
 	font-style: normal;
   font-display: swap;
 }
+
 @font-face {
 	font-family: 'Conv_sky_2';
 	src: url('./assets/fonts/sky_2.eot');

@@ -66,15 +66,20 @@
                 <div class="rez">
                     <h5>Ваш результат:</h5>
                     <img src="../../../assets/quiz/rez.png" id="rez" loading="lazy" alt="logo">
-                    <h1 class="center">розробник Ігор</h1>
+                    <h1 *ngIf="course == 'junior' || course == 'junior2' " class="center">розробник Ігор</h1>
+                    <h1 *ngIf="course == 'evo' || course == 'evo2' " class="center">Розробник сайтів та мобільних додатків</h1>
                 </div>
-                <div id="prof">
-                    <p>Це програміст, який спеціалізується на створенні комп'ютерних ігор (відеоігор).  Кожен учень отримає базові навички моделювання, графіки, розробки та дизайну відеоігор.</p>
+                <div id="prof" *ngIf="course == 'junior' || course == 'junior2' ">
+                    <p>Це програміст, який спеціалізується на створенні комп'ютерних ігор (відеоігор).</p>
                 </div>
-                <!-- <div class="podarok">
+                <div id="prof" *ngIf="course == 'evo' || course == 'evo2' ">
+                    <p>Це програміст, який спеціалізується на створенні сайтів та мобільних додатків.</p>
+                </div>
+                 <div class="podarok">
+                    <h4>Отримай безкоштовний подарунок за проходження тесту</h4>
                     <img id='pod' class="animate__animated animate__tada animate__infinite	infinite" src="../../../assets/quiz/giftbox.png" loading="lazy" alt="logo">
-                </div> -->
-            </div>
+                </div> 
+            </div>            
         </div>
         
     </div>

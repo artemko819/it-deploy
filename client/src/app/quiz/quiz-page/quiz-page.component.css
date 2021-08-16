@@ -29,7 +29,7 @@
     right: 5%;
 }
 #q4{
-    bottom: 50px;
+    bottom: 5px;
     transform: rotateZ(-14deg);
     left: 5%;
 }
@@ -39,8 +39,8 @@
     right: 40%;
 }
 #q6{
-    bottom: 50px;
-    transform: rotateZ(-14deg);
+    bottom: 5px;
+    transform: rotateZ(-45deg);
     right: 5%;
 }
 #go-test{
@@ -176,7 +176,11 @@ width: 100%;
 #rezult h5{
     text-align: center;
     font-weight: bold;
+    background: #fff;
     font-size: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 #rezult h1{
     font-size: 14px;
@@ -184,7 +188,8 @@ width: 100%;
     position: relative;
     background: none;
     width: 43%;
-    top: -183px;
+    top: -210px;
+    left: -2px;
     margin: 0 auto;
     line-height: 20px;
     text-transform: uppercase;
@@ -194,10 +199,21 @@ width: 100%;
     display: block;
     margin: 0 auto;
 }
+.wrap-rez{display: none;}
 #prof{
     background: #fff;
     padding: 10px;
     border-radius: 10px;
+    margin-top: -60px;
+    text-align: center;
+}
+#rezult h4{
+    background: #fff;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 .circle-item{
     display: inline-block;
