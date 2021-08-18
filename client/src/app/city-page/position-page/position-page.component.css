@@ -54,6 +54,7 @@
 
   }
  }
+
  .up{
    display: inline-block;
    float: right;
@@ -67,10 +68,72 @@
  
   transform: rotateZ(-180deg);
  }
-
- nav #logo i{
+.wrap-puzzle{
+   display: flex;
+   justify-content: space-around;
+   position: relative;
+   z-index: 5;
+   top:200px;
+   margin-bottom: 350px;
+}
+.wrap-puzzle .left-puzle{
+  width:  calc(300px + (430 - 300)*((100vw - 320px)/(1920 - 320)));
+  max-width: 430px;
+}
+.wrap-puzzle .right-puzle{
+  width: 30%;
+}
+.wrap-head{
+  position: absolute;
+  top: calc(30px + (30 - 0)*((100vw - 320px)/(1920 - 320))) !important;
+  left: 30px;
+}
+.wrap-head-2{
+  position: absolute;
+  top: calc(50px + (50 - 0)*((100vw - 320px)/(1920 - 320))) !important;
+  left: 20px;
+}
+.wrap-puzzle .text{
+  position: absolute;
+  top: calc(85px + (80 - 0)*((100vw - 320px)/(1920 - 320))) !important;
+  left: 30px;
+  z-index: 55;
+  font-size: 20px;
+  line-height: 22px;
+}
+.wrap-head h3{
+  font-size: 36px;
+  font-weight: bold;
+}
+.wrap-head-2{
+  position: absolute;
+  top:0
+}
+.wrap-puzzle .wrap-img{
+  position: relative;
+}
+.wrap-puzzle .wrap-img img{
+  width: calc(300px + (450 - 300)*((100vw - 320px)/(1920 - 320))) ;
+}
+.puzzle{
+  position: relative;
+  
+}
+.tabs-btn .wrap-bg{
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+}
+.tabs-btn .wrap-bg img{
+ width: 100%;
+}
+.junior-puzzle{
+  position: relative;
+}
+nav #logo i{
    line-height: 42px;
- }
+}
  nav #logo{
   font-family: 'Conv_Blogger Sans';
   font-weight: normal;
