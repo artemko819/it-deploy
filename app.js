@@ -5,7 +5,10 @@ const path = require('path')
 const morgan = require("morgan")
 const mongoose = require("mongoose")
 const passport = require("passport")
-
+const fs = require('fs')
+const http = require('http')
+const https = require('https')
+const port = process.env.PORT || 5000
 const authRoutes = require('./routes/auth')
 const analyticsRoutes = require('./routes/analytics')
 const categoryRoutes = require('./routes/category')
@@ -59,6 +62,29 @@ if(process.env.NODE_ENV === 'production'){
      )
    )
  })
+}
+if(process.env.NODE_ENV === 'production'){
+  const privateKey = fs.readFileSync(__dirname + "/ssl/itstart_in_ua.key", 'utf-8')
+  const setificate = fs.readFileSync(__dirname + "/ssl/itstart_in_ua.crt", 'utf-8')
+  const httpsOptions = {
+    key:privateKey,
+    cert: setificate
+  }
+  https.createServer(httpsOptions,app).listen(443, ()=>{
+    console.log("HTTPS SERVER RUNING 443 port")
+  })
+  http.createServer( function(req,res){
+    res.writeHead(301,{"location":"https//"+req.headers['host']+req.url})
+    res.end()
+  }).listen(80)
+}else if(process.env.NODE_ENV === "developmant"){
+  app.listen(port, ()=>{
+    console.log(`server starterd on ${port}`)
+})
+}else{
+  app.listen(port, ()=>{
+    console.log(`server starterd on ${port}`)
+})
 }
 
 module.exports = app
