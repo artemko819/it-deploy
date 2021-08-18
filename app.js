@@ -5,7 +5,6 @@ const path = require('path')
 const morgan = require("morgan")
 const mongoose = require("mongoose")
 const passport = require("passport")
-
 const authRoutes = require('./routes/auth')
 const analyticsRoutes = require('./routes/analytics')
 const categoryRoutes = require('./routes/category')
