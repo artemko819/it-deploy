@@ -4,6 +4,82 @@
   padding: calc(10px + (30 - 10)*((100vw - 320px)/(1920 - 320))) !important;
  } */
  @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  .wrap-bg{
+    display: none;
+  }
+  #course .wrap-puzzle{
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+  }
+  #course .wrap-puzzle .left-puzle{
+    margin-bottom: 20px;
+  }
+  #course .wrapper-btn{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #course .wrapper-btn .btn{
+    width: 83%;
+    font-size: 20px;
+  }
+  #course .wrap-puzzle{
+    top:35px
+  }
+  #course .tabs-btn .wrap-info {
+    background: #B5F7B8;
+    border-radius: 25px;
+    width: 83%;
+    float: none !important;
+    clear: both;
+    margin: 0 auto !important;
+}
+  #course  .wrap-prog h1{line-height: 45px;
+    font-size: 30px !important;}
+
+  #course .wrap-puzzle .left-puzle{
+    width: 80%;
+  }
+  #course .wrap-puzzle .right-puzle{
+    width: 80%;
+  }
+  #course .wrap-puzzle .text p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  #course .wrap-puzzle .text {
+    top:120px;
+  }
+  #course  #puzle1 .wrap-head-2{
+    top: calc(70px + (110 - 70)*((100vw - 320px)/(1920 - 320)));
+  }
+  #course  #puzle2 .text-list ul li span{
+    font-size: 20px;
+  }
+  #course  #puzle2 .text-list{
+    top:70px
+  }
+  #course  #puzle2 .text-list ul li img{
+    width: 30px;
+    height: 30px;
+  }
+  #course #puzle3 .wrap-head-2{
+    top:70px;
+  }
+  #course #puzle4 .wrap-level{
+    top:40px;
+    
+  }
+  #course #puzle4 .wrap-level h5{
+    font-size: 20px;
+  }
+  #course #puzle4 .wrap-level  .left-part  img {
+   width: 25px;
+   height: 25px;
+  }
   #course .container .wrap-content {
     display: flex !important;
     flex-direction: column !important;
@@ -137,7 +213,7 @@ height: 45px;
   width: 49%
 }
 #puzle4 .flex-row .right-part-p{
-  width: 49%
+  width: 43%
 }
 #puzle4 .flex-row .right-part-p ul li img{
   width: 25px;
@@ -168,6 +244,31 @@ height: 45px;
   width: 100%;
   right: 15px;
 }
+.junior-puzzle .btn{
+background: #3c9b37;
+height: 75px;
+border-bottom: 5px solid #387535;
+border-radius: 10px;
+margin-bottom: 10px;
+font-size:25px;
+transition: all 0.3s;
+width: 50%;
+}
+
+.junior-puzzle .btn.active{
+background: #ddec03;
+border-bottom: 3px solid #b6c214;
+transform: scale(0.95);
+color: #333;
+}
+
+.wrapper-btn{
+width: 100%;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+}
+
 .wrap-puzzle .text{
   position: absolute;
   top: calc(85px + (175 - 85)*((100vw - 320px)/(1920 - 320)));
@@ -283,7 +384,7 @@ nav #logo i{
 }
 #course .wrap-prog h1{
   margin-bottom: 60px;
-  font-size: calc(20px + (100 - 20)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(20px + (60 - 20)*((100vw - 320px)/(1920 - 320)));
 }
 .wrap-lesson{
   display: flex;
@@ -297,7 +398,7 @@ nav #logo i{
 }
 .block{
   width: calc(300px + (382 - 300)*((100vw - 320px)/(1920 - 320)));
-  margin: calc(1px + (28 - 1)*((100vw - 320px)/(1920 - 320)));;
+  margin: calc(1px + (20 - 1)*((100vw - 320px)/(1920 - 320)));;
 }
 .block img{
   width: calc(300px + (382 - 300)*((100vw - 320px)/(1920 - 320)));

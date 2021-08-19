@@ -21,6 +21,8 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
   categoryId
   positionId
   positionFind
+  siteActive = true
+  gameActive = false
   className = null
   form: FormGroup
   formConsult: FormGroup
@@ -100,6 +102,14 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
   }
   close() {
     this.modal.close()
+  }
+  siteDevelopment(){
+    this.siteActive = true
+    this.gameActive = false
+  }
+  gameDevelopment(){
+    this.siteActive = false
+    this.gameActive = true
   }
   submitConsult(){
     this.formConsult.disable()
