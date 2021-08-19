@@ -74,7 +74,7 @@ if(process.env.NODE_ENV === 'production'){
     console.log("HTTPS SERVER RUNING 443 port")
   })
   http.createServer( function(req,res){
-    res.writeHead(301,{"location":"https//"+req.headers['host']+req.url})
+    res.writeHead(301,{"location":"https://"+req.headers['host']+req.url})
     res.end()
   }).listen(80)
 }else if(process.env.NODE_ENV === "developmant"){

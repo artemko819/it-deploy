@@ -68,42 +68,148 @@
  
   transform: rotateZ(-180deg);
  }
+ .wrap-puzzle *{
+  font-family: 'Conv_Akrobat-Regular';
+ }
 .wrap-puzzle{
    display: flex;
    justify-content: space-around;
    position: relative;
    z-index: 5;
-   top:200px;
+   top:100px;
    margin-bottom: 350px;
 }
 .wrap-puzzle .left-puzle{
-  width:  calc(300px + (430 - 300)*((100vw - 320px)/(1920 - 320)));
+  width: 33%;
   max-width: 430px;
 }
 .wrap-puzzle .right-puzle{
-  width: 30%;
+  width: 33%;
+}
+#puzle3 p{
+max-width: 375px;
+}
+.right-part-p ul li span{
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  top:-5px;
 }
 .wrap-head{
   position: absolute;
-  top: calc(30px + (30 - 0)*((100vw - 320px)/(1920 - 320))) !important;
-  left: 30px;
+  top: calc(25px + (25 - 0)*((100vw - 320px)/(1920 - 320))) !important;
+  left: 85px;
+}
+#puzle2 .text-list ul li img{
+width: 45px;
+height: 45px;
+}
+#puzle2 .text-list ul li{
+  font-size: 45px;
+  line-height: 45px;
+}
+#puzle2 .text-list ul li span{
+  position: relative;
+  top:-8px
+}
+#puzle2 .text-list{
+  position: absolute;
+  top:158px;
+  left: 10px;
+}
+#puzle4 .wrap-level .left-part img{
+  width: 45px;
+  height: 45px;
+}
+#puzle4 .wrap-level .left-part h5{
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+#puzle4 .flex-row{
+  display: flex;
+  justify-content:space-between;
+}
+#puzle4 .flex-row .left-part{
+  width: 49%
+}
+#puzle4 .flex-row .right-part-p{
+  width: 49%
+}
+#puzle4 .flex-row .right-part-p ul li img{
+  width: 25px;
+  height: 25px;
+}
+#puzle4 .wrap-level{
+  position: absolute;
+  top:146px;
+  width: 100%;
+}
+#puzle4 .wrap-img-row{
+  position: relative;
+  left: 15px;
+}
+.wrap-head h4{
+  font-size: calc(20px + (37 - 20)*((100vw - 320px)/(1920 - 320))) ;
+  font-weight: bold;
+  margin: 0;
+}
+.wrap-head-2 h5{
+  font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1920 - 320))) ;
+  text-align: right;
+  font-weight: bold;
 }
 .wrap-head-2{
   position: absolute;
-  top: calc(50px + (50 - 0)*((100vw - 320px)/(1920 - 320))) !important;
-  left: 20px;
+  top: calc(50px + (50 - 0)*((100vw - 320px)/(1920 - 320)));
+  width: 100%;
+  right: 15px;
 }
 .wrap-puzzle .text{
   position: absolute;
-  top: calc(85px + (80 - 0)*((100vw - 320px)/(1920 - 320))) !important;
-  left: 30px;
+  top: calc(85px + (175 - 85)*((100vw - 320px)/(1920 - 320)));
+  left: 25px;
   z-index: 55;
   font-size: 20px;
   line-height: 22px;
 }
-.wrap-head h3{
-  font-size: 36px;
-  font-weight: bold;
+.tabs-btn{
+  margin-top: 50px;
+}
+#course .tabs-btn .wrap-info{
+  background: #B5F7B8;
+  border-radius: 25px;
+  width: 78%;
+  float: right;
+  clear: both   ;
+}
+#course .tabs-btn .wrap-info h1{
+  font-size: calc(20px + (70 - 20)*((100vw - 320px)/(1920 - 320)));
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 0 0 black;
+}
+.clear{
+  clear: both;
+}
+#puzle1 .wrap-head-2{
+width: 100%;
+text-align: center;
+  top: calc(80px + (110 - 80)*((100vw - 320px)/(1920 - 320)));
+}
+#puzle3 .wrap-head-2{
+  top: calc(80px + (110 - 80)*((100vw - 320px)/(1920 - 320)));
+  left:8px
+}
+#puzle3 .wrap-head{
+  left:117px
+}
+#puzle3 .wrap-head-2 h5{
+text-align: center;
 }
 .wrap-head-2{
   position: absolute;

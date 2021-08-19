@@ -176,7 +176,8 @@
   max-width: 441px;
   /* top:0px; */
   width: calc(80px + (441 - 80)*((100vw - 320px)/(1920 - 320)));
-  height: calc(480px + (862 - 480)*((100vh - 560px)/(1200 - 560)));
+  /* height: calc(480px + (862 - 480)*((100vh - 560px)/(900 - 560))); */
+  max-height: 760px;
 /* height: 60vh;*/
   z-index: 1;
 }
