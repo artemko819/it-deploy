@@ -135,15 +135,15 @@
   </div>
   <div class="wrap-prog">
     <h1 class="center" *ngIf="className == 'Individual'">Что будем изучать ?</h1>
-    <h1 class="center" *ngIf="className == 'Junior' || className == 'Evolite'">Выбери подходящую IT проффесию</h1>
+    <h1 class="center" *ngIf="className == 'Junior' || className == 'Evolite'">Выбери подходящую IT професcию</h1>
     <div class="junior-puzzle" *ngIf="className == 'Junior' ">
-      <div class="wrapper-btn">
+      <div class="wrapper-btn ">
         <button class="btn" [class.active]="siteActive" (click)="siteDevelopment()">Разработчик сайтов</button>
         <button class="btn" [class.active]="gameActive" (click)="gameDevelopment()">Разработчик игр</button>
       </div>
-      <div class="tabs-btn" *ngIf="siteActive == true">
+      <div class="tabs-btn animate__animated animate__zoomInLeft" *ngIf="siteActive == true">
         <div class="wrap-bg">
-          <img src="../../../assets/puzzle/tabs.png" alt="">
+          <img src="../../../assets/puzzle/tabs.png" loading="lazy" alt="1">
         </div>
         <div class="wrap-info">
           <h1>Разработчик сайтов</h1>
@@ -153,14 +153,14 @@
           <div class="left-puzle">
             <div id="puzle1" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzzle1.png" alt="1">
+                <img src="../../../assets/puzzle/jn-1.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Junior Web START</h4>
-              </div>
-              <div class="wrap-head-2">
+              </div> -->
+              <!-- <div class="wrap-head-2">
                 <h5>Перемещение в мир веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
                 <p>На этом курсе ребёнок получит знания по
                   созданию сайтов на Wordpress . Подключит
@@ -174,29 +174,29 @@
             </div>
             <div id="puzle2" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle1-1.png" alt="1">
+                <img src="../../../assets/puzzle/jn2.png" alt="1">
               </div>
-              <div class="text-list">
+              <!-- <div class="text-list">
                 <ul>
                   <li> <img src="../../../assets/puzzle/wordpress.png" alt="wp"> <span> Wordpress</span> </li>
                   <li><img src="../../../assets/puzzle/illus.png" alt="wp"> <span> Adobe illustrator </span></li>
                   <li><img src="../../../assets/puzzle/ps.png" alt="wp"> <span> Adobe Photoshop </span></li>
                   <li> <img src="../../../assets/puzzle/cinema.png" alt="wp"> <span> Cinema 4D </span></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="right-puzle">
             <div id="puzle3" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzzle2.png" alt="1">
+                <img src="../../../assets/puzzle/jn-2.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Junior Web PRO </h4>
-              </div>
-              <div class="wrap-head-2">
+              </div> -->
+              <!-- <div class="wrap-head-2">
                 <h5>Продолжение прохождения мира веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
                 <p>После изучения основных задач веб-дизайна
                   ученик получит углублённые знания в UX/UI ,
@@ -210,9 +210,9 @@
             </div>
             <div id="puzle4" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle2-2.png" alt="1">
+                <img src="../../../assets/puzzle/jn2-2.png" alt="1">
               </div>
-              <div class="wrap-level">
+              <!-- <div class="wrap-level">
                 <div class="flex-row">
                   <div class="left-part">
                     <h5>Новый уровень
@@ -236,14 +236,18 @@
                 </div>
 
 
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
+        <div class="wrap-portfolio">
+          <img src="../../../assets/puzzle/site.png" loading="lazy" alt="1">
+        </div>
+        
       </div>
-      <div class="tabs-btn" *ngIf="gameActive == true">
+      <div class="tabs-btn animate__animated animate__zoomInRight" *ngIf="gameActive == true">
         <div class="wrap-bg">
-          <img src="../../../assets/puzzle/tabs.png" alt="">
+          <img src="../../../assets/puzzle/tabs.png" loading="lazy" alt="">
         </div>
         <div class="wrap-info">
           <h1>Разработчик игр</h1>
@@ -255,35 +259,35 @@
               <div class="wrap-img">
                 <img src="../../../assets/puzzle/jn-game-1.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Junior Web START</h4>
-              </div>
-              <div class="wrap-head-2">
+              </div> -->
+              <!-- <div class="wrap-head-2">
                 <h5>Перемещение в мир веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
-                <p>На этом курсе ребёнок получит знания по
-                  созданию сайтов на Wordpress . Подключит
-                  свой сайт к интернету изучив хостинг и домен
-                  сайта. Сделает полную настройку SEO и получит
-                  полную основу веб-дизайна с помощью проф.
-                  пакета программ Adobe и Maxon Cinema 4D.
+                <p>Дети начнут уверенно делать свои первые шаги
+                  в сфере разработке игр. На протяжение курса 
+                  ребёнок научиться  разрабатывать 3D модели и 
+                  игровые сцены с нуля в программе Cinema 4D и 
+                  Adobe Illustrator. Также изучит язык программ. 
+                  LUE , на котором будут создаваться игры в Roblox.  
                 </p>
               </div>
 
             </div>
             <div id="puzle2" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle1-1.png" alt="1">
+                <img src="../../../assets/puzzle/jn-game-1_2.png" alt="1">
               </div>
-              <div class="text-list">
+              <!-- <div class="text-list">
                 <ul>
                   <li> <img src="../../../assets/puzzle/wordpress.png" alt="wp"> <span> Wordpress</span> </li>
                   <li><img src="../../../assets/puzzle/illus.png" alt="wp"> <span> Adobe illustrator </span></li>
                   <li><img src="../../../assets/puzzle/ps.png" alt="wp"> <span> Adobe Photoshop </span></li>
                   <li> <img src="../../../assets/puzzle/cinema.png" alt="wp"> <span> Cinema 4D </span></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="right-puzle">
@@ -291,28 +295,27 @@
               <div class="wrap-img">
                 <img src="../../../assets/puzzle/jn-game-2.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Junior Web PRO </h4>
               </div>
               <div class="wrap-head-2">
                 <h5>Продолжение прохождения мира веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
-                <p>После изучения основных задач веб-дизайна
-                  ученик получит углублённые знания в UX/UI ,
-                  перейдёт к созданию личного магазина в
-                  OpenCart и добавит анимационное дополнение
-                  созданно в программе Adobe AE и Сharacter Anim.
-                  В финале курса изучит основу HTML&CSS для
-                  дальнейшего получения проффесии Fron-end dev.
+                <p>На этом курсе дети перейдут в профессиональную
+                  среду разработки игр Unity в которой начнут получать
+                  фундаментальные знания создания и проектирования
+                  игровых сцен и основ языка программирования С#,
+                  а также к  работе над качественными 2D проектами
+                  дизайн которых будет создавать самостоятельно  
                 </p>
               </div>
             </div>
             <div id="puzle4" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle2-2.png" alt="1">
+                <img src="../../../assets/puzzle/jn-game-1-2.png" alt="1">
               </div>
-              <div class="wrap-level">
+              <!-- <div class="wrap-level">
                 <div class="flex-row">
                   <div class="left-part">
                     <h5>Новый уровень
@@ -336,21 +339,24 @@
                 </div>
 
 
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
+        <div class="wrap-portfolio">
+          <img src="../../../assets/puzzle/game.png" loading="lazy" alt="1">
+        </div>
       </div>
-
+     
     </div>
     <div class="junior-puzzle" *ngIf="className == 'Evolite' ">
       <div class="wrapper-btn">
         <button class="btn" [class.active]="siteActive" (click)="siteDevelopment()">Разработчик сайтов</button>
         <button class="btn" [class.active]="gameActive" (click)="gameDevelopment()">Разработчик игр</button>
       </div>
-      <div class="tabs-btn" *ngIf="siteActive == true">
+      <div class="tabs-btn animate__animated animate__zoomInLeft" *ngIf="siteActive == true">
         <div class="wrap-bg">
-          <img src="../../../assets/puzzle/tabs.png" alt="">
+          <img src="../../../assets/puzzle/tabs.png" loading="lazy" alt="">
         </div>
         <div class="wrap-info">
           <h1>Разработчик сайтов</h1>
@@ -360,66 +366,66 @@
           <div class="left-puzle">
             <div id="puzle1" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzzle1.png" alt="1">
+                <img src="../../../assets/puzzle/evo1.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Evo Web START</h4>
-              </div>
-              <div class="wrap-head-2">
+              </div> -->
+              <!-- <div class="wrap-head-2">
                 <h5>Перемещение в мир веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
-                <p>На этом курсе ребёнок получит знания по
-                  созданию сайтов на Wordpress . Подключит
-                  свой сайт к интернету изучив хостинг и домен
-                  сайта. Сделает полную настройку SEO и получит
-                  полную основу веб-дизайна с помощью проф.
-                  пакета программ Adobe и Maxon Cinema 4D.
+                <p>На этом курсе ребёнок изучит все нужные 
+                  инструменты для веб-разработки. Начиная всё 
+                  от простых страниц на HTML&CSS заканчивая 
+                  большими и сложными проектами на языке 
+                  программирования JavaScript . Также получит 
+                  невероятное начало в практике веб-дизайна.                  
                 </p>
               </div>
 
             </div>
             <div id="puzle2" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle1-1.png" alt="1">
+                <img src="../../../assets/puzzle/evo2.png" alt="1">
               </div>
-              <div class="text-list">
+              <!-- <div class="text-list">
                 <ul>
                   <li> <img src="../../../assets/puzzle/wordpress.png" alt="wp"> <span> Wordpress</span> </li>
                   <li><img src="../../../assets/puzzle/illus.png" alt="wp"> <span> Adobe illustrator </span></li>
                   <li><img src="../../../assets/puzzle/ps.png" alt="wp"> <span> Adobe Photoshop </span></li>
                   <li> <img src="../../../assets/puzzle/cinema.png" alt="wp"> <span> Cinema 4D </span></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="right-puzle">
             <div id="puzle3" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzzle2.png" alt="1">
+                <img src="../../../assets/puzzle/evo3.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Evo Web PRO </h4>
-              </div>
-              <div class="wrap-head-2">
+              </div> -->
+              <!-- <div class="wrap-head-2">
                 <h5>Продолжение прохождения мира веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
-                <p>После изучения основных задач веб-дизайна
-                  ученик получит углублённые знания в UX/UI ,
-                  перейдёт к созданию личного магазина в
-                  OpenCart и добавит анимационное дополнение
-                  созданно в программе Adobe AE и Сharacter Anim.
-                  В финале курса изучит основу HTML&CSS для
-                  дальнейшего получения проффесии Fron-end dev.
+                <p>По окончанию данного курса ученик полностью
+                  освоит профессию front-end разработчика , создаст
+                  большое портфолио своих работ используя самые 
+                  современные и актуальные фреймворки языка
+                  программирования JavaScript и получит практические
+                  знания в backend создавая серверную часть сайта
+                  и  своего личного чат-бота с помощью Node.JS
                 </p>
               </div>
             </div>
             <div id="puzle4" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle2-2.png" alt="1">
+                <img src="../../../assets/puzzle/evo4.png" alt="1">
               </div>
-              <div class="wrap-level">
+              <!-- <div class="wrap-level">
                 <div class="flex-row">
                   <div class="left-part">
                     <h5>Новый уровень
@@ -443,12 +449,15 @@
                 </div>
 
 
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
+        <div class="wrap-portfolio">
+          <img src="../../../assets/puzzle/site.png" loading="lazy" alt="1">
+        </div>
       </div>
-      <div class="tabs-btn" *ngIf="gameActive == true">
+      <div class="tabs-btn animate__animated animate__zoomInRight" *ngIf="gameActive == true">
         <div class="wrap-bg">
           <img src="../../../assets/puzzle/tabs.png" alt="">
         </div>
@@ -460,66 +469,70 @@
           <div class="left-puzle">
             <div id="puzle1" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/jn-game-1.png" alt="1">
+                <img src="../../../assets/puzzle/evo-game1.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Evo Web START</h4>
               </div>
               <div class="wrap-head-2">
                 <h5>Перемещение в мир веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
-                <p>На этом курсе ребёнок получит знания по
-                  созданию сайтов на Wordpress . Подключит
-                  свой сайт к интернету изучив хостинг и домен
-                  сайта. Сделает полную настройку SEO и получит
-                  полную основу веб-дизайна с помощью проф.
-                  пакета программ Adobe и Maxon Cinema 4D.
+                <p>На этом курсе дети начнут использовать язык 
+                  программирования С# в разработке игр на 
+                  движке Unity . Unity - одна из самых профессиональных
+                  сред разработки игр в мире , на которой были созданы
+                  такие бестселлеры как: Pokemon go , Rust , Superhot и др .
+                  <!-- Ученики могут создать множества качественных 2D игр
+                  вклад которые они сделают не только с программной части,
+                  а и с 3D моделирований сцен. -->
                 </p>
               </div>
 
             </div>
             <div id="puzle2" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle1-1.png" alt="1">
+                <img src="../../../assets/puzzle/evo-game-2.png" alt="1">
               </div>
-              <div class="text-list">
+              <!-- <div class="text-list">
                 <ul>
                   <li> <img src="../../../assets/puzzle/wordpress.png" alt="wp"> <span> Wordpress</span> </li>
                   <li><img src="../../../assets/puzzle/illus.png" alt="wp"> <span> Adobe illustrator </span></li>
                   <li><img src="../../../assets/puzzle/ps.png" alt="wp"> <span> Adobe Photoshop </span></li>
                   <li> <img src="../../../assets/puzzle/cinema.png" alt="wp"> <span> Cinema 4D </span></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="right-puzle">
             <div id="puzle3" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/jn-game-2.png" alt="1">
+                <img src="../../../assets/puzzle/evo-game-3.png" alt="1">
               </div>
-              <div class="wrap-head">
+              <!-- <div class="wrap-head">
                 <h4>Evo Web PRO </h4>
               </div>
               <div class="wrap-head-2">
                 <h5>Продолжение прохождения мира веб-разработки</h5>
-              </div>
+              </div> -->
               <div class="text">
-                <p>После изучения основных задач веб-дизайна
-                  ученик получит углублённые знания в UX/UI ,
-                  перейдёт к созданию личного магазина в
-                  OpenCart и добавит анимационное дополнение
-                  созданно в программе Adobe AE и Сharacter Anim.
-                  В финале курса изучит основу HTML&CSS для
-                  дальнейшего получения проффесии Fron-end dev.
+                <p>Ученики смогут получить знания одного из самых
+                  продвинутых курсов по разработке игр , на котором они 
+                  будут выполнять много проектов на основе искуственного
+                  интеллекта и других важных элементов . Смогут прикоснуться
+                  ко всем направлениям игростроя , начиная от создания 
+                  игровой механники и заканчивая  рекламным продвижением
+                  и выпуском продукта на главные интернет-площадки . 
+                  <!-- Основная работа будет происходить на движке Unity 3D с
+                  совмещением языка программирование C# в Unity .   -->
                 </p>
               </div>
             </div>
             <div id="puzle4" class="puzzle">
               <div class="wrap-img">
-                <img src="../../../assets/puzzle/puzle2-2.png" alt="1">
+                <img src="../../../assets/puzzle/evo-game-4.png" alt="1">
               </div>
-              <div class="wrap-level">
+              <!-- <div class="wrap-level">
                 <div class="flex-row">
                   <div class="left-part">
                     <h5>Новый уровень
@@ -543,9 +556,12 @@
                 </div>
 
 
-              </div>
+              </div> -->
             </div>
           </div>
+        </div>
+        <div class="wrap-portfolio">
+          <img src="../../../assets/puzzle/game.png" loading="lazy" alt="1">
         </div>
       </div>
 
@@ -798,13 +814,13 @@
       <h4> Стоимость обучения </h4>
       <div class="wrap-price">
         <img id="baks" src="../../../assets/block1/baks.png" loading="lazy" alt="baks">
-        <h4 *ngIf="positions.name == 'Evolite'">{{(positions.cost)/10/2.5}} грн в час </h4>
-        <h4 *ngIf="positions.name == 'Junior'">{{(positions.cost)/10}} грн в час </h4>
+        <h4 *ngIf="positions.name == 'Evolite'">200 грн. за урок</h4>
+        <h4 *ngIf="positions.name == 'Junior'">99 грн. за урок </h4>
         <h4 *ngIf="positions.name == 'Seniors'">{{(positions.cost)/10}} грн в час </h4>
         <h4 *ngIf="positions.name == 'Individual'">{{(positions.cost)/2}} грн в час </h4>
         <h4>2 урока в неделю
           <span *ngIf="positions.name == 'Evolite'">
-            по 2.5 часа
+            по 2 часа
           </span>
           <span *ngIf="positions.name == 'Junior'">
             по 1 часу

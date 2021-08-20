@@ -11,7 +11,7 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 140px;
+    margin-bottom: 70px;
   }
   #course .wrap-puzzle .left-puzle{
     margin-bottom: 20px;
@@ -120,6 +120,12 @@
      justify-content: center !important;
      margin-top: 20px !important;
    }
+   #course  .wrap-portfolio img{
+     width: 80%;
+     display: block;
+     margin: 0 auto;
+     border-radius: 10px;
+   }
    #course #ss{
   
     top: calc(-25px + (0 - 30)*((100vw - 320px)/(1920 - 320))) !important;
@@ -153,7 +159,7 @@
    position: relative;
    z-index: 5;
    top:100px;
-   margin-bottom: 350px;
+   margin-bottom: 300px;
 }
 .wrap-puzzle .left-puzle{
   width: 33%;
@@ -162,8 +168,8 @@
 .wrap-puzzle .right-puzle{
   width: 33%;
 }
-#puzle3 p{
-max-width: 375px;
+#puzle3 p,#puzle1 p{
+max-width: 355px;
 }
 .right-part-p ul li span{
   position: relative;
@@ -274,11 +280,14 @@ flex-direction: row;
   top: calc(85px + (175 - 85)*((100vw - 320px)/(1920 - 320)));
   left: 25px;
   z-index: 55;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 22px;
 }
 .tabs-btn{
   margin-top: 50px;
+}
+.wrap-portfolio img{
+  width: 100%;
 }
 #course .tabs-btn .wrap-info{
   background: #B5F7B8;
@@ -622,9 +631,9 @@ strong {
   line-height: 43px;
 }
   #positions{
-    position: absolute;
+    position: fixed;
     top: 0px;
-    left: 0px;
+    left: 30px;
     opacity: 0.5;
     transition: 0.5s;
     transform: rotateZ(90deg);
