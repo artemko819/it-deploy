@@ -136,7 +136,12 @@
 
   }
  }
-
+ #puzle1{
+  margin-bottom: -35px;
+}
+#puzle3{
+  margin-bottom: -35px;
+}
  .up{
    display: inline-block;
    float: right;
@@ -441,7 +446,7 @@ nav #logo i{
 }
 
 .block .wrap-text h3{
-  font-size: calc(20px + (35 - 20)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(20px + (30 - 20)*((100vw - 320px)/(1920 - 320)));
   font-weight: bold;
 }
 #course.Junior
