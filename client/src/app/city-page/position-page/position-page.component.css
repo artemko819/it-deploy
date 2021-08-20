@@ -49,6 +49,7 @@
   #course .wrap-puzzle .text p {
     font-size: 15px;
     line-height: 15px;
+    max-width: 265px;
   }
   #course .wrap-puzzle .text {
     top:120px;
