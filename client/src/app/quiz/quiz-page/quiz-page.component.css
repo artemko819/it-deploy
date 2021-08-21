@@ -10,7 +10,21 @@
     display: flex;
     
 }
-
+form{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+form > *{
+    font-family: 'Montserrat', sans-serif;
+}
+#quiz ul{
+    border: 0;
+}
+#registered h1{
+    font-size: 20px;
+    line-height: 22px;
+}
 .wrap-q img{
     position: absolute;
 }

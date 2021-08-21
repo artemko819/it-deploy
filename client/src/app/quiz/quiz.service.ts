@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Message, Test } from '../admin/shared/interfaces';
 import { Quiz } from './quiz.model';
 
 @Injectable({
@@ -167,8 +170,18 @@ export class QuizService {
       ]
     }
   ]
-  constructor() { }
+  constructor(private http:HttpClient) { }
+  
+  fetch():Observable<Test[]>{
+    return this.http.get<Test[]>('/api/test/get-test')
+}
+create(test:Test):Observable<Test>{
 
+    return this.http.post<Test>('/api/test/add-test',test)
+}
+delete(consult:Test):Observable<Message>{
+    return this.http.delete<Message>(`/api/test/${consult._id}`)
+}
   getQuizzes(){
     return this.quizzes
   }

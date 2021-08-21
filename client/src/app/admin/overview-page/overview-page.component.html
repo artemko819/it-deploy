@@ -1,35 +1,20 @@
 <div class="container">
-    <div id="pdfTable" #pdfTable>
-      <h2>Angular HTML To PDF Generator Example - ItSolutionStuff.com</h2>
-                
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Website</th>
-          </tr>
-        </thead>
-        
-        <tbody>
-          <tr>
-            <td>Hardik</td>
-            <td>Savani</td>
-            <td>itsolutionstuff.com</td>
-          </tr>
-          <tr>
-            <td>Vimal</td>
-            <td>Kashiyani</td>
-            <td>hdtuto.com</td>
-          </tr>
-          <tr>
-            <td>Harshad</td>
-            <td>Pathak</td>
-            <td>nicesnippets.com</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <button class="btn btn-primary" (click)="downloadAsPDF()">Export To PDF</button>
+<h1>Заявочки с теста</h1>
+<div class="collection">
+  <div *ngFor="let consult of consults" class="collection-item">
+      <p>Имя ребенка: {{consult.name}}</p>
+      <p>Имя родителя: {{consult.name2}}</p>
+      <p>Email: {{consult.email}}</p>
+      <p>Телефон: {{consult.tel}}</p>
+      <p>Город: {{consult.city}}</p>
+      <p>Курс: {{consult.course}}</p>
+      <p>Дата: {{consult.date}}    
+      <i class="material-icons red-text"
+          (click)="onDeletePosition($event,consult)"
+       >delete</i>
+      </p>
   </div>
+</div>
+
+</div>
   

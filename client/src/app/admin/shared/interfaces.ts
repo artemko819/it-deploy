@@ -22,6 +22,17 @@ export interface Consult{
     date:string
 }
 
+export interface Test{
+    _id?:string,
+    name:string,
+    name2:string,
+    email: string,
+    tel: string,
+    city:string,
+    course:string,
+    date:string
+}
+
 
 export interface Message{
     message:string

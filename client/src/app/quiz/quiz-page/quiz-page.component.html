@@ -1,6 +1,6 @@
 <div id="quiz" [class.reg]='questionOn == false'>
     <div class="wrap-quiz-container">
-        <div class="register" *ngIf="questionOn == false">
+        <div class="register animate__animated animate__bounceInLeft" *ngIf="questionOn == false">
             <h1 class="center">В якому місті ви знаходитесь?</h1>
             <select class="browser-default" [(ngModel)]="city">
                 <option value="" disabled selected>Обери своє місто</option>
@@ -29,7 +29,7 @@
                 тесту</button>
 
         </div>
-        <div class="wrap-qustions" *ngIf="questionOn == true && rezult == false">
+        <div class="wrap-qustions " *ngIf="questionOn == true && rezult == false && regForm == false">
             <div class="wrap-q">
                 <img id="q" src="../../../assets/quiz/111.png" alt="1">
                 <img id="q2" src="../../../assets/quiz/222.png" alt="1">
@@ -46,10 +46,10 @@
             </div>
             <div class="block">
                 <ul class="collection">
-                    <li class="collection-item" *ngFor="let  quiz of quizzes[quizCouter].answer;index as i">
+                    <li class="collection-item animate__animated animate__jackInTheBox" *ngFor="let  quiz of quizzes[quizCouter].answer;index as i">
                         <p>
                             <label>
-                                <input class="with-gap" name="group3" type="radio" (change)="onAnswer(quiz.correct)" />
+                                <input class="with-gap" name="group3"  type="radio" (change)="onAnswer(quiz.correct)" />
                                 <span>{{quiz.option}}</span>
                             </label>
                         </p>
@@ -61,7 +61,7 @@
                     (click)="rezultQuiz()">Результат</button>
             </div>
         </div>
-        <div id="rezult" *ngIf='rezult'>
+        <div id="rezult" *ngIf='rezult' class="animate__animated animate__bounceInLeft">
             <div class="wrap-content">        
                 <div class="rez">
                     <h5>Ваш результат:</h5>
@@ -77,9 +77,62 @@
                 </div>
                  <div class="podarok">
                     <h4>Отримай безкоштовний подарунок за проходження тесту</h4>
-                    <img id='pod' class="animate__animated animate__tada animate__infinite	infinite" src="../../../assets/quiz/giftbox.png" loading="lazy" alt="logo">
+                    <img id='pod' (click)="regQuiz()" class="animate__animated animate__tada animate__infinite	infinite" src="../../../assets/quiz/giftbox.png" loading="lazy" alt="logo">
                 </div> 
             </div>            
+        </div>
+        <div id="registered" class="animate__animated animate__bounceInRight" *ngIf="regForm == true">
+            <h1 class="center">«Отримай білет на безкоштовний мастер-клас у твоєму місті по розробці сайтів. 
+                Та отримай свій подарунок на зустрічі»</h1>
+                <form [formGroup]="formConsult" (ngSubmit)="submitConsult()" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input formControlName="name" id="icon_prefix" type="text"
+                                [ngClass]="{'invalid':formConsult.get('name').invalid && formConsult.get('name').touched}">
+                            <label for="icon_prefix">Им'я</label>
+                            <span class="helper-text red-text"
+                                *ngIf="formConsult.get('name').invalid && formConsult.get('name').touched">
+                                <span *ngIf="formConsult.get('name').errors['required']">Им'я не може бути пустым</span>
+                            </span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input formControlName="name2" id="icon_prefix-fazer" type="text"
+                                [ngClass]="{'invalid':formConsult.get('name2').invalid && formConsult.get('name2').touched}">
+                            <label for="icon_prefix-fazer">Им'я одного з батьків</label>
+                            <span class="helper-text red-text"
+                                *ngIf="formConsult.get('name2').invalid && formConsult.get('name2').touched">
+                                <span *ngIf="formConsult.get('name2').errors['required']">Им'я не може бути пустым</span>
+                            </span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input formControlName="tel" id="icon_telephone" type="tel"
+                                [ngClass]="{'invalid':formConsult.get('tel').invalid && formConsult.get('tel').touched}">
+                            <label for="icon_telephone">Номер телефону батьків</label>
+                            <span class="helper-text red-text"
+                                *ngIf="formConsult.get('tel').invalid && formConsult.get('tel').touched">
+                                <span *ngIf="formConsult.get('tel').errors['required']">Телефон не може бути
+                                    пустим</span>
+                                <span *ngIf="formConsult.get('tel').errors['pattern']">Телефон складаеться з цифр</span>
+                            </span>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input formControlName="email" id="icon_email" type="email"
+                                [ngClass]="{'invalid':formConsult.get('email').invalid && formConsult.get('email').touched}">
+                            <label for="icon_email">Еmail</label>
+                            <span class="helper-text red-text"
+                                *ngIf="formConsult.get('email').invalid && formConsult.get('email').touched">
+                                <span *ngIf="formConsult.get('email').errors['required']">Email не може бути пустим</span>
+                                <span *ngIf="formConsult.get('email').errors['email']">Email не коректний</span>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" id="quiz-reg" class="green modal-action btn waves-effect"
+                        [disabled]="formConsult.invalid || formConsult.disabled">Зареєструватися на зустріч</button>
+                </form>
         </div>
         
     </div>

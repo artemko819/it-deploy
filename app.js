@@ -16,6 +16,7 @@ const orderRoutes = require('./routes/order')
 const positionRoutes = require('./routes/position')
 const personRoutes = require('./routes/person')
 const consultRoutes = require('./routes/consult')
+const testsRoutes = require('./routes/tests')
 const app = express()
 
 const DB_USER = 'itbd';
@@ -52,7 +53,7 @@ app.use('/api/order',orderRoutes)
 app.use('/api/position',positionRoutes)
 app.use('/api/person',personRoutes)
 app.use('/api/consult',consultRoutes)
-
+app.use('/api/test',testsRoutes)
 if(process.env.NODE_ENV === 'production'){
  app.use(express.static('client/dist/it-start'))
  app.get('*',(req,res)=>{
