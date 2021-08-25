@@ -271,7 +271,7 @@
  }
  
  .city .heading{
-  font-size: calc(30px + (50 - 30)*((100vw - 320px)/(1920 - 320)));
+  font-size: calc(30px + (40 - 30)*((100vw - 320px)/(1920 - 320)));
   position: absolute;
   -webkit-text-stroke: 1px rgb(5, 83, 11);
   width: 100%;

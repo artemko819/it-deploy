@@ -18,11 +18,13 @@ export class QuizPageComponent implements OnInit {
   correctAnswer = 0
   incorrectAnswer = 0
   rezult = false
+  school = ''
   questionOn = false
   modal: MaterialInstance
   city = ''
   regForm = false
   course=''
+  video = false
   formConsult: FormGroup
   constructor(
     private quizService:QuizService, 
@@ -47,6 +49,7 @@ export class QuizPageComponent implements OnInit {
     const newPerson: Test = {
       name: this.formConsult.value.name,
       name2:this.formConsult.value.name,
+      school:this.school,
       email: this.formConsult.value.email,
       tel: this.formConsult.value.tel,
       city: this.city,

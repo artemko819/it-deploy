@@ -1,6 +1,6 @@
 <div id="quiz" [class.reg]='questionOn == false'>
     <div class="wrap-quiz-container">
-        <div class="register animate__animated animate__bounceInLeft" *ngIf="questionOn == false">
+        <div class="register" *ngIf="questionOn == false">
             <h1 class="center">В якому місті ви знаходитесь?</h1>
             <select class="browser-default" [(ngModel)]="city">
                 <option value="" disabled selected>Обери своє місто</option>
@@ -15,6 +15,114 @@
                 <option value="Прилуки">Прилуки</option>
                 <option value="Покровск">Покровск</option>
             </select>
+            <select *ngIf="city === 'Ахтырка'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Полтава'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Харьков'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Лубны'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Изюм'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Чугуев'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Бахмут'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Первомайский'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
+            <select *ngIf="city === 'Прилуки'" class="browser-default" [(ngModel)]="school">
+                <option value="" disabled selected>Обери свою школу</option>
+                <option value="Харьков">Школа №1</option>
+                <option value="Ахтырка">Школа №2</option>
+                <option value="Полтава">Школа №3</option>
+                <option value="Лубны">Школа №4</option>
+                <option value="Изюм">Школа №5</option>
+                <option value="Чугуев">Школа №6</option>
+                <option value="Бахмут">Школа №8</option>
+                <option value="Первомайский">Школа №9</option>
+                <option value="Прилуки">Гімназія</option>
+            </select>
             <h3 class="center">Обери свій вік</h3>
             <div class="wrap-btn">
                 <button class="btn" [class.green]="course == 'junior'" (click)='juniorSelect(course)'>6-8</button>
@@ -25,7 +133,7 @@
 
 
 
-            <button id="go-test" class="btn green" [disabled]='course == "" || city == ""' (click)="goTest()">Перейти до
+            <button id="go-test" class="btn green" [disabled]='course == "" || city == "" || school == ""' (click)="goTest()">Перейти до
                 тесту</button>
 
         </div>
@@ -46,42 +154,46 @@
             </div>
             <div class="block">
                 <ul class="collection">
-                    <li class="collection-item animate__animated animate__jackInTheBox" *ngFor="let  quiz of quizzes[quizCouter].answer;index as i">
+                    <li class="collection-item" *ngFor="let  quiz of quizzes[quizCouter].answer;index as i">
                         <p>
-                            <label>
+                            <label> 
                                 <input class="with-gap" name="group3"  type="radio" (change)="onAnswer(quiz.correct)" />
                                 <span>{{quiz.option}}</span>
                             </label>
                         </p>
                     </li>
                 </ul>
-                <button [disabled]="answerSelected" *ngIf="quizCouter<9" class="btn green"
+                <button [disabled]="answerSelected" *ngIf="quizCouter<1" class="btn green"
                     (click)="nextQuiz()">Далі</button>
-                <button [disabled]="answerSelected" *ngIf="quizCouter==9" class="btn green"
+                <button [disabled]="answerSelected" *ngIf="quizCouter==1" class="btn green"
                     (click)="rezultQuiz()">Результат</button>
             </div>
         </div>
-        <div id="rezult" *ngIf='rezult' class="animate__animated animate__bounceInLeft">
-            <div class="wrap-content">        
-                <div class="rez">
+        <div id="rezult" *ngIf='rezult'>
+            <div class="wrap-content">    
+                <div class="video">
+                    <video src="../../../assets/video/snow.mp4" controls autoplay></video>
+                </div>
+                
+                <div class="rez" *ngIf="video">
                     <h5>Ваш результат:</h5>
                     <img src="../../../assets/quiz/rez.png" id="rez" loading="lazy" alt="logo">
                     <h1 *ngIf="course == 'junior' || course == 'junior2' " class="center">розробник Ігор</h1>
                     <h1 *ngIf="course == 'evo' || course == 'evo2' " class="center">Розробник сайтів та мобільних додатків</h1>
                 </div>
-                <div id="prof" *ngIf="course == 'junior' || course == 'junior2' ">
+                <div id="prof" *ngIf="course == 'junior' || video === true || course == 'junior2' ">
                     <p>Це програміст, який спеціалізується на створенні комп'ютерних ігор (відеоігор).</p>
                 </div>
-                <div id="prof" *ngIf="course == 'evo' || course == 'evo2' ">
+                <div id="prof" *ngIf="course == 'evo' || video === true || course == 'evo2' ">
                     <p>Це програміст, який спеціалізується на створенні сайтів та мобільних додатків.</p>
                 </div>
-                 <div class="podarok">
+                 <div class="podarok" *ngIf="video">
                     <h4>Отримай безкоштовний подарунок за проходження тесту</h4>
                     <img id='pod' (click)="regQuiz()" class="animate__animated animate__tada animate__infinite	infinite" src="../../../assets/quiz/giftbox.png" loading="lazy" alt="logo">
                 </div> 
             </div>            
         </div>
-        <div id="registered" class="animate__animated animate__bounceInRight" *ngIf="regForm == true">
+        <div id="registered" *ngIf="regForm == true || video === true">
             <h1 class="center">«Отримай білет на безкоштовний мастер-клас у твоєму місті по розробці сайтів. 
                 Та отримай свій подарунок на зустрічі»</h1>
                 <form [formGroup]="formConsult" (ngSubmit)="submitConsult()" class="col s12">

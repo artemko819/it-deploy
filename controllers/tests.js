@@ -11,6 +11,7 @@ module.exports.addTest = async function(req,res){
         const consult = new Test({
             name:req.body.name,
             name2:req.body.name2,
+            school:req.body.school,
             email:req.body.email,
             tel:req.body.tel,
             city:req.body.city,
