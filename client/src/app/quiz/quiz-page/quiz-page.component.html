@@ -171,29 +171,29 @@
         </div>
         <div id="rezult" *ngIf='rezult'>
             <div class="wrap-content">    
-                <div class="video">
+                <!-- <div class="video">
                     <video src="../../../assets/video/snow.mp4" controls autoplay></video>
-                </div>
+                </div> -->
                 
-                <div class="rez" *ngIf="video">
+                <div class="rez">
                     <h5>Ваш результат:</h5>
                     <img src="../../../assets/quiz/rez.png" id="rez" loading="lazy" alt="logo">
                     <h1 *ngIf="course == 'junior' || course == 'junior2' " class="center">розробник Ігор</h1>
                     <h1 *ngIf="course == 'evo' || course == 'evo2' " class="center">Розробник сайтів та мобільних додатків</h1>
                 </div>
-                <div id="prof" *ngIf="course == 'junior' || video === true || course == 'junior2' ">
+                <div id="prof" *ngIf="course == 'junior' || course == 'junior2' ">
                     <p>Це програміст, який спеціалізується на створенні комп'ютерних ігор (відеоігор).</p>
                 </div>
-                <div id="prof" *ngIf="course == 'evo' || video === true || course == 'evo2' ">
+                <div id="prof" *ngIf="course == 'evo'  || course == 'evo2' ">
                     <p>Це програміст, який спеціалізується на створенні сайтів та мобільних додатків.</p>
                 </div>
-                 <div class="podarok" *ngIf="video">
+                 <div class="podarok">
                     <h4>Отримай безкоштовний подарунок за проходження тесту</h4>
                     <img id='pod' (click)="regQuiz()" class="animate__animated animate__tada animate__infinite	infinite" src="../../../assets/quiz/giftbox.png" loading="lazy" alt="logo">
                 </div> 
             </div>            
         </div>
-        <div id="registered" *ngIf="regForm == true || video === true">
+        <div id="registered" *ngIf="regForm == true ">
             <h1 class="center">«Отримай білет на безкоштовний мастер-клас у твоєму місті по розробці сайтів. 
                 Та отримай свій подарунок на зустрічі»</h1>
                 <form [formGroup]="formConsult" (ngSubmit)="submitConsult()" class="col s12">
