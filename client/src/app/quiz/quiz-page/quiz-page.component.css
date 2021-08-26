@@ -3,12 +3,25 @@
     background-size: cover; */
     background: linear-gradient(90deg, rgba(9,164,88,1) 0%, rgba(74,92,161,1) 55%, rgb(116 59 152) 100%);
     height: 100vh;
-    
+    font-family: 'Conv_Montserrat-Regular';
     width: 100vw;
     /* overflow: hidden; */
     background-position-x: 0;
     display: flex;
     
+}
+#quiz button{
+    position: relative;
+    z-index: 999;
+}
+#quiz img{
+    z-index: 1;
+}
+#quiz *{
+    /* text-transform: uppercase; */
+}#quiz i{
+    text-transform: initial;
+    font-family: 'Material Icons' !important;
 }
 .video video{
     width: 300px;
@@ -19,7 +32,7 @@ form{
     border-radius: 10px;
 }
 form > *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Conv_Montserrat-Regular';
 }
 #quiz ul{
     border: 0;
@@ -36,7 +49,7 @@ form > *{
     transform: rotateZ(14deg);
 }
 #q2{
-    top: 100px;
+    top: 10px;
     transform: rotateZ(-14deg);
     right: 40%;
 }
@@ -51,7 +64,7 @@ form > *{
     left: 5%;
 }
 #q5{
-    bottom: 20px;
+    bottom: 5px;
     transform: rotateZ(14deg);
     right: 40%;
 }
@@ -94,15 +107,14 @@ select{
     border-radius: 5px;
     line-height: 16px !important;  
     color: rgb(24, 24, 24);
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Conv_Montserrat-Regular';
     margin-bottom: 20px;
 }
 option {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-family: 'Montserrat', sans-serif;
-
+	font-family: 'Conv_Montserrat-Regular';
 }
 .register{
     margin-top: -100px;
@@ -122,7 +134,7 @@ option {
 }
 .wrap-btn .btn{
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Conv_Montserrat-Regular';
     font-size: 16px;
     background-color: #747978;
     letter-spacing: 2px;
@@ -140,7 +152,7 @@ option {
     border: 2px solid #14b41c;
 }
 label span{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Conv_Montserrat-Regular';
     color: #000;
     display: inline-block;
     width: 100%;
@@ -152,7 +164,7 @@ label span{
     padding: 15px 0 15px 0; 
     color: #333;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Conv_Montserrat-Regular';
     line-height:18px;
     padding: 10px;
     margin-top: 0px;
@@ -171,7 +183,7 @@ label span{
     padding: 10px 0 10px 0;
     font-weight: bold;
     color:#333;
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Conv_Montserrat-Regular';
 
 }
 .block{
@@ -188,28 +200,36 @@ width: 100%;
 }
 
 #rezult{
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Conv_Montserrat-Regular';
 }
 #rezult h5{
     text-align: center;
     font-weight: bold;
-    background: #fff;
     font-size: 18px;
     padding: 10px;
     border-radius: 8px;
-    margin-bottom: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: -30px;
 }
 #rezult h1{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
+    
     background: none;
     width: 43%;
     top: -210px;
     left: -2px;
     margin: 0 auto;
     line-height: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+#prof.evo{
+    margin-top: -80px;
+}
+#rezult p{
+    font-weight: bold;
 }
 #rezult #pod{
     width: 30%;

@@ -6,7 +6,7 @@
                 <option value="" disabled selected>Обери своє місто</option>
                 <option value="Харьков">Харків</option>
                 <option value="Ахтырка">Охтирка</option>
-                <option value="Полтава">Полтава</option>
+                <option value="Мерефа">Мерефа</option>
                 <option value="Лубны">Лубни</option>
                 <option value="Изюм">Ізюм</option>
                 <option value="Чугуев">Чугуїв</option>
@@ -17,27 +17,27 @@
             </select>
             <select *ngIf="city === 'Ахтырка'" class="browser-default" [(ngModel)]="school">
                 <option value="" disabled selected>Обери свою школу</option>
-                <option value="">Школа №1</option>
-                <option value="Ахтырка">Школа №2</option>
-                <option value="Полтава">Школа №3</option>
-                <option value="Лубны">Школа №4</option>
-                <option value="Изюм">Школа №5</option>
-                <option value="Чугуев">Школа №6</option>
-                <option value="Бахмут">Школа №8</option>
-                <option value="Первомайский">Школа №9</option>
-                <option value="Прилуки">Гімназія</option>
+                <option value="1">Школа №1</option>
+                <option value="2">Школа №2</option>
+                <option value="3">Школа №3</option>
+                <option value="4">Школа №4</option>
+                <option value="5">Школа №5</option>
+                <option value="6">Школа №6</option>
+                <option value="7">Школа №8</option>
+                <option value="8">Школа №9</option>
+                <option value="9">Гімназія</option>
             </select>
-            <select *ngIf="city === 'Полтава'" class="browser-default" [(ngModel)]="school">
+            <select *ngIf="city === 'Мерефа'" class="browser-default" [(ngModel)]="school">
                 <option value="" disabled selected>Обери свою школу</option>
-                <option value="Харьков">Школа №1</option>
-                <option value="Ахтырка">Школа №2</option>
-                <option value="Полтава">Школа №3</option>
-                <option value="Лубны">Школа №4</option>
-                <option value="Изюм">Школа №5</option>
-                <option value="Чугуев">Школа №6</option>
-                <option value="Бахмут">Школа №8</option>
-                <option value="Первомайский">Школа №9</option>
-                <option value="Прилуки">Гімназія</option>
+                <option value="1">Школа №1</option>
+                <option value="2">Школа №2</option>
+                <option value="3">Школа №3</option>
+                <option value="4">Школа №4</option>
+                <option value="5">Школа №5</option>
+                <option value="6">Школа №6</option>
+                <option value="7">Школа №8</option>
+                <option value="8">Школа №9</option>
+                <option value="9">Гімназія</option>
             </select>
             <select *ngIf="city === 'Харьков'" class="browser-default" [(ngModel)]="school">
                 <option value="" disabled selected>Обери свою школу</option>
@@ -113,15 +113,15 @@
             </select>
             <select *ngIf="city === 'Прилуки'" class="browser-default" [(ngModel)]="school">
                 <option value="" disabled selected>Обери свою школу</option>
-                <option value="Харьков">Школа №1</option>
-                <option value="Ахтырка">Школа №2</option>
-                <option value="Полтава">Школа №3</option>
-                <option value="Лубны">Школа №4</option>
-                <option value="Изюм">Школа №5</option>
-                <option value="Чугуев">Школа №6</option>
-                <option value="Бахмут">Школа №8</option>
-                <option value="Первомайский">Школа №9</option>
-                <option value="Прилуки">Гімназія</option>
+                <option value="Харьков">Гімназія № 1</option>
+                <option value="Ахтырка">ЗОШ №2</option>
+                <option value="Полтава">ЗОШ №3</option>
+                <option value="Изюм">Гімназія № 5</option>
+                <option value="Первомайский">ЗОШ №9</option>
+                <option value="Первомайский">ЗОШ №12</option>
+                <option value="Первомайский">ЗОШ №13</option>
+                <option value="Первомайский">ЗОШ №14</option>
+                <option value="Первомайский">ЗОШ №15</option>
             </select>
             <h3 class="center">Обери свій вік</h3>
             <div class="wrap-btn">
@@ -147,6 +147,9 @@
                 <img id="q6" src="../../../assets/quiz/222.png" alt="1">
             </div>         
             <div class="questions">
+                <p class="center red-text animate__animated animate__tada" *ngIf="quizCouter >= 2 && quizCouter<=3">так тримати</p>
+                <p class="center yellow-text animate__animated animate__tada" *ngIf="quizCouter >= 4 && quizCouter < 7">цікаво, що буде за результат</p>
+                <p class="center red-text animate__animated animate__tada" *ngIf="quizCouter >= 7">молодець, залишилося ще трохы</p>
                 <div class="progress green darken-4">
                     <div class="determinate green accent-4"  [style.width] = 'quizCouter*10 + "%"'></div>
                 </div>
@@ -163,9 +166,9 @@
                         </p>
                     </li>
                 </ul>
-                <button [disabled]="answerSelected" *ngIf="quizCouter<1" class="btn green"
+                <button [disabled]="answerSelected" *ngIf="quizCouter<9" class="btn green"
                     (click)="nextQuiz()">Далі</button>
-                <button [disabled]="answerSelected" *ngIf="quizCouter==1" class="btn green"
+                <button [disabled]="answerSelected" *ngIf="quizCouter==9" class="btn green"
                     (click)="rezultQuiz()">Результат</button>
             </div>
         </div>
@@ -178,13 +181,13 @@
                 <div class="rez">
                     <h5>Ваш результат:</h5>
                     <img src="../../../assets/quiz/rez.png" id="rez" loading="lazy" alt="logo">
-                    <h1 *ngIf="course == 'junior' || course == 'junior2' " class="center">розробник Ігор</h1>
-                    <h1 *ngIf="course == 'evo' || course == 'evo2' " class="center">Розробник сайтів та мобільних додатків</h1>
+                    <h1 *ngIf="course == 'junior' || course == 'junior2' " class="center">розробник Ігор на unity 3d</h1>
+                    <h1 *ngIf="course == 'evo' || course == 'evo2' " class="center">Розробник web сайтів та мобільних додатків</h1>
                 </div>
                 <div id="prof" *ngIf="course == 'junior' || course == 'junior2' ">
                     <p>Це програміст, який спеціалізується на створенні комп'ютерних ігор (відеоігор).</p>
                 </div>
-                <div id="prof" *ngIf="course == 'evo'  || course == 'evo2' ">
+                <div id="prof" class="evo" *ngIf="course == 'evo'  || course == 'evo2' ">
                     <p>Це програміст, який спеціалізується на створенні сайтів та мобільних додатків.</p>
                 </div>
                  <div class="podarok">
@@ -194,8 +197,7 @@
             </div>            
         </div>
         <div id="registered" *ngIf="regForm == true ">
-            <h1 class="center">«Отримай білет на безкоштовний мастер-клас у твоєму місті по розробці сайтів. 
-                Та отримай свій подарунок на зустрічі»</h1>
+            <h1 class="center">Заповни форму, щоб отримати запрошення на безкоштовний захід «Час коду»</h1>
                 <form [formGroup]="formConsult" (ngSubmit)="submitConsult()" class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
@@ -212,10 +214,10 @@
                             <i class="material-icons prefix">account_circle</i>
                             <input formControlName="name2" id="icon_prefix-fazer" type="text"
                                 [ngClass]="{'invalid':formConsult.get('name2').invalid && formConsult.get('name2').touched}">
-                            <label for="icon_prefix-fazer">Им'я одного з батьків</label>
+                            <label for="icon_prefix-fazer">Iм'я одного з батьків</label>
                             <span class="helper-text red-text"
                                 *ngIf="formConsult.get('name2').invalid && formConsult.get('name2').touched">
-                                <span *ngIf="formConsult.get('name2').errors['required']">Им'я не може бути пустым</span>
+                                <span *ngIf="formConsult.get('name2').errors['required']">Iм'я не може бути пустым</span>
                             </span>
                         </div>
                         <div class="input-field col s12">
