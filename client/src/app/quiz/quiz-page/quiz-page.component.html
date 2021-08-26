@@ -204,10 +204,10 @@
                             <i class="material-icons prefix">account_circle</i>
                             <input formControlName="name" id="icon_prefix" type="text"
                                 [ngClass]="{'invalid':formConsult.get('name').invalid && formConsult.get('name').touched}">
-                            <label for="icon_prefix">Им'я</label>
+                            <label for="icon_prefix">Ім'я</label>
                             <span class="helper-text red-text"
                                 *ngIf="formConsult.get('name').invalid && formConsult.get('name').touched">
-                                <span *ngIf="formConsult.get('name').errors['required']">Им'я не може бути пустым</span>
+                                <span *ngIf="formConsult.get('name').errors['required']">Ім'я не може бути пустым</span>
                             </span>
                         </div>
                         <div class="input-field col s12">
