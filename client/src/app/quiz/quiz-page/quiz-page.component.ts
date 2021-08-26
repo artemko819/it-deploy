@@ -32,8 +32,8 @@ export class QuizPageComponent implements OnInit {
      private route: ActivatedRoute) {
 
    }
-   
-  ngOnInit(): void {
+   videoPlay = true;
+  ngOnInit(): void {  
     const body = document.getElementById("app-main")
     body.classList.add("quiz"); 
     this.quizzes = this.quizService.getQuizzes()
@@ -73,6 +73,7 @@ export class QuizPageComponent implements OnInit {
   regQuiz(){
     this.rezult = false
    this.regForm = true
+ 
   }
   onAnswer(option: boolean){
     this.answerSelected = false
@@ -102,6 +103,12 @@ export class QuizPageComponent implements OnInit {
   }
   rezultQuiz(){
     this.rezult = true
+    this.video = true
+    if(this.video === true){
+      setTimeout(()=>{
+        this.videoPlay = false
+      },4000)
+    }
     // this.router.navigate(['rezult'], { relativeTo: this.route })
   }
 }
