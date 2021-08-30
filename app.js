@@ -18,6 +18,7 @@ const personRoutes = require('./routes/person')
 const consultRoutes = require('./routes/consult')
 const testsRoutes = require('./routes/tests')
 const app = express()
+const expressStaticGzip = require("express-static-gzip");
 
 const DB_USER = 'itbd';
 const PASSWORD = encodeURIComponent('RsXmAG18YkkEDtuU');
@@ -56,6 +57,7 @@ app.use('/api/consult',consultRoutes)
 app.use('/api/test',testsRoutes)
 if(process.env.NODE_ENV === 'production'){
  app.use(express.static('client/dist/it-start'))
+ app.use("/", expressStaticGzip("client/dist/it-start"));
  app.get('*',(req,res)=>{
    res.sendFile(
      path.resolve(
