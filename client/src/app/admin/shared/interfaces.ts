@@ -4,6 +4,7 @@ export interface User{
 }
 
 export interface TestSchool{
+    _id?:string,
     school:string,
     city:string,
 }

@@ -1,4 +1,24 @@
 <div class="container">
+<h1>Города и школы </h1>
+<table>
+  <thead>
+    <tr>
+        <th>Количество начатих тестов</th>
+        <th>Школа</th>
+        <th>Город</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let school of schools;let i = index">
+      <td>{{i+1}}</td>
+      <td>Школа№ : {{school.school}}</td>
+      
+      <td>Город : {{school.city}}   <i class="material-icons red-text"
+        (click)="onDeleteSchool($event,school)"
+     >delete</i></td>
+    </tr>   
+  </tbody>
+</table>
 <h1>Заявочки с теста</h1>
 <div class="collection">
   <div *ngFor="let consult of consults" class="collection-item">

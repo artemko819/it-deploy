@@ -39,7 +39,7 @@ export class QuizPageComponent implements OnInit {
     this.quizzes = this.quizService.getQuizzes()
     this.formConsult = new FormGroup({
       name: new FormControl(null, Validators.required),
-      name2:new FormControl(null, Validators.required),
+      name2: new FormControl(null, Validators.required),
       tel: new FormControl(null, [Validators.required, Validators.pattern('[- +()0-9]+')]),
       email: new FormControl(null, [Validators.required, Validators.email]),
     })
@@ -48,7 +48,7 @@ export class QuizPageComponent implements OnInit {
     this.formConsult.disable()
     const newPerson: Test = {
       name: this.formConsult.value.name,
-      name2:this.formConsult.value.name,
+      name2:this.formConsult.value.name2,
       school:this.school,
       email: this.formConsult.value.email,
       tel: this.formConsult.value.tel,
@@ -74,7 +74,7 @@ export class QuizPageComponent implements OnInit {
       city: this.city,
     }
     this.quizService.createSchool(newSchool).subscribe(person => {
-      MaterialService.toast("Запасайся водой зазарз почнеться.")
+      MaterialService.toast("Запасайся водой, зазарз почнеться.")
       // this.modal.close()
     },
         err => {

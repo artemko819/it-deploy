@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { QuizService } from 'src/app/quiz/quiz.service';
 import { MaterialService } from '../shared/classes/material.service';
-import { Test } from '../shared/interfaces';
+import { Test, TestSchool } from '../shared/interfaces';
 // import jsPDF from 'jspdf';
 // import pdfMake from 'pdfmake/build/pdfmake';
 // import pdfFonts from 'pdfmake/build/vfs_fonts';
@@ -15,6 +15,7 @@ import { Test } from '../shared/interfaces';
 export class OverviewPageComponent implements OnInit {
 
   consults
+  schools
   constructor(private consultService: QuizService) { }
 
   ngOnInit(): void {
@@ -22,6 +23,25 @@ export class OverviewPageComponent implements OnInit {
       this.consults = person
       console.log(this.consults)
     })
+    this.consultService.fetchSchool().subscribe(person=>{
+      this.schools = person
+    })
+  }
+  onDeleteSchool(event:Event,consult: TestSchool){
+    event.stopPropagation()
+    const decision = window.confirm(`Удалить заявку "${consult.school}" ?`)
+    if(decision){
+      this.consultService.deleteSchool(consult).subscribe(
+        response=>{
+          const idx = this.consults.findIndex(p=> p._id === consult._id)
+          this.consults.splice(idx,1)
+          MaterialService.toast(response.message)
+        },
+        error=>{
+          MaterialService.toast(error.error.message)
+        }
+      )
+    }
   }
   onDeletePosition(event:Event,consult: Test) {
     event.stopPropagation()

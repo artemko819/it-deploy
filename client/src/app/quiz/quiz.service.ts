@@ -188,8 +188,8 @@ fetchSchool():Observable<TestSchool[]>{
 createSchool(test:TestSchool):Observable<TestSchool>{
   return this.http.post<TestSchool>('/api/test-school/add-test',test)
 }
-deleteSchool(consult:Test):Observable<Message>{
-  return this.http.delete<Message>(`/api/test-school/test/${consult._id}`)
+deleteSchool(consult:TestSchool):Observable<Message>{
+  return this.http.delete<Message>(`/api/test-school/${consult._id}`)
 }
   getQuizzes(){
     return this.quizzes
