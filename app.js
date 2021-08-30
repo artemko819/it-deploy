@@ -80,6 +80,7 @@ if(process.env.NODE_ENV === 'production'){
   })
   http.createServer( function(req,res){
     res.writeHead(301,{"location":"https://"+req.headers['host']+req.url})
+    res.redirect('https://' + req.headers.host + req.url);
     res.end()
   }).listen(80)
 }else if(process.env.NODE_ENV === "developmant"){
