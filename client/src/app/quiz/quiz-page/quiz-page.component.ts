@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MaterialInstance, MaterialService } from 'src/app/admin/shared/classes/material.service';
-import { Consult, Test } from 'src/app/admin/shared/interfaces';
+import { Test, TestSchool } from 'src/app/admin/shared/interfaces';
 import { Quiz } from '../quiz.model';
 import { QuizService } from '../quiz.service';
 
@@ -69,6 +69,19 @@ export class QuizPageComponent implements OnInit {
   }
   goTest(){
     this.questionOn = true
+    const newSchool:TestSchool = {
+      school:this.school,
+      city: this.city,
+    }
+    this.quizService.createSchool(newSchool).subscribe(person => {
+      MaterialService.toast("Запасайся водой зазарз почнеться.")
+      // this.modal.close()
+    },
+        err => {
+        MaterialService.toast(err.error.message)
+        this.formConsult.enable()
+      }
+    )
   }
   regQuiz(){
     this.rezult = false

@@ -2,6 +2,11 @@ export interface User{
     email: string,
     password: string
 }
+
+export interface TestSchool{
+    school:string,
+    city:string,
+}
 export interface Person{
     _id?:string
     name:string
@@ -33,6 +38,7 @@ export interface Test{
     course:string,
     date:string
 }
+
 
 
 export interface Message{

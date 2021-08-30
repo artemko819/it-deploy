@@ -1,5 +1,6 @@
 const express  = require('express')
 const bodyParser = require("body-parser")
+const compression = require('compression')
 const cors = require("cors")
 const path = require('path')
 const morgan = require("morgan")
@@ -17,8 +18,8 @@ const positionRoutes = require('./routes/position')
 const personRoutes = require('./routes/person')
 const consultRoutes = require('./routes/consult')
 const testsRoutes = require('./routes/tests')
+const testSchoolRoutes = require('./routes/testSchool')
 const app = express()
-const expressStaticGzip = require("express-static-gzip");
 
 const DB_USER = 'itbd';
 const PASSWORD = encodeURIComponent('RsXmAG18YkkEDtuU');
@@ -46,7 +47,7 @@ app.use('/uploads',express.static('uploads'))
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use(cors())
-
+app.use(compression())
 app.use('/api/auth',authRoutes)
 app.use('/api/analytics',analyticsRoutes)
 app.use('/api/category',categoryRoutes)
@@ -55,9 +56,10 @@ app.use('/api/position',positionRoutes)
 app.use('/api/person',personRoutes)
 app.use('/api/consult',consultRoutes)
 app.use('/api/test',testsRoutes)
+app.use('/api/test-school',testSchoolRoutes)
 if(process.env.NODE_ENV === 'production'){
  app.use(express.static('client/dist/it-start'))
- app.use("/", expressStaticGzip("client/dist/it-start"));
+
  app.get('*',(req,res)=>{
    res.sendFile(
      path.resolve(
