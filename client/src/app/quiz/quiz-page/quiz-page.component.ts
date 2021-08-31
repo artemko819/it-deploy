@@ -74,7 +74,7 @@ export class QuizPageComponent implements OnInit {
       city: this.city,
     }
     this.quizService.createSchool(newSchool).subscribe(person => {
-      MaterialService.toast("Запасайся водой, зазарз почнеться.")
+      MaterialService.toast("Пройди тест та отримай подарунок")
       // this.modal.close()
     },
         err => {
@@ -116,12 +116,12 @@ export class QuizPageComponent implements OnInit {
   }
   rezultQuiz(){
     this.rezult = true
-    this.video = true
-    if(this.video === true){
-      setTimeout(()=>{
-        this.videoPlay = false
-      },4000)
-    }
+    // this.video = true
+    // if(this.video === true){
+    //   setTimeout(()=>{
+    //     this.videoPlay = false
+    //   },4000)
+    // }
     // this.router.navigate(['rezult'], { relativeTo: this.route })
   }
 }
