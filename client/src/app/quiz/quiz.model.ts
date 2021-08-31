@@ -1,4 +1,4 @@
 export class Quiz {
     question:string;
-    answer:{option:string,correct:boolean} [];
+    answer:{option:string,proffesion:[{design:boolean},{web:boolean},{game:boolean}]} [];
 }

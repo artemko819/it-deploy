@@ -11,162 +11,165 @@ export class QuizService {
   quizzes:Quiz[] = [
     {
       question:'Як би виглядав робот вашої мрії?',
-      answer:[
-        {option:'Виконував твоє шкільне домашнє завдання',correct:false},
-        {option:'Танцював',correct:true},
-        {option:'Прибирав в твоїй кімнаті',correct:false}
+      answer:[       
+        {option:'Танцював',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Прибирав в твоїй кімнаті',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Виконував твоє шкільне домашнє завдання',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'У дитинстві ви захоплено грали з конструктором?',
       answer:[
-        {option:'Так',correct:true},
-        {option:'Ні',correct:false},        
-        {option:'У мене не було конструктора',correct:false}
+        {option:'Так',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Ні',proffesion:[{design:false},{web:false},{game:true}]},      
+        {option:'У мене не було конструктора',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Яке хобі у вас зараз?',
       answer:[
-        {option:'Грати в комп`ютерні ігри',correct:false},
-        {option:'Малювати',correct:false},
-        {option:'Дивитися корисні відео',correct:true},
+        {option:'Малювати',proffesion:[{design:false},{web:false},{game:true}]},     
+        {option:'Дивитися корисні відео',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Грати в комп`ютерні ігри',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Що вам більше подобається?',
       answer:[
-        {option:'Що-небудь розбирати',correct:false},
-        {option:'Фотографувати',correct:false},
-        {option:'Запрограмувати комп`ютер',correct:true},
+        {option:'Фотографувати',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Запрограмувати комп`ютер',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Що-небудь розбирати',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Які ваші найкращі якості?',
       answer:[
-        {option:'Хороша фантазія',correct:false},
-        {option:'Навички командної роботи',correct:false},
-        {option:'Уміння вирішувати завдання',correct:true},
+        {option:'Хороша фантазія',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Навички командної роботи',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Уміння вирішувати завдання',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Головна мета від роботи вашої мрії?',
       answer:[
-        {option:'Змінити світ',correct:false},
-        {option:'Веселитися',correct:false},
-        {option:'Допомагати іншим',correct:true},
+        {option:'Веселитися',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Змінити світ',proffesion:[{design:false},{web:false},{game:true}]},        
+        {option:'Допомагати іншим',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'В якому додатку ви б хотіли витрачати найбільше часу?',
       answer:[
-        {option:'Instagram / TikTok',correct:false},
-        {option:'Among US / Brawl Stars',correct:false},
-        {option:'YouTube / Wikipedia',correct:true},
+        {option:'Instagram / TikTok',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'YouTube / Wikipedia',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Among US / Brawl Stars',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },    {
       question:'Що вам більше подобається?',
       answer:[
-        {option:'Створювати свою гру',correct:false},
-        {option:'Складати пісню',correct:false},
-        {option:'Розробляти робота',correct:true},
+        {option:'Складати пісню',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Розробляти робота',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Створювати свою гру',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'В яке місце ви б хотіли відправитися найбільше зараз?',
       answer:[
-        {option:'У парк розваг',correct:false},
-        {option:'В галерею мистецтва',correct:false},
-        {option:'Додому, в свою кімнату',correct:true},
+        {option:'В галерею мистецтва',proffesion:[{design:false},{web:false},{game:true}]},   
+        {option:'Додому, в свою кімнату',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'У парк розваг',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Змогли-б сидіти за комп`ютером або в телефоні цілими днями? ',
       answer:[
-        {option:' Так',correct:false},
-        {option:'Ні',correct:false},
-        {option:'У мене немає комп`ютера або телефону',correct:true},
+        {option:' Так',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Ні',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'У мене немає комп`ютера або телефону',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     }
   ]
   quizzesEvo:Quiz[] = [
     {
       question:'Якби ви грали в футбол (волейбол, баскетбол), то хотіли б бути?',
-      answer:[
-        {option:'Тренером, який розробляє тактику гри',correct:false},
-        {option:'Відомим гравцем',correct:true},
-        {option:'Обраним капітаном команди',correct:false}
+      answer:[        
+        {option:'Відомим гравцем',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Обраним капітаном команди',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Тренером, який розробляє тактику гри',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Що вам більше подобається?',
       answer:[
-        {option:'Розробляти технологію, яка змінить світ',correct:true},
-        {option:'Створювати реалістичний світ в 3D графіці',correct:false},        
-        {option:'Створювати свою гру',correct:false}
+        {option:'Створювати реалістичний світ в 3D графіці',proffesion:[{design:false},{web:false},{game:true}]},    
+        {option:'Розробляти технологію, яка змінить світ',proffesion:[{design:false},{web:false},{game:true}]},       
+        {option:'Створювати свою гру',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Як би виглядав робот вашої мрії?',
       answer:[
-        {option:'Виконував твоє шкільне домашнє завдання',correct:false},
-        {option:'Танцював',correct:false},
-        {option:'Прибирав в твоїй кімнаті',correct:true},
+        {option:'Танцював',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Виконував твоє шкільне домашнє завдання',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Прибирав в твоїй кімнаті',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Ідеальна робота для вас дає можливість?',
       answer:[
-        {option:'Багато спілкуватися з іншими людьми',correct:false},
-        {option:'Отримати стабільність',correct:false},
-        {option:'Знаходити нові методи і підходи',correct:true},
+        {option:'Знаходити нові методи і підходи',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Отримати стабільність',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Багато спілкуватися з іншими людьми',proffesion:[{design:false},{web:false},{game:true}]},
+       
       ]
     },
     {
       question:'Ви б з великим інтересом?',
       answer:[
-        {option:'Придумали цікавий конкурс',correct:false},
-        {option:'Взяли участь у конкурсі',correct:false},
-        {option:'Організували конкурс і керували ним',correct:true},
+        {option:'Придумали цікавий конкурс',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Взяли участь у конкурсі',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Організували конкурс і керували ним',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Наскільки вам цікаво програмувати вебсайт або мобільний додаток?',
       answer:[
-        {option:'Дуже цікаво',correct:false},
-        {option:'Трохи цікаво',correct:false},
-        {option:'Не цікаво',correct:true},
+        {option:'Трохи цікаво',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Дуже цікаво',proffesion:[{design:false},{web:false},{game:true}]},  
+        {option:'Не цікаво',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Ви хочете, щоб у вашій щоденній роботі були відсутні?',
       answer:[
-        {option:'Неясні завдання',correct:false},
-        {option:'Нудьга, монотонність',correct:false},
-        {option:'Правила, стандарти',correct:true},
+        {option:'Неясні завдання',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Нудьга, монотонність',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Правила, стандарти',proffesion:[{design:false},{web:false},{game:true}]},
       ]
-    },    {
+    },    
+    {
       question:'Які ваші найкращі якості?',
       answer:[
-        {option:'Сильна концентрація',correct:false},
-        {option:'Завзятість',correct:false},
-        {option:'Хороша фантазія',correct:true},
+        {option:'Хороша фантазія',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Сильна концентрація',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Завзятість',proffesion:[{design:false},{web:false},{game:true}]},
+        
       ]
     },
     {
       question:'Наскільки вам цікаво проявляти креатив і придумувати щось нове?',
       answer:[
-        {option:'Дуже цікаво',correct:false},
-        {option:'Злегка цікаво',correct:false},
-        {option:'Не цікавить',correct:true},
+        {option:'Дуже цікаво',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Злегка цікаво',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Не цікавить',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     },
     {
       question:'Яке хобі у вас зараз? ',
       answer:[
-        {option:' Грати в комп`ютерні ігри',correct:false},
-        {option:'Малювати',correct:false},
-        {option:'Дивитися корисні відео',correct:true},
+        {option:'Малювати',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:'Дивитися корисні відео',proffesion:[{design:false},{web:false},{game:true}]},
+        {option:' Грати в комп`ютерні ігри',proffesion:[{design:false},{web:false},{game:true}]},
       ]
     }
   ]

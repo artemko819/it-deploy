@@ -24,6 +24,16 @@ export class QuizPageComponent implements OnInit {
   city = ''
   regForm = false
   course=''
+  web='web'
+  ballWeb = 0
+  totalWeb = 0
+  design='design'
+  ballDesign = 0
+  totalDesign =0
+  game='game'
+  ballGame = 0
+  totalGame = 0
+  rezultTest
   video = false
   formConsult: FormGroup
   constructor(
@@ -88,16 +98,35 @@ export class QuizPageComponent implements OnInit {
    this.regForm = true
  
   }
-  onAnswer(option: boolean){
+  onAnswer(option){
     this.answerSelected = false
-    if(option === true){
-      this.correctAnswer++
-    }else{
-      this.incorrectAnswer++
+    this.ballWeb =0;
+    this.ballDesign =0;
+    this.ballGame = 0;
+    for(let op in option){
+      if(op === this.web){
+        this.ballWeb +=1
+     //   console.log(this.ballWeb)
+      }
+      if(op === this.design){
+        this.ballDesign +=1
+      //  console.log(this.ballDesign)
+      }
+      if(op === this.game){
+        this.ballGame +=1
+       // console.log(this.ballGame)
+      }
     }
+   
   }
   nextQuiz(){
     this.quizCouter++
+    this.totalWeb = this.totalWeb + this.ballWeb;
+    this.totalDesign = this.totalDesign + this.ballDesign
+    this.totalGame = this.totalGame + this.ballGame
+    console.log('web:'+this.totalWeb)
+   console.log('design:'+this.totalDesign)
+   console.log('game:'+this.totalGame)
     this.answerSelected = true
   }
   juniorSelect(course){
@@ -116,6 +145,9 @@ export class QuizPageComponent implements OnInit {
   }
   rezultQuiz(){
     this.rezult = true
+    this.totalWeb = this.totalWeb + this.ballWeb;
+    this.totalDesign = this.totalDesign + this.ballDesign
+    this.totalGame = this.totalGame + this.ballGame
     // this.video = true
     // if(this.video === true){
     //   setTimeout(()=>{

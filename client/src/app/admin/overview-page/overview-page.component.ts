@@ -16,17 +16,20 @@ export class OverviewPageComponent implements OnInit {
 
   consults
   schools
+  city 
   constructor(private consultService: QuizService) { }
 
   ngOnInit(): void {
     this.consultService.fetch().subscribe(person=>{
       this.consults = person
-      console.log(this.consults)
     })
     this.consultService.fetchSchool().subscribe(person=>{
       this.schools = person
+     
+      console.log(this.schools)
     })
   }
+ 
   onDeleteSchool(event:Event,consult: TestSchool){
     event.stopPropagation()
     const decision = window.confirm(`Удалить заявку "${consult.school}" ?`)
