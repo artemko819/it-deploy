@@ -68,8 +68,9 @@ export class QuizPageComponent implements OnInit {
     }
     console.log(newPerson)
     this.quizService.create(newPerson).subscribe(person => {
-      MaterialService.toast("Спасибі за регестрацію. З вами зв'яжуться.")
+      // MaterialService.toast("Спасибі за регестрацію. З вами зв'яжуться.")
       // this.modal.close()
+      this.router.navigate(['test/quiz-page/rezult'])   
     },
         err => {
         MaterialService.toast(err.error.message)

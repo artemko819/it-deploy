@@ -1,30 +1,17 @@
-#rez{
-    width: 320px;
+img{
     display: block;
-    margin: 50px auto;
+    margin: 0 auto;
 }
-
-#quiz-rezult{
-    background: url("../../../assets/quiz/bg-main.png") center no-repeat;
-    background-size: cover;
+#quiz-index{
+    /* background: url("../../../assets/quiz/bg-main.png") center no-repeat;
+    background-size: cover; */
+    background: linear-gradient(90deg, rgba(9,164,88,1) 0%, rgba(74,92,161,1) 55%, rgb(116 59 152) 100%);
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
 }
-.podarok{
-    box-shadow: 0 0 10px #000;
-    width: 300px;
-    padding: 50px;
-    margin-top: -100px;
-    border-radius: 10px;
-}
-.podarok img{
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-}
-#quiz-rezult .wrap-content{
+#quiz-index .wrap-content{
     margin: 0 auto;
     width: 300px;
     display: flex;
@@ -32,52 +19,63 @@
     align-items: center;
     justify-content: center;
 }
-.go-to{
+#ticket{
+    width: 80%;
     display: block;
     margin: 0 auto;
 }
-#pdfTable{
-    
+.block{
+    font-family: 'Conv_Akrobat-Regular';
+    font-weight: bold;
+}
+.block {
+    background:#52CE73;
+    border: 2px solid #fff;
+    padding: 10px;
     border-radius: 10px;
-    padding: 15px 0 15px 0;
-  
-}
-#pdfTable h1{
- font-size: 20px;
-
- color: rgb(255, 255, 255);
- font-family:Arial, Helvetica, sans-serif;
- text-align: center;
-}
-.btn{
-    width: 100%;
-}
-#pdfTable h2{
-    font-size: 20px;  
-    color: rgb(255, 255, 255);
-    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    width: 80%;
     text-align: center;
-   }
-.rez{
-    /* background: #c6e0ff;
-    border-radius: 10px;
-    padding: 15px;
-
-    width: 300px; */
-    margin: 0 auto 50px;
 }
-
-.rez h1{
-    font-size: 13px;
-    /* background: #c6e0ff; */
-    border-radius: 10px;
-    margin: 0;
-    padding: 15px 0 15px 0;
-    /* -webkit-text-stroke: 1px rgb(0, 0, 0); */
-    color: rgb(47 91 191);
-    font-family: 'Conv_evo_1';
+h1.litle{
+    font-size: 20px  !important;
+    line-height: 25px !important;
+    width: 100%;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.block2{
+    font-size: 20px;
+}
+#logo{
+    width: 100px;
+}
+#rocket{
+    position: absolute;
+    width: 70px;
+    left: 73px;
+    z-index: 0;
+    margin-top: -245px;
+}
+#quiz-index .wrap-content h1{
+    font-size: 30px;
     position: relative;
-    top: -200px;
-    letter-spacing: 2px;
-
+    z-index: 5;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Conv_evo_1';
+    line-height: 45px;
+}
+#people{
+    width: 250px;
+}
+.go-to{
+    display: block;
+    width: 80%;
+    margin: 50px auto;
+    background: linear-gradient(90deg, rgba(9,164,88,1) 0%, rgba(74,92,161,1) 55%, rgb(116 59 152) 100%);
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 10px #000;
+    border-radius: 40px;
 }

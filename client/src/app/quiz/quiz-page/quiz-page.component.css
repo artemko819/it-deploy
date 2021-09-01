@@ -104,7 +104,8 @@ option {
 select{
     font-size: 16px;
     background: #efefef;
-    border-radius: 5px;
+    border-radius: 10px;
+    outline: none !important;
     line-height: 16px !important;  
     color: rgb(24, 24, 24);
 	font-family: 'Conv_Montserrat-Regular';
@@ -238,19 +239,25 @@ width: 100%;
 }
 .wrap-rez{display: none;}
 #prof{
-    background: #fff;
+    background:#52CE73;
+    border: 2px solid #fff;
     padding: 10px;
     border-radius: 10px;
     margin-top: -60px;
     text-align: center;
 }
 #rezult h4{
-    background: #fff;
+    background:#52CE73;
+    border: 2px solid #fff;
     padding: 10px;
     font-size: 15px;
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
+}
+#registered h1{
+    background:#52CE73 !important;
+    border: 2px solid #fff !important;
 }
 .circle-item{
     display: inline-block;
