@@ -10,7 +10,7 @@ export class QuizRezultPageComponent implements OnInit {
   constructor( ) { }
 
   ngOnInit(): void {
-   
+    window.location.reload();
   }
 
 }
