@@ -7,7 +7,7 @@ img{
     background-size: cover; */
     background: linear-gradient(90deg, rgba(9,164,88,1) 0%, rgba(74,92,161,1) 55%, rgb(116 59 152) 100%);
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     /* overflow: hidden; */
     display: flex;
 }
@@ -62,9 +62,9 @@ h1.litle{
 #rocket{
     position: absolute;
     width: 70px;
-    left: 73px;
+    left: 65px;
     z-index: 0;
-    margin-top: -245px;
+    margin-top: -265px;
 }
 #quiz-index .wrap-content h1{
     font-size: 30px;
