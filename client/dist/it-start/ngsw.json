@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1630520279751,
+  "timestamp": 1630566210347,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,14 +12,14 @@
       },
       "urls": [
         "/5.6fe0836e7968b33f15e0.js",
-        "/6.57714aa3f3d08a17ba60.js",
+        "/6.e6604b5354cff7477c09.js",
         "/common.fc139ca01d64a06f9484.js",
         "/favicon.ico",
         "/index.html",
         "/main.bd11a4be5cd64b46432b.js",
         "/manifest.webmanifest",
         "/polyfills.d2135627448cfdb803be.js",
-        "/runtime.59c98fc34667d16c7b73.js",
+        "/runtime.480a629df7e257be2c0b.js",
         "/scripts.7ac9fd63bd0a07105432.js",
         "/styles.9538df43b7eb554ba479.css"
       ],
@@ -336,7 +336,7 @@
   "hashTable": {
     "/404.be092734751086502cf2.png": "a2b07fcf139ba483a18574a0c5d75d1659a56773",
     "/5.6fe0836e7968b33f15e0.js": "7cb6ff629dd95745ab9e312046b40e800392d2c6",
-    "/6.57714aa3f3d08a17ba60.js": "2017378e0593b4f08dccd243d8b409d1123ed950",
+    "/6.e6604b5354cff7477c09.js": "ac55802fd2b8d220f60553b8a7449735005b985c",
     "/Akrobat-Regular.12827ce5e0d9afebcc19.svg": "fde45f63da9e4dfcc69a8a544d255df754a88350",
     "/Akrobat-Regular.e4105075195cd0326245.ttf": "39cfebc8e71fb0930d6b59577450f4b19bd61233",
     "/Akrobat-Regular.ed55b9d26d9d6127002e.woff": "4b0f816b39b272e3db45c4215b835393856a17d7",
@@ -583,7 +583,7 @@
     "/gorod_1.31ac037626d8e032d345.svg": "3f1f0a868137191a105438b29c14e29da95bd43b",
     "/gorod_1.f209321afde9b1f7d61c.woff": "bad002533a0014620165284c014b6e6d30a5b3cb",
     "/gorod_1.f3effa309b4ff84482a1.ttf": "e44f09ac7a6ab67e189375081c10ed53cea3ab6c",
-    "/index.html": "674a74eb057c1832c04bffddb0563479c98063d4",
+    "/index.html": "a3626855260bfea921a6ded2c3f2513dc8a67ee6",
     "/lesson_1.920dfaf76533b3ba2c50.svg": "a4b797c0730b5631b6693dd519a3c4a02ca25387",
     "/lesson_1.d0a0ab8de5efec383290.ttf": "d96f8221192b36721eaa421ff10d7fbad140aac7",
     "/lesson_1.d95054e1002c96f67de7.eot": "e1f9037c4a1347a273309c0db25302bb9c91509a",
@@ -599,7 +599,7 @@
     "/ofont.ru_Aqum.41b007e68088b802dafd.ttf": "d56f7adbc54b60ee169aed2a3174506cbc3892a7",
     "/ofont.ru_Aqum.c13f72e7324da2bbec4b.eot": "c86bbc9bcbaaa85a6ca2b0a17d31ae4560938158",
     "/polyfills.d2135627448cfdb803be.js": "0fcd3cafd6256825ef766cb3bf4746418329d7b8",
-    "/runtime.59c98fc34667d16c7b73.js": "2121cffee4ffb66599f33530b4c47bb3bdf35f79",
+    "/runtime.480a629df7e257be2c0b.js": "f66941e3daca144452084da7c9dfdd297df3eb20",
     "/scripts.7ac9fd63bd0a07105432.js": "dd98551dc34e53a71219e2b7ce09d7d488e9171f",
     "/sky_1.09452fae0ce94998f672.woff": "9800192a0906ad8455e1c41a3d89a046621f2399",
     "/sky_1.0ef81adc55b524f613f2.ttf": "202f42f6d8244926de60feff1bb66b0bbb0e4a99",
