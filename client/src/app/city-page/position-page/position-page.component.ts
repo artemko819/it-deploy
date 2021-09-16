@@ -128,7 +128,7 @@ export class PositionPageComponent implements OnInit, OnDestroy, AfterViewInit {
     },
         err => {
         MaterialService.toast(err.error.message)
-        this.form.enable()
+        this.formConsult.enable()
       }
     )
 

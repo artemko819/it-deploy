@@ -20,6 +20,7 @@ import { PositionPageComponent } from './city-page/position-page/position-page.c
 import { CommonModule } from '@angular/common';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { MasterklassComponent } from './masterklass/masterklass.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { environment } from '../environments/environment';
     CityPageComponent,
     PageNotFoundComponent,
     PositionPageComponent,
+    MasterklassComponent,
   ],
   imports: [
     CommonModule,

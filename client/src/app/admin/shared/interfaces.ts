@@ -28,6 +28,14 @@ export interface Consult{
     date:string
 }
 
+export interface Anketa{
+    _id?:string,
+    name:string, 
+    tel: string,
+    city:string,
+    course:string,
+    date:string
+}
 export interface Test{
     _id?:string,
     name:string,

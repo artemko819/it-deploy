@@ -10,6 +10,7 @@ import {CityPageComponent} from './city-page/city-page.component';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PositionPageComponent } from './city-page/position-page/position-page.component';
+import { MasterklassComponent } from './masterklass/masterklass.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: 'web-4', component: Web4Component, data: {animation: 'web4'} },
       { path: 'city', component: Web5Component, data: {animation: 'web5'} },
       { path: 'city/:id', component: CityPageComponent, data: {animation: 'city'} },
+      {path:'anketa', component:MasterklassComponent},
       {
         path: 'test', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
       },
