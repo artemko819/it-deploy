@@ -817,14 +817,14 @@
       <h4> Стоимость обучения </h4>
       <div class="wrap-price">
         <img id="baks" src="../../../assets/block1/baks.png" loading="lazy" alt="baks">
-        <h4 *ngIf="positions.name == 'Evolite'">99 грн. за урок</h4>
+        <h4 *ngIf="positions.name == 'Evolite'">100 грн. в час.</h4>
         <h4 *ngIf="positions.name == 'Junior'">99 грн. за урок </h4>
         <h4 *ngIf="positions.name == 'Seniors'">{{(positions.cost)/10}} грн в час </h4>
         <h4 *ngIf="positions.name == 'Individual'">150 грн в час </h4>
         <h4>2 урока в неделю
-          <span *ngIf="positions.name == 'Evolite'">
+          <!-- <span *ngIf="positions.name == 'Evolite'">
             по 1 часу
-          </span>
+          </span> -->
           <span *ngIf="positions.name == 'Junior'">
             по 1 часу
           </span>
