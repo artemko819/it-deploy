@@ -11,6 +11,8 @@ import {CityPageComponent} from './city-page/city-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PositionPageComponent } from './city-page/position-page/position-page.component';
 import { MasterklassComponent } from './masterklass/masterklass.component';
+import { PoliticksPageComponent } from './politicks-page/politicks-page.component';
+import { OfertaPageComponent } from './oferta-page/oferta-page.component';
 
 const routes: Routes = [
   {
@@ -23,6 +25,8 @@ const routes: Routes = [
       { path: 'city', component: Web5Component, data: {animation: 'web5'} },
       { path: 'city/:id', component: CityPageComponent, data: {animation: 'city'} },
       {path:'anketa', component:MasterklassComponent},
+      {path:'politika-konfidencialnosli',component:PoliticksPageComponent},
+      {path:'dogovor-oferty',component:OfertaPageComponent},
       {
         path: 'test', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
       },

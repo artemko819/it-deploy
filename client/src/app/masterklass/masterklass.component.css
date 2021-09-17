@@ -36,6 +36,7 @@ form .row .input-field{
 
 .top-image img{
     width: 33%;
+    height: calc(68px + (360 - 68)*((100vw - 320px)/(1920 - 320)));
 }
 .wrap-logo{
     width: 88%;
@@ -46,6 +47,7 @@ form .row .input-field{
     max-width: 560px;
     display: block;
     margin: 0 auto;
+    height: auto
 }
 h3{	
     font-family: 'Conv_evo_1';   
@@ -65,6 +67,8 @@ h3{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: calc(70px + (530 - 70)*((100vw - 320px)/(1920 - 320)));
+    max-height: 530px;
 }
 .flex-row >*{
     width: 48%;
@@ -81,6 +85,7 @@ footer{
 .header{
     position: relative;
     font-size: calc(15px + (40 - 15)*((100vw - 320px)/(1920 - 320)));
+    margin-bottom: 3px;
     /* top: calc(1px + (-240 - 1)*((100vw - 320px)/(1920 - 320))); */
 }
 #foot-bg{
@@ -90,29 +95,50 @@ footer{
 }
 .wrap-bg{width: 100%;position: relative;}
 .left-contact h3{
-    font-size: calc(15px + (40 - 15)*((100vw - 320px)/(1920 - 320)));
+    font-size: calc(12px + (55 - 12)*((100vw - 320px)/(1920 - 320)));
     margin-top: 10px;
     margin-bottom: 15px;
+   text-indent: calc(1px + (25 - 1)*((100vw - 320px)/(1920 - 320)));
+ 
     
 }
 .left-contact p{
     text-align: center;
     color: yellow;
-    font-size: calc(13px + (25 - 13)*((100vw - 320px)/(1920 - 320)));
+    font-size: calc(10px + (45 - 10)*((100vw - 320px)/(1920 - 320)));
+}
+
+.right-contact p{
+    font-family: 'Conv_evo_1';
+    font-size: calc(8px + (23 - 8)*((100vw - 320px)/(1920 - 320)));
+    background: rgb(65, 129, 2);
+    width: 70%;
+    margin: calc(5px + (10 - 5)*((100vw - 320px)/(1920 - 320))) auto;
+    border-radius: 30px;
+    text-align: center;
+    padding: calc(1px + (10 - 1)*((100vw - 320px)/(1920 - 320)));;
+}
+.right-contact p a{
+    color: #000;
 }
 .left-contact{
     position: relative;
     z-index: 99;
     background: #6db63f;
     border-radius: 100px 0px 100px 100px;
-    padding-bottom: 30px;
+    height: calc(70px + (340 - 70)*((100vw - 320px)/(1920 - 320)));
+    max-height: 240px;
+    max-width: 550px;
+    
 }
 .right-contact{
     position: relative;
     z-index: 99;
     background: #6db63f;
     border-radius: 0px 100px 100px 100px;
-    padding-bottom: 30px;
+    height: calc(70px + (340 - 70)*((100vw - 320px)/(1920 - 320)));
+    max-height: 240px;
+    max-width: 550px;
 }
 .wrap-btn .btn{
     font-family: 'Conv_evo_1';
@@ -149,6 +175,19 @@ select{
     border-bottom: 5px solid #5f5c5c;
 }
 
+#telega{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.flex-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:calc(15px + (-100 +15)*((100vw - 320px)/(1920 - 320)))
+}
 option{
     font-family: 'Conv_evo_1';
     font-size: 20px;

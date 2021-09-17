@@ -21,7 +21,8 @@ import { CommonModule } from '@angular/common';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { MasterklassComponent } from './masterklass/masterklass.component';
-
+import { PoliticksPageComponent } from './politicks-page/politicks-page.component';
+import { OfertaPageComponent } from './oferta-page/oferta-page.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,8 @@ import { MasterklassComponent } from './masterklass/masterklass.component';
     PageNotFoundComponent,
     PositionPageComponent,
     MasterklassComponent,
+    PoliticksPageComponent,
+    OfertaPageComponent,
   ],
   imports: [
     CommonModule,

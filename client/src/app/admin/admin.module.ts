@@ -16,6 +16,7 @@ import { CategoriesFormComponent } from './categories-page/categories-form/categ
 import { PositionsFormComponent } from './categories-page/categories-form/positions-form/positions-form.component';
 import { PersonPageComponent } from './person-page/person-page.component';
 import { ConsultPageComponent } from './consult-page/consult-page.component';
+import { AnalyticsPageComponent } from './analytics-page/analytics-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ConsultPageComponent } from './consult-page/consult-page.component';
         RegisterPageComponent, 
         OverviewPageComponent, 
         HistoryPageComponent, 
-
+        AnalyticsPageComponent,
         CategoriesPageComponent, 
         LoaderComponent,
         CategoriesFormComponent, 
@@ -50,6 +51,7 @@ import { ConsultPageComponent } from './consult-page/consult-page.component';
           { path: 'owerview', component: OverviewPageComponent },
           { path: 'consult', component: ConsultPageComponent },
           {path:"person", component:PersonPageComponent},
+          {path:'analitick',component:AnalyticsPageComponent},
           { path: 'categories', component: CategoriesPageComponent },
           { path: 'categories/new', component: CategoriesFormComponent },
           { path: 'categories/:id', component: CategoriesFormComponent },

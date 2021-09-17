@@ -1,15 +1,15 @@
 <div id="master-class">
     <div class="wrap-content">
         <div class="top-image">
-            <img src="../../assets/master/1.png" alt="">
-            <img src="../../assets/master/1111.png" alt="">
-            <img src="../../assets/master/2.png" alt="">
+            <img src="../../assets/master/1.png" loading="lazy" alt="">
+            <img src="../../assets/master/1111.png" loading="lazy" alt="">
+            <img src="../../assets/master/2.png" loading="lazy" alt="">
         </div>
         <div class="wrap-logo">
-            <img src="../../assets/master/logo.png" alt="">
+            <img src="../../assets/master/logo.png" loading="lazy" alt="">
         </div>
         <div class="wrap-logo">
-            <img src="../../assets/master/text.png" alt="">
+            <img src="../../assets/master/text.png" loading="lazy" alt="">
         </div>
         <form [formGroup]="formConsult" (ngSubmit)="submitConsult()" class="col s12">
             <div class="row">
@@ -71,9 +71,17 @@
               </div>
               <div class="right-contact">
                 <p><a [routerLink]="['/']">Головна сторінка</a></p>
-                <p><a [routerLink]="['/']">Договір оферти</a></p>
-                <p><a [routerLink]="['/']">Політика конфіденціальності</a></p>
+                <p><a [routerLink]="['/dogovor-oferty']">Договір оферти</a></p>
+                <p class="politic"><a [routerLink]="['/politika-konfidencialnosli']">Політика конфіденціальності</a></p>
               </div>
+            </div>
+            <div class="flex-image">
+              <a href="https://t.me/itstart_school" target="_blank">
+                <img id="telega" src="../../assets/master/Telegram_Messenger.png" alt="">
+              </a>           
+              <a href="https://www.instagram.com/itstart.school/" target="_blank">
+                <img id="telega" src="../../assets/master/600px-Instagram_icon.png" alt="">
+              </a>
             </div>
           </footer>
     </div>  
