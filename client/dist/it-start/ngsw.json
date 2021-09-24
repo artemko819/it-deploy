@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1631877244328,
+  "timestamp": 1632467711968,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "ignoreVary": true
       },
       "urls": [
-        "/5.83dad422c5303024225d.js",
+        "/5.a25a168fdc729611aa80.js",
         "/6.ba16bf7aac87ec3c9cd4.js",
         "/common.fc139ca01d64a06f9484.js",
         "/favicon.ico",
@@ -19,7 +19,7 @@
         "/main.fdfd5fdfad0e99c7dce5.js",
         "/manifest.webmanifest",
         "/polyfills.d2135627448cfdb803be.js",
-        "/runtime.4534f31814db9d88c2c5.js",
+        "/runtime.c751b3ca191f64ead6fb.js",
         "/scripts.7ac9fd63bd0a07105432.js",
         "/styles.9538df43b7eb554ba479.css"
       ],
@@ -351,7 +351,7 @@
   ],
   "hashTable": {
     "/404.be092734751086502cf2.png": "a2b07fcf139ba483a18574a0c5d75d1659a56773",
-    "/5.83dad422c5303024225d.js": "3cf014b957b784e9f3410f6017541d24a8810e63",
+    "/5.a25a168fdc729611aa80.js": "97c992d2a64acc8b160623dcda4eaf11c9a4b72e",
     "/6.ba16bf7aac87ec3c9cd4.js": "e3c9fccf7f8732264605084404295c9df13ed405",
     "/Akrobat-Regular.12827ce5e0d9afebcc19.svg": "fde45f63da9e4dfcc69a8a544d255df754a88350",
     "/Akrobat-Regular.e4105075195cd0326245.ttf": "39cfebc8e71fb0930d6b59577450f4b19bd61233",
@@ -615,7 +615,7 @@
     "/gorod_1.31ac037626d8e032d345.svg": "3f1f0a868137191a105438b29c14e29da95bd43b",
     "/gorod_1.f209321afde9b1f7d61c.woff": "bad002533a0014620165284c014b6e6d30a5b3cb",
     "/gorod_1.f3effa309b4ff84482a1.ttf": "e44f09ac7a6ab67e189375081c10ed53cea3ab6c",
-    "/index.html": "8f042e28249c526035449acc6dc8b1dcaace9edb",
+    "/index.html": "4a036d5107029ffc91dd559c697aeacbee864c0d",
     "/lesson_1.920dfaf76533b3ba2c50.svg": "a4b797c0730b5631b6693dd519a3c4a02ca25387",
     "/lesson_1.d0a0ab8de5efec383290.ttf": "d96f8221192b36721eaa421ff10d7fbad140aac7",
     "/lesson_1.d95054e1002c96f67de7.eot": "e1f9037c4a1347a273309c0db25302bb9c91509a",
@@ -631,7 +631,7 @@
     "/ofont.ru_Aqum.41b007e68088b802dafd.ttf": "d56f7adbc54b60ee169aed2a3174506cbc3892a7",
     "/ofont.ru_Aqum.c13f72e7324da2bbec4b.eot": "c86bbc9bcbaaa85a6ca2b0a17d31ae4560938158",
     "/polyfills.d2135627448cfdb803be.js": "0fcd3cafd6256825ef766cb3bf4746418329d7b8",
-    "/runtime.4534f31814db9d88c2c5.js": "99633375b2cf85bad64dc047afbe70aa5f981975",
+    "/runtime.c751b3ca191f64ead6fb.js": "4ce283789db8b6289373a65c3fc3fe60ac4f20d6",
     "/scripts.7ac9fd63bd0a07105432.js": "dd98551dc34e53a71219e2b7ce09d7d488e9171f",
     "/sky_1.09452fae0ce94998f672.woff": "9800192a0906ad8455e1c41a3d89a046621f2399",
     "/sky_1.0ef81adc55b524f613f2.ttf": "202f42f6d8244926de60feff1bb66b0bbb0e4a99",
