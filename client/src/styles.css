@@ -3,6 +3,11 @@
   -webkit-box-sizing: border-box;
   -msbox-sizing: border-box;
 }
+pre{
+  white-space: pre-wrap;
+font-weight: bold;
+padding: 50px;
+}
 @font-face {
 	font-family: 'Conv_Akrobat-Regular';
 	src: url('./assets/fonts/Akrobat-Regular.eot');
