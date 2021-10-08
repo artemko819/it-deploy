@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1633714633182,
+  "timestamp": 1633717187921,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,7 +16,7 @@
         "/common.fc139ca01d64a06f9484.js",
         "/favicon.ico",
         "/index.html",
-        "/main.f4fd2ab8d2e15ac9ad0a.js",
+        "/main.f1e4145d68b33ffadc68.js",
         "/manifest.webmanifest",
         "/polyfills.d2135627448cfdb803be.js",
         "/runtime.c751b3ca191f64ead6fb.js",
@@ -615,7 +615,7 @@
     "/gorod_1.31ac037626d8e032d345.svg": "3f1f0a868137191a105438b29c14e29da95bd43b",
     "/gorod_1.f209321afde9b1f7d61c.woff": "bad002533a0014620165284c014b6e6d30a5b3cb",
     "/gorod_1.f3effa309b4ff84482a1.ttf": "e44f09ac7a6ab67e189375081c10ed53cea3ab6c",
-    "/index.html": "31f428066ca2e02f455b85507905902d86d73357",
+    "/index.html": "4f2be35c3c887430778ae2c0fb6d7e5b8ecd3f78",
     "/lesson_1.920dfaf76533b3ba2c50.svg": "a4b797c0730b5631b6693dd519a3c4a02ca25387",
     "/lesson_1.d0a0ab8de5efec383290.ttf": "d96f8221192b36721eaa421ff10d7fbad140aac7",
     "/lesson_1.d95054e1002c96f67de7.eot": "e1f9037c4a1347a273309c0db25302bb9c91509a",
@@ -624,7 +624,7 @@
     "/lesson_2.2485c6f9523f43aeadf8.woff": "96dbbbf521dca22f1e6aea8765fe94b20c4ba4b2",
     "/lesson_2.a649a87d6951fe6020e0.svg": "b6950589d06ad0ff9365fbdcbc7395303743c99b",
     "/lesson_2.e48eb32414e1a0e83dd9.eot": "03fa36fefb45733b07c76b5580b8e405b30ac128",
-    "/main.f4fd2ab8d2e15ac9ad0a.js": "d603719616c27f96eed93b9410b07ce37e5998cd",
+    "/main.f1e4145d68b33ffadc68.js": "98b606c125a480bc3f3869984248c678770aac2e",
     "/manifest.webmanifest": "422d1ca9f708509b1c58103bc91fa4a0e0b0ae18",
     "/ofont.ru_Aqum.1039f5c8a1e95c100a7c.svg": "cf076fa3b8f9246f13ce3b62d62e05cdfb2eeaf6",
     "/ofont.ru_Aqum.2fa3b7babc3f5088dcb6.woff": "c3f71c8bf86716ff1341f5d87d35784e2dfee6c2",
