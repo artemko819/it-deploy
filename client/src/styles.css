@@ -179,6 +179,12 @@ padding: 50px;
 	font-style: normal;
   font-display: swap;
 }
+body{
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
+}
 #bingc-phone-button{
   bottom: 1% !important;
 }

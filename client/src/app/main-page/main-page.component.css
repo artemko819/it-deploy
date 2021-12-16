@@ -79,6 +79,14 @@ header{
     box-shadow: 0 0 10px #888;
     border-radius: 10px;
 }
+.oppi_social_about_content .oppi_btn_group .oppi_dbtn{
+    border: 0;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.oppi_social_about_content .oppi_btn_group .oppi_dbtn i{
+    color: #fff;
+}
 #video-icon{
     height: 600px;
     width: 100%;
@@ -116,6 +124,9 @@ header{
     border-radius: 4px;
     margin-bottom: 30px;
     padding: 15px 28px 20px 40px;
+}
+#q h2{
+    margin-top: 40px;
 }
 .modal{
     max-width: 980px;
@@ -157,8 +168,9 @@ input{
     padding-top: 165px !important;
     padding: 15px;
 }
+
 .oppi_finance_features_item img{
-    width: 170px !important;
+    width: 160px !important;
     margin-top: 0 !important;
     position: absolute !important;
     top: 16px !important;
@@ -212,10 +224,22 @@ input{
         padding-bottom: 0;
     }
     a h4{
-        color: #333;
+        color: #707b8e;
         text-decoration: none;
         font-size: 15px;
-        line-height: 17px;
+        line-height: 18px;
+        font-family: "Poppins", sans-serif;
+    }
+    .collapsible.popout > li h3{
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .material-icons{
+        margin-right: 0;
+    }
+    .oppi_grafe_img_content .img_inner .grafe_item .grafe_item_img{
+        margin-bottom: 55px;
     }
     .shape_2,
     .oppi_banner_content,
@@ -228,7 +252,7 @@ input{
                
     }
     .oppi_finance_features_area{
-        margin-top: -50px;
+      
     }
     .oppi_about_content .about_title::before{
         content: "1";
@@ -273,11 +297,11 @@ input{
     }
     #carousel-mobile{
         display: block;
-        margin-bottom: -100px;
-        margin-top: -100px;
+        margin-bottom: -50px;
+        margin-top: -50px;
     }
      #carousel-mobile .carousel{
-         margin-top: -100px;
+         margin-top: -50px;
      }
      .oppi_social_about_content .sec_title2{
          text-align: center;
