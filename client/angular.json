@@ -32,10 +32,30 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/materialize-css/dist/css/materialize.min.css"
+              "node_modules/materialize-css/dist/css/materialize.min.css",
+              "src/assets/main-page/css/style.css",
+              "src/assets/main-page/css/bootstrap.min.css",
+              "src/assets/main-page/css/font-awesome.min.css",
+              "src/assets/main-page/vendors/slick/slick.css",
+              "src/assets/main-page/vendors/slick/slick-theme.css",
+              "src/assets/main-page/vendors/elegant-icon/elegant-icon-style.css",
+              "src/assets/main-page/css/linearicons.css",
+              "src/assets/main-page/css/simple-line-icons.css",
+              "src/assets/main-page/vendors/animation/animate.css",
+              "src/assets/main-page/vendors/flex/css/flexslider.css",
+              "src/assets/main-page/vendors/magnify-pop/magnific-popup.css"
             ],
             "scripts": [
-              "node_modules/materialize-css/dist/js/materialize.min.js"
+              "node_modules/particles.js/particles.js",
+              "node_modules/materialize-css/dist/js/materialize.min.js",
+              "src/assets/main-page/js/jquery-3.4.1.min.js",
+              "src/assets/main-page/js/bootstrap.min.js",
+              "src/assets/main-page/vendors/slick/slick.min.js",
+              "src/assets/main-page/vendors/simple-icon/iconify.min.js",
+              "src/assets/main-page/vendors/wow/wow.min.js",
+              "src/assets/main-page/vendors/sckroller/jquery.parallax-scroll.js",
+              "src/assets/main-page/vendors/magnify-pop/jquery.magnific-popup.min.js",
+              "src/assets/main-page/js/main.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"

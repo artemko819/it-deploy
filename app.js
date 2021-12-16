@@ -20,6 +20,7 @@ const consultRoutes = require('./routes/consult')
 const testsRoutes = require('./routes/tests')
 const testSchoolRoutes = require('./routes/testSchool')
 const anketsRoutes = require('./routes/ankets')
+const mainForm = require('./routes/mainForm')
 const app = express()
 
 const DB_USER = 'itbd';
@@ -59,6 +60,7 @@ app.use('/api/consult',consultRoutes)
 app.use('/api/test',testsRoutes)
 app.use('/api/ankets',anketsRoutes)
 app.use('/api/test-school',testSchoolRoutes)
+app.use('/api/landing/',mainForm)
 if(process.env.NODE_ENV === 'production'){
  app.use(express.static('client/dist/it-start'))
 

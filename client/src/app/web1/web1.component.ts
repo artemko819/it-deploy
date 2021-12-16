@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Title, Meta } from '@angular/platform-browser';  
+import { Title, Meta } from '@angular/platform-browser';
+declare var particlesJS: any;
 @Component({
   selector: 'app-web1',
   templateUrl: './web1.component.html',
@@ -11,14 +12,14 @@ export class Web1Component implements OnInit{
   constructor( private router:Router,
                private titleService: Title,  
                private metaTagService: Meta  
-    ) { }
-    myStyle: object = {};
-    myParams: object = {};
-    width: number = 100;
-    height: number = 100;
+    ) { 
+      particlesJS.load('particles-js', '../assets/particles.json', null);
+    }
+ 
     select:boolean = false;
 
     ngOnInit() {
+      
       this.titleService.setTitle("IT-курсы Харьков, Ахтырка, Полтава, Лубны, Изюм, Мерефа, Первомайский, Чугуев, Бахмут ,Прилуки, Покровск, обучение ИТ-специалистов 【IT-START】 с нуля. Дизайн, 3d моделирование, Программирование");  
       this.metaTagService.addTags([  
         { name: 'description', content: 'Самые сочные ⚡️ IT-курсы в Харьковe, Ахтырке, Первомайский, Полтаве, Чугуеве, Бахмуте, Лубнах, Изюме, Чугуеве ⚡️ ➨ Стань IT-специалистом в школе ❗ IT-START ❗ Дизайн, 3d моделирование, Программирование.' },  
@@ -27,45 +28,6 @@ export class Web1Component implements OnInit{
       
       const body = document.getElementById("app-main")
       body.classList.add("ov");
-      this.myStyle = {
-          'position': 'absolute',
-          'width': '100%',
-          'height': '100%',
-          'z-index': 1,
-          'top': 0,
-          'left': 0,
-          'right': 0,
-          'bottom': 0,
-      };
-
-  this.myParams = {
-      particles: {
-              number: {
-                  value:50,
-              },
-              color: {
-                  value: '#fff'
-              },
-              shape: {
-                  type: 'circle',
-              },
-              
-      },
-      interactivity:{
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: false,
-            mode: "repulse"
-          },
-          onclick: {
-            enable: true,
-            mode: "push"
-          },
-          resize: true
-        },
-      }
-  };
   }
   
   btnClick(){

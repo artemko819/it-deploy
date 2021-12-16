@@ -13,12 +13,14 @@ import { PositionPageComponent } from './city-page/position-page/position-page.c
 import { MasterklassComponent } from './masterklass/masterklass.component';
 import { PoliticksPageComponent } from './politicks-page/politicks-page.component';
 import { OfertaPageComponent } from './oferta-page/oferta-page.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: '/', pathMatch: 'full'},
-      { path: '', component: Web1Component, data: {animation: 'web1'} },
+      { path: '', component:MainPageComponent, data: {animation: 'web1'} },
+      { path: 'web-1', component: Web1Component, data: {animation: 'web1'} },
       { path: 'web-2', component: Web2Component, data: {animation: 'web2'} },
       { path: 'web-3', component: Web3Component, data: {animation: 'web3'} },
       { path: 'web-4', component: Web4Component, data: {animation: 'web4'} },
@@ -31,10 +33,6 @@ const routes: Routes = [
         path: 'test', loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
       },
       { path: 'city/:id/:position', component: PositionPageComponent, data: {animation: 'course'} },
-      // { path: 'city/:id/junior', component: JuniorPageComponent, data: {animation: 'course'}},
-      // { path: 'city/:id/evolution', component: EvolutionPageComponent, data: {animation: 'course'}},
-      // { path: 'city/:id/seniors', component: SeniorsPageComponent, data: {animation: 'course'}},
-      // { path: 'city/:id/individual', component: IndividulPageComponent, data: {animation: 'course'}},
       {
         path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
       },

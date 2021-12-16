@@ -8,6 +8,14 @@ export interface TestSchool{
     school:string,
     city:string,
 }
+
+export interface MainForm{
+    _id?:string,
+    name:string,
+    tel:string,
+    date:string
+}
+
 export interface Person{
     _id?:string
     name:string

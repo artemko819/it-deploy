@@ -19,9 +19,6 @@ MIT
 @angular/service-worker
 MIT
 
-angular-particle
-MIT
-
 materialize-css
 MIT
 The MIT License (MIT)

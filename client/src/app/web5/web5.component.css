@@ -7,6 +7,15 @@ img{
     transform: scale(1.1);
     cursor: pointer;
 } */
+h3,h5,p,h4{
+    font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
+}
+.row{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
 #positions{
     position: absolute;
     top: 30px;
@@ -140,6 +149,6 @@ img{
 .map{
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-top: calc(10px + (-50 -10)*((100vw - 320px)/(1920 - 320)));;
+    margin-top: calc(10px + (50 -10)*((100vw - 320px)/(1920 - 320)));;
    
 }

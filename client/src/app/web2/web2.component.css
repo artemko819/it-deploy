@@ -37,4 +37,9 @@
     opacity: 1;
     transition: all 1s;
   }
-  
+  #particles-js{
+    transition: all 1.5s;
+  }
+  #particles-js.active{
+    top:-100%;
+  }

@@ -1,12 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+declare var particlesJS: any;
 @Component({
   selector: 'app-web2',
   templateUrl: './web2.component.html',
   styleUrls: ['./web2.component.css']
 })
-export class Web2Component implements OnInit, OnDestroy {
+export class Web2Component implements OnInit {
 
   constructor(private router:Router) { }
     hide 
@@ -19,6 +19,7 @@ export class Web2Component implements OnInit, OnDestroy {
   goTo:boolean =false
  
   ngOnInit() {
+    particlesJS.load('particles-js', '../assets/particles.json', null);
     // setTimeout(()=> {
     //     this.router.navigate(['web-3'])
     // }, 999400);
@@ -38,35 +39,8 @@ export class Web2Component implements OnInit, OnDestroy {
      this.route =  setTimeout(()=> {
               this.router.navigate(['web-4'])
         }, 2500);
-    this.myStyle = {
-        'position': 'absolute',
-        'width': '100%',
-        'height': '100%',
-        'z-index': 1,
-        'top': 0,
-        'left': 0,
-        'right': 0,
-        'bottom': 0,
-    };
+   
+}
 
-    
-this.myParams = {
-        particles: {
-            number: {
-                value: 100,
-            },
-            color: {
-                value: '#fff'
-            },
-            shape: {
-                type: 'circle',
-            },
-    }
-};
-}
-ngOnDestroy(){
-    window.clearTimeout(this.hide);
-    window.clearTimeout(this.route);
-}
 
 }

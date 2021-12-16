@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ParticlesModule } from 'angular-particle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +22,7 @@ import { environment } from '../environments/environment';
 import { MasterklassComponent } from './masterklass/masterklass.component';
 import { PoliticksPageComponent } from './politicks-page/politicks-page.component';
 import { OfertaPageComponent } from './oferta-page/oferta-page.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +39,12 @@ import { OfertaPageComponent } from './oferta-page/oferta-page.component';
     MasterklassComponent,
     PoliticksPageComponent,
     OfertaPageComponent,
+    MainPageComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    ParticlesModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,

@@ -19,6 +19,10 @@ export class MaterialService{
         return M.Modal.init(ref.nativeElement) 
     }
 
+    static initCarousel(ref:ElementRef,set:Object):MaterialInstance {
+        return M.Carousel.init(ref.nativeElement,set) 
+    }
+
     static initTabs(ref:ElementRef):MaterialInstance{
         return M.Collapsible.init(ref.nativeElement)
     }

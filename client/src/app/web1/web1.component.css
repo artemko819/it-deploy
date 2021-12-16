@@ -129,6 +129,7 @@ img{
 /*====================== righ part ========================*/
 .text{
     z-index: 22;
+    font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
     color: transparent; /* прозрачный цвет букв */
     -webkit-text-stroke: calc(1px + (3 - 1)*((100vw - 320px)/(1920 - 320))) #fff;
 }

@@ -6,6 +6,9 @@
  footer p a{
    color: #fff;
  }
+ .row{
+  display: block ;
+}
  @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
   .wrap-bg{
     display: none;
