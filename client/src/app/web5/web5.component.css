@@ -31,6 +31,7 @@ h3,h5,p,h4{
 .space5 h1{
     font-size: calc(20px + (50 - 20)*((100vw - 320px)/(1920 - 320)));
     -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-top: calc(10px + (100 - 10)*((100vw - 320px)/(1920 - 320)));;
     color: rgb(206, 241, 6);
     font-family: 'Conv_evo_1';
     letter-spacing: 5px;

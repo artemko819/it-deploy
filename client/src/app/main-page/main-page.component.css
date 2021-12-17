@@ -125,8 +125,20 @@ header{
     margin-bottom: 30px;
     padding: 15px 28px 20px 40px;
 }
+.oppi_call_to_action_four .oppi_call_btn_group .oppi_dbtn{
+    transition: all 0.3s ease-in-out;
+}
+.oppi_call_to_action_four .oppi_call_btn_group .oppi_dbtn:hover{
+    color: #FFF;
+    transform: scale(0.9);
+    text-decoration: none;
+    background: transparent;
+}
 #q h2{
     margin-top: 40px;
+    color: #2c234d;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
 }
 .modal{
     max-width: 980px;

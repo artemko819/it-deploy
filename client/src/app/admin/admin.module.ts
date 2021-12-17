@@ -17,6 +17,7 @@ import { PositionsFormComponent } from './categories-page/categories-form/positi
 import { PersonPageComponent } from './person-page/person-page.component';
 import { ConsultPageComponent } from './consult-page/consult-page.component';
 import { AnalyticsPageComponent } from './analytics-page/analytics-page.component';
+import { MainPageFormComponent } from './main-page-form/main-page-form.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AnalyticsPageComponent } from './analytics-page/analytics-page.componen
         CategoriesFormComponent, 
         PositionsFormComponent,
         PersonPageComponent,
-        ConsultPageComponent
+        ConsultPageComponent,
+        MainPageFormComponent
   ],
   imports: [
     CommonModule,
@@ -50,6 +52,7 @@ import { AnalyticsPageComponent } from './analytics-page/analytics-page.componen
         path:'',component: AdminLayoutComponent,canActivate:[AuthGuard],children:[
           { path: 'owerview', component: OverviewPageComponent },
           { path: 'consult', component: ConsultPageComponent },
+          {path:'form',component:MainPageFormComponent},
           {path:"person", component:PersonPageComponent},
           {path:'analitick',component:AnalyticsPageComponent},
           { path: 'categories', component: CategoriesPageComponent },

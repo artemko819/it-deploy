@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Заявки с главной старници</h1>
+    <div class="collection">
+      <div *ngFor="let consult of consults;index as i" class="collection-item">
+        <h4>Заявка № {{i+1}}</h4>
+          <p>Имя: {{consult.name}}</p>
+          <p>Номер: {{consult.tel}}</p>
+          
+      </div>
+    </div>
+    
+    </div>
+      

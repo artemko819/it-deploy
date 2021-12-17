@@ -179,6 +179,9 @@ padding: 50px;
 	font-style: normal;
   font-display: swap;
 }
+.text{
+  font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
+}
 body{
   overflow-x: hidden;
 }
@@ -253,7 +256,7 @@ body{
  #space2 .container,
  #space3 .container,
  #space4 .container,
- #space5 .container,
+.space5 .container,
  #city .container,
  #course .container {
     width: 99%  !important;

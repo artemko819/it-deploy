@@ -418,3 +418,4 @@
   opacity: 1;
 }
 
+.row{flex-wrap: nowrap;}

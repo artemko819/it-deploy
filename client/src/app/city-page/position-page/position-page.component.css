@@ -9,6 +9,17 @@
  .row{
   display: block ;
 }
+h3,h1,h2{
+  margin-top: 20px;
+}
+.footer-copyright p{
+  margin: 0;
+}
+ul li a:hover{
+  background: none;
+  text-decoration: none;
+  transform: scale(0.95);
+}
  @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
   .wrap-bg{
     display: none;
