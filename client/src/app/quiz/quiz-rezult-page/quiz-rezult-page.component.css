@@ -11,6 +11,9 @@ img{
     /* overflow: hidden; */
     display: flex;
 }
+.row{
+    display: block ;
+  }
 #quiz-index .wrap-content{
     margin: 0 auto;
     width: 300px;

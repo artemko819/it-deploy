@@ -259,6 +259,7 @@ input{
     .col-lg-4.col-md-4,
     .col-lg-6.col-md-6.col-sm-12.col-12,
     .oppi_about_img_wrap.text-right,
+    .banner_img,
     .oppi_about_content div{
         transform: translate3d(0px, 0px, 0px) rotateX( 0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) !important;
                
@@ -309,11 +310,11 @@ input{
     }
     #carousel-mobile{
         display: block;
-        margin-bottom: -50px;
-        margin-top: -50px;
+        /* margin-bottom: -50px;
+        margin-top: -50px; */
     }
      #carousel-mobile .carousel{
-         margin-top: -50px;
+         /* margin-top: -50px; */
      }
      .oppi_social_about_content .sec_title2{
          text-align: center;

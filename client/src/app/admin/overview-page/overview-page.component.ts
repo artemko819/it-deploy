@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Observable } from 'rxjs';
 import { QuizService } from 'src/app/quiz/quiz.service';
 import { MaterialService } from '../shared/classes/material.service';
 import { Test, TestSchool } from '../shared/interfaces';
@@ -13,19 +14,16 @@ import { Test, TestSchool } from '../shared/interfaces';
   styleUrls: ['./overview-page.component.css']
 })
 export class OverviewPageComponent implements OnInit {
-
-  consults
-  schools
-  city 
+  consults$:Observable<TestSchool[]>
+  consults:any
+  schools:any
+  city:any 
   constructor(private consultService: QuizService) { }
 
   ngOnInit(): void {
-    this.consultService.fetch().subscribe(person=>{
-      this.consults = person
-    })
+    this.consults$=  this.consultService.fetch()
     this.consultService.fetchSchool().subscribe(person=>{
-      this.schools = person
-     
+      this.schools = person     
       console.log(this.schools)
     })
   }

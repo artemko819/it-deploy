@@ -10,6 +10,9 @@
     display: flex;
     
 }
+.row{
+    display: block ;
+  }
 #quiz button{
     position: relative;
     z-index: 999;

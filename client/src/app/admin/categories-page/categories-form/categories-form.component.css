@@ -13,3 +13,7 @@ h4{
 .dn{
     display: none;
 }
+.row{
+    display: block;
+    margin: 0;
+}

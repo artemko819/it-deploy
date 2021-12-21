@@ -50,7 +50,6 @@ padding: 50px;
 	src: local('☺'), url('./assets/fonts/ofont.ru_Aqum.woff') format('woff'), url('./assets/fonts/ofont.ru_Aqum.ttf') format('truetype'), url('./assets/fonts/ofont.ru_Aqum.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -181,6 +180,9 @@ padding: 50px;
 }
 .text{
   font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
+}
+.collection p {
+  margin-bottom: 0;
 }
 body{
   overflow-x: hidden;
