@@ -1,0 +1,205 @@
+form{
+    background: linear-gradient(45deg, #19a5a1 0%, #63e8e4 100%);
+}
+.coupon_form .form-group{
+    margin: auto;
+}
+#qq{
+    font-size: 2.4rem;
+}
+.row{
+    position: relative;
+}
+#top-btn{
+    font-size: 50px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.coupon_form .form-group input{
+    padding-right: 0;
+}
+
+.coupon_form .form-group i{
+    position: relative;
+    left: 15px;
+}
+.carousel .carousel-item{
+    width: 400px;
+    height: 400px;
+}
+.helper-text{
+    position: relative;
+    left: 15px;
+    text-shadow: none;
+}
+:root {
+    --animate-duration: 0s;
+    --animate-delay:0s;
+    --animate-repeat: 0;
+}
+#sc4{margin-top: 50px;}
+a{transition: all 0s;}
+#quiz-reg{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px !important;
+    letter-spacing: 1px;
+    margin-top: 25px !important;
+    background: linear-gradient( 
+45deg, #ffb16b 0%, #ffdb8d 100%);
+    height: 45px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    height: 45px;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    top: -18px;
+    border-radius: 5000px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgb(0 0 0 / 20%);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    line-height: 11px;
+    filter: drop-shadow(0px 10px 10px rgba(245, 69, 144, 0.4));
+    -webkit-filter: drop-shadow(0px 10px 10px rgba(245, 69, 144, 0.4));
+}
+.oppi_finance_features_item{
+    height: 230px;
+    position: relative;
+    padding-top: 165px !important;
+    padding: 15px;
+}
+
+.oppi_finance_features_item img{
+    width: 160px !important;
+    margin-top: 0 !important;
+    position: absolute !important;
+    top: 16px !important;
+    right: 20px !important;
+}
+.modal{
+    background: transparent;
+    box-shadow: none;
+}
+.oppi_finance_features_item > *{
+    font-family: "Poppins", sans-serif;
+}
+.oppi_finance_features_item a{
+    display: block;
+    font-size: 14px;
+}
+.collapsible-body{
+    font-size: 20px;
+}
+.collapsible.popout > li{
+    border: 2px solid rgba(201, 89, 25, 0.5)
+}
+.collapsible.popout > li.active {
+    border-image: linear-gradient(
+220deg, #e99f00 0%, #e20a0a 100%) 10;
+    box-shadow: 0 0 30px rgb(28 63 116 / 28%);
+}
+li i{
+    position: relative;
+    top:3px
+}
+.collapsible-header{
+    border-bottom: 0;
+}
+.collapsible-header{
+    padding: 2rem;
+}
+li.active .up{
+    transform: rotateZ(-180deg);
+}
+.oppi_faq_content{
+    max-width: 1140px;
+}
+
+.oppi_faq_content ul li h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.oppi_faq_content ul li i{
+    font-size: 25px;
+   
+}
+.sec_title{
+    margin-bottom: 100px;
+}
+.footer{
+    margin-bottom: 0;
+}
+.footer__wrapper{
+    padding: 1rem 0;
+}
+.collapsible.popout>li{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.oppi_finance_features_area{
+    padding-bottom: 50px;
+}
+.hero__wrapper .order-2{
+    padding-left: 5px;
+}
+.header__logo{
+    position: relative;
+    left: -3px;
+}
+.newsletter__wrapper h2{
+    width: 100%;
+    margin-top: 10px;
+}
+#intro .section-heading{
+    width: 100%;
+}
+.header__nav-primary > li:first-child a{
+    color: #15a021;
+}
+@media (max-width: 991.98px){
+    .newsletter__img{
+        display: none;
+    }
+    .video__background img.phone{
+        margin-top: 105px;
+    }
+    .order-1 .container-form {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 475px !important; 
+        left: 50% !important;
+        width: 80%;
+    }
+    #container-form2 {
+        top: 100%;
+        left: 27%;
+        width: 85%;
+    }
+    .container-form {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 205px !important; 
+        left: 50% !important;
+        width: 80%;
+    }
+    .oppi_faq_content ul li h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    li i{
+        top:5px
+    }
+    .collapsible-body{
+        font-size: 14px;
+    }
+}

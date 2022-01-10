@@ -34,6 +34,9 @@
               "src/styles.css",
               "node_modules/materialize-css/dist/css/materialize.min.css",
               "src/assets/main-page/css/style.css",
+              "src/assets/landing/css/style.css",
+              "src/assets/landing/css/all.min.css",
+              "src/assets/landing/css/swiper-bundle.min.css",
               "src/assets/main-page/css/bootstrap.min.css",
               "src/assets/main-page/css/font-awesome.min.css",
               "src/assets/main-page/vendors/slick/slick.css",
@@ -55,7 +58,9 @@
               "src/assets/main-page/vendors/wow/wow.min.js",
               "src/assets/main-page/vendors/sckroller/jquery.parallax-scroll.js",
               "src/assets/main-page/vendors/magnify-pop/jquery.magnific-popup.min.js",
-              "src/assets/main-page/js/main.js"
+              "src/assets/main-page/js/main.js",
+              "src/assets/landing/js/script.js",
+              "src/assets/landing/js/ytdefer.min.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"

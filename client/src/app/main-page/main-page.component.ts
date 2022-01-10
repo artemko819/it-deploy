@@ -39,7 +39,6 @@ export class MainPageComponent implements OnInit {
     this.carousel = MaterialService.initCarousel(this.carouselHtml,{
       fullWidth: false,
       indicators: true,
-    
     })
     this.carouselMobile = MaterialService.initCarousel(this.carouselMobileHtml,{
       indicators: true, 

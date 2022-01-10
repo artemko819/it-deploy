@@ -23,6 +23,7 @@ import { MasterklassComponent } from './masterklass/masterklass.component';
 import { PoliticksPageComponent } from './politicks-page/politicks-page.component';
 import { OfertaPageComponent } from './oferta-page/oferta-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { AhtyrkaPageComponent } from './ahtyrka-page/ahtyrka-page.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     PoliticksPageComponent,
     OfertaPageComponent,
     MainPageComponent,
+    AhtyrkaPageComponent,
   ],
   imports: [
     CommonModule,

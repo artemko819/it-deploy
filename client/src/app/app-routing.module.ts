@@ -14,12 +14,14 @@ import { MasterklassComponent } from './masterklass/masterklass.component';
 import { PoliticksPageComponent } from './politicks-page/politicks-page.component';
 import { OfertaPageComponent } from './oferta-page/oferta-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { AhtyrkaPageComponent } from './ahtyrka-page/ahtyrka-page.component';
 
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: '/', pathMatch: 'full'},
       { path: '', component:MainPageComponent, data: {animation: 'web1'} },
+      { path: 'ahtyrka', component:AhtyrkaPageComponent, data: {animation: 'web1'} },
       { path: 'web-1', component: Web1Component, data: {animation: 'web1'} },
       { path: 'web-2', component: Web2Component, data: {animation: 'web2'} },
       { path: 'web-3', component: Web3Component, data: {animation: 'web3'} },

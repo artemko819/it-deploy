@@ -6,6 +6,12 @@ nav{
 #carousel-mobile{
     display: none;
 }
+.oppi_header .header_nav .oppi_header_menu ul li.nav-item a.nav-link{
+    font-size: 1.5rem;
+}
+.oppi_header .header_nav .oppi_header_menu .oppi_try_for_free{
+    font-size: 1.5rem;
+}
 .oppi_banner.oppi_banner_three .oppi_banner_content .oppi_dbtn.btn_border{
     background: linear-gradient(-90deg, #0080e9 0%, #59C173 100%);
     transition: all 0.3s ease-in-out;
