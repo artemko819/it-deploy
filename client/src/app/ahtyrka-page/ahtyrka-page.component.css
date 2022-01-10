@@ -167,6 +167,10 @@ li.active .up{
     color: #15a021;
 }
 @media (max-width: 991.98px){
+    #qq {
+        font-size: 1.4rem;
+        line-height: 22px;
+    }
     .newsletter__img{
         display: none;
     }
