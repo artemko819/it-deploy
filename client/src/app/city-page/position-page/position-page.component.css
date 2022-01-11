@@ -9,6 +9,15 @@
  .row{
   display: block ;
 }
+.input-field {
+  width: auto;
+  height: auto;
+  border: 0;
+  border-radius: 0rem;
+  padding: 0;
+  font-size: 2.6rem;
+  color: #666b6d;
+}
 h3,h1,h2{
   margin-top: 20px;
 }

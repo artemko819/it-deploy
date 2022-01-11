@@ -44,14 +44,13 @@ h3,h5,p,h4{
 }
 .wrap-img h3{
 
- 
-    transition: all 0.5s;
+transition: all 0.5s;
  position: absolute;  
  z-index: 99;
  -webkit-text-stroke: 2px rgb(5, 83, 11);
  color: rgb(206, 241, 6);
 
- font-size: 2em;
+ font-size: 3rem;
  margin-top: 5%;
 }
 
@@ -74,22 +73,22 @@ h3,h5,p,h4{
     margin-top:122%;
 }
 .wrap-img.img-3 h3{
-    margin-top: 8%;
-    font-size: 1.8em;
-    margin-left: 2%;
+    margin-top: 26%;
+    font-size: 3rem;
+    margin-left: 15%;
 }
 
 .img-4{
     margin-top:-10%;
 }
 .wrap-img.img-4 h3{
-    margin-top: 12%;
-    font-size: 2em;
-    margin-left: 10%;
+    margin-top: 17%;
+    font-size: 3rem;
+    margin-left: 12%;
 }
 .wrap-img.img-5 h3{
-    margin-top: 9%;
-    font-size: 2em;
+    margin-top: 28%;
+    font-size: 3rem;
     margin-left: 8.5%;
 }
 
@@ -100,15 +99,15 @@ h3,h5,p,h4{
 }
 
 .wrap-img.img-6 h3{
-    margin-top: 4.5%;
-    font-size: 2em;
-    margin-left: 3%;
+    margin-top: 18%;
+    font-size: 3rem;
+    margin-left:8.5%;
 }
 
 .wrap-img.img-7 h3{
-    margin-top: 7%;
-    font-size: 2em;
-    margin-left: 3%;
+    margin-top: 27%;
+    font-size: 3rem;
+    margin-left: 15%;
     
 }
 
@@ -118,7 +117,7 @@ h3,h5,p,h4{
 }
 .wrap-img.img-8 h3{
     margin-top: 5%;
-    font-size: 2em;
+    font-size: 3rem;
     margin-left: 4%;
 }
 
@@ -131,7 +130,7 @@ h3,h5,p,h4{
 .wrap-img.img-9 h3{
     margin-top: calc(30px + (116 - 30)*((100vw - 320px)/(1920 - 320)));
     font-size: calc(13px + (30 - 13)*((100vw - 320px)/(1920 - 320)));
-    margin-left: 3.2%;
+    margin-left: 25.5%;
 }
 
 
@@ -150,6 +149,6 @@ h3,h5,p,h4{
 .map{
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-top: calc(10px + (50 -10)*((100vw - 320px)/(1920 - 320)));;
-   
+    /* margin-top: calc(10px + (50 -10)*((100vw - 320px)/(1920 - 320)));; */
+   margin-top: -105px;
 }

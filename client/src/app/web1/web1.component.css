@@ -138,6 +138,7 @@ img{
     line-height: 110%;
     margin-top: calc(30px + (300 - 30)*((100vw - 320px)/(1920 - 320)));
     white-space:nowrap;
+    font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
     margin-bottom: 0;
 }
 .text h3{
@@ -146,9 +147,11 @@ img{
   z-index: 9999;
  float: left;
  margin: 0;
+ font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;
  white-space:nowrap;
   font-size: calc(29px + (90 - 29)*((100vw - 320px)/(1920 - 320)));
 }
+.text span{font-family: 'Conv_ofont.ru_Aqum',Arial, Helvetica, sans-serif;}
 .border{
     display: inline-block;
     border: calc(1px + (3 - 1)*((100vw - 320px)/(1920 - 320))) solid #22f106;

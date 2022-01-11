@@ -387,9 +387,22 @@ body{
     width: 100%;
     align-items: center;
     height: 100vh;
+    margin-top: 0;
   }
 
-
+  .wrap-img.img-3 h3 {
+    margin-top: 17% !important;
+    font-size: 3rem;
+    margin-left: 15%;
+}
+.wrap-img.img-4 h3 {
+  margin-top: 17% !important;
+  font-size: 3rem;
+  margin-left: 20% !important;
+}
+.wrap-img.img-5 h3{
+  margin-left: 26.5% !important; 
+}
   #map .left-map{
     display: flex;
     width: 50%;

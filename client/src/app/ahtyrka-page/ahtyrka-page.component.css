@@ -166,7 +166,14 @@ li.active .up{
 .header__nav-primary > li:first-child a{
     color: #15a021;
 }
+.mobile{
+    display: none;
+}
 @media (max-width: 991.98px){
+    .desk{display: none;}
+    .mobile{
+        display: block;
+    }
     #qq {
         font-size: 1.4rem;
         line-height: 22px;
