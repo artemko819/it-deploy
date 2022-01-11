@@ -16,7 +16,13 @@ pre{
 font-weight: bold;
 padding: 50px;
 }
-
+.wrap-lesson{
+  display: none !important;
+}
+#admin .collection .collection-item {
+  line-height: 3.5rem ;
+  font-size: 2rem 
+}
 .toast{
   background-color: #333 !important;
 }
@@ -395,6 +401,7 @@ body{
     font-size: 3rem;
     margin-left: 15%;
 }
+
 .wrap-img.img-4 h3 {
   margin-top: 17% !important;
   font-size: 3rem;

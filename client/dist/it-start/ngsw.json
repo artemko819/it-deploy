@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1641896452651,
+  "timestamp": 1641899905400,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -21,7 +21,7 @@
         "/polyfills.d2135627448cfdb803be.js",
         "/runtime.150b5b2d0fe06ee55acd.js",
         "/scripts.c75fa1666e75e27a6e4d.js",
-        "/styles.f6a1b61d424db9696d71.css"
+        "/styles.e62266da14aff9aff804.css"
       ],
       "patterns": []
     },
@@ -1700,7 +1700,7 @@
     "/gorod_1.31ac037626d8e032d345.svg": "3f1f0a868137191a105438b29c14e29da95bd43b",
     "/gorod_1.f209321afde9b1f7d61c.woff": "bad002533a0014620165284c014b6e6d30a5b3cb",
     "/gorod_1.f3effa309b4ff84482a1.ttf": "e44f09ac7a6ab67e189375081c10ed53cea3ab6c",
-    "/index.html": "a6a6afb206c600b7f7cee19a07c88d9d13e89a61",
+    "/index.html": "917b11dbdfab78a335367fbcdfd2b11e2692b3c8",
     "/lesson_1.0d37f81dbea61858d663.svg": "999e3d37ada33803482e2c0064c1da9c2a683b9e",
     "/lesson_1.d0a0ab8de5efec383290.ttf": "d96f8221192b36721eaa421ff10d7fbad140aac7",
     "/lesson_1.d95054e1002c96f67de7.eot": "e1f9037c4a1347a273309c0db25302bb9c91509a",
@@ -1741,7 +1741,7 @@
     "/slick.7ba97953187dc2907930.svg": "8abc209b72ca066da711e6110f2e1981f653c770",
     "/slick.a4e97f5a2a64f0ab1323.eot": "2dff0768f4c0a53228761eab917e2c65556042d4",
     "/slick.c94f7671dcc99dce43e2.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
-    "/styles.f6a1b61d424db9696d71.css": "2eddde5a7737af58586410d106a923265df6308c",
+    "/styles.e62266da14aff9aff804.css": "eee75e52eed743eb76d5a1a3a008c26f14874e67",
     "/vozrast_1.14fc153040b9045116fd.eot": "eb4a41d9b6631586b29b6e9b28c5365d72fc6af8",
     "/vozrast_1.a645a0ad1c35b9d23ddc.ttf": "a73fd18804279714c4f85b7be6dc5da32ba50ff2",
     "/vozrast_1.ad0077647ba96a83db50.svg": "f8170d66fe52c7ea9707b2aee56109022a4cc395",
