@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1641899905400,
+  "timestamp": 1641989726070,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,12 +16,12 @@
         "/common.d132f6bf75845dd5f07d.js",
         "/favicon.ico",
         "/index.html",
-        "/main.48de2fd036c61eb20cb7.js",
+        "/main.8498283a8ba51ccce183.js",
         "/manifest.webmanifest",
         "/polyfills.d2135627448cfdb803be.js",
         "/runtime.150b5b2d0fe06ee55acd.js",
         "/scripts.c75fa1666e75e27a6e4d.js",
-        "/styles.e62266da14aff9aff804.css"
+        "/styles.c73d2220b0cd00ae3a95.css"
       ],
       "patterns": []
     },
@@ -1700,7 +1700,7 @@
     "/gorod_1.31ac037626d8e032d345.svg": "3f1f0a868137191a105438b29c14e29da95bd43b",
     "/gorod_1.f209321afde9b1f7d61c.woff": "bad002533a0014620165284c014b6e6d30a5b3cb",
     "/gorod_1.f3effa309b4ff84482a1.ttf": "e44f09ac7a6ab67e189375081c10ed53cea3ab6c",
-    "/index.html": "917b11dbdfab78a335367fbcdfd2b11e2692b3c8",
+    "/index.html": "e928a6b0f0a12f76290fddab34e61d9a7e48ced1",
     "/lesson_1.0d37f81dbea61858d663.svg": "999e3d37ada33803482e2c0064c1da9c2a683b9e",
     "/lesson_1.d0a0ab8de5efec383290.ttf": "d96f8221192b36721eaa421ff10d7fbad140aac7",
     "/lesson_1.d95054e1002c96f67de7.eot": "e1f9037c4a1347a273309c0db25302bb9c91509a",
@@ -1709,7 +1709,7 @@
     "/lesson_2.2485c6f9523f43aeadf8.woff": "96dbbbf521dca22f1e6aea8765fe94b20c4ba4b2",
     "/lesson_2.7bad4771a8c8d78de061.svg": "be7d87b9e43692040bc0489b99d5f945ae1c8b92",
     "/lesson_2.e48eb32414e1a0e83dd9.eot": "03fa36fefb45733b07c76b5580b8e405b30ac128",
-    "/main.48de2fd036c61eb20cb7.js": "5ae05a7c18300ecd3f633dfbdd17eb1ef9c472a2",
+    "/main.8498283a8ba51ccce183.js": "17aa2f952286bf2f2c06fea69c6e7328af8ed3d4",
     "/manifest.webmanifest": "0918c309acd3f30aa32681442b5eb13f174ab637",
     "/newsletter-texture.c612ff3d38255d417d24.png": "f2e17d06e24786f2d5dcc95b8101d47ec6a319ed",
     "/ofont.ru_Aqum.2fa3b7babc3f5088dcb6.woff": "c3f71c8bf86716ff1341f5d87d35784e2dfee6c2",
@@ -1741,7 +1741,7 @@
     "/slick.7ba97953187dc2907930.svg": "8abc209b72ca066da711e6110f2e1981f653c770",
     "/slick.a4e97f5a2a64f0ab1323.eot": "2dff0768f4c0a53228761eab917e2c65556042d4",
     "/slick.c94f7671dcc99dce43e2.ttf": "3331eebdd4ba348ef25abe00c39ffbe867d46575",
-    "/styles.e62266da14aff9aff804.css": "eee75e52eed743eb76d5a1a3a008c26f14874e67",
+    "/styles.c73d2220b0cd00ae3a95.css": "cc8f57da691e607c820697427c1eb92ce7e38e16",
     "/vozrast_1.14fc153040b9045116fd.eot": "eb4a41d9b6631586b29b6e9b28c5365d72fc6af8",
     "/vozrast_1.a645a0ad1c35b9d23ddc.ttf": "a73fd18804279714c4f85b7be6dc5da32ba50ff2",
     "/vozrast_1.ad0077647ba96a83db50.svg": "f8170d66fe52c7ea9707b2aee56109022a4cc395",

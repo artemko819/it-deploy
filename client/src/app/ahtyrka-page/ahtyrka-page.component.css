@@ -169,11 +169,37 @@ li.active .up{
 .mobile{
     display: none;
 }
+
 @media (max-width: 991.98px){
+    .clients-sec .testimonial__wrapper .client .testimonial p{
+        font-size: 1.5rem;
+    }
+    .step .button__wrapper a{
+        font-size: 11px;
+    }
+    #feature .col-lg-6:nth-child(3),
+    #feature .col-lg-6:nth-child(4),
+    #feature .col-lg-6:nth-child(5),
+    #feature .col-lg-6:nth-child(6)
+    {
+        display: none;
+    }
+     .section-heading{
+        font-size: 22px;
+        width: 100%;
+    }
     .desk{display: none;}
+    .hero .main-heading{
+        font-size: 2.3rem;
+    }
     .mobile{
         display: block;
+        font-size: 22px;
+        z-index: 100;
+        position: relative;
+        top: -25px;
     }
+
     #qq {
         font-size: 1.4rem;
         line-height: 22px;
@@ -184,24 +210,30 @@ li.active .up{
     .video__background img.phone{
         margin-top: 105px;
     }
+    .drops{
+        display: none;
+    }
     .order-1 .container-form {
         position: relative;
         transform: translate(-50%, -50%);
-        top: 475px !important; 
+        top: 425px !important; 
         left: 50% !important;
-        width: 80%;
+        width: 280px;
+    }
+    .hero__wrapper{
+        padding-bottom: 20px;
     }
     #container-form2 {
         top: 100%;
         left: 27%;
-        width: 85%;
+        width: 275px;
     }
     .container-form {
         position: relative;
         transform: translate(-50%, -50%);
         top: 205px !important; 
         left: 50% !important;
-        width: 80%;
+        width: 275px;
     }
     .oppi_faq_content ul li h3{
         font-size: 20px;
@@ -214,3 +246,9 @@ li.active .up{
         font-size: 14px;
     }
 }
+@media only screen and (min-device-width: 300px) and (max-device-width: 330px){
+    .order-1 .container-form{
+      top:475px !important
+      }
+  }
+  

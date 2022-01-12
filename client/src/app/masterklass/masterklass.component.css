@@ -9,6 +9,22 @@
 }
 form span, label{
     font-family: 'Conv_evo_1';
+    font-size: 10px;
+    margin-top: 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+form label{
+    font-size: 16px;
+    top:-10px;
+
+}
+footer .flex-row{
+    margin-top: -59px;
+}
+.row{
+    display: block;
 }
 form .row {
     background: #eaeaea;
@@ -19,6 +35,7 @@ form .row {
     margin:  0 auto;
 }
 form .row .input-field{
+    border: 0;
     /* box-shadow: 0 0 10px #000;
     border-radius: 10px; */
 }
@@ -52,6 +69,8 @@ form .row .input-field{
 h3{	
     font-family: 'Conv_evo_1';   
     font-size: calc(20px + (55 - 20)*((100vw - 320px)/(1920 - 320)));
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .wrap-btn .btn{
     width: 45%;
@@ -69,6 +88,7 @@ h3{
     flex-wrap: wrap;
     height: calc(70px + (530 - 70)*((100vw - 320px)/(1920 - 320)));
     max-height: 530px;
+    margin-top: 50px;
 }
 .flex-row >*{
     width: 48%;
@@ -84,14 +104,17 @@ footer{
 }
 .header{
     position: relative;
-    font-size: calc(15px + (40 - 15)*((100vw - 320px)/(1920 - 320)));
-    margin-bottom: 3px;
+    font-size: calc(12px + (40 - 15)*((100vw - 320px)/(1920 - 320)));
+    margin-bottom: 5px;
+    position: relative;
+    top: -4px;
     /* top: calc(1px + (-240 - 1)*((100vw - 320px)/(1920 - 320))); */
 }
 #foot-bg{
     position: absolute;
     left: 0;
     width: 100%;
+    margin-top: 30px;
 }
 .wrap-bg{width: 100%;position: relative;}
 .left-contact h3{
@@ -104,19 +127,26 @@ footer{
 }
 .left-contact p{
     text-align: center;
+    font-family: 'Conv_Blogger Sans';
     color: yellow;
     font-size: calc(10px + (45 - 10)*((100vw - 320px)/(1920 - 320)));
+    margin-bottom: 0;
 }
 
 .right-contact p{
-    font-family: 'Conv_evo_1';
-    font-size: calc(8px + (23 - 8)*((100vw - 320px)/(1920 - 320)));
+    font-family: 'Conv_Blogger Sans';
+    font-size: calc(12px + (23 - 8)*((100vw - 320px)/(1920 - 320)));
     background: rgb(65, 129, 2);
     width: 70%;
     margin: calc(5px + (10 - 5)*((100vw - 320px)/(1920 - 320))) auto;
     border-radius: 30px;
     text-align: center;
+    margin-top: 12px;
     padding: calc(1px + (10 - 1)*((100vw - 320px)/(1920 - 320)));;
+}
+
+.politic{
+    display: none;
 }
 .right-contact p a{
     color: #000;
@@ -148,7 +178,7 @@ footer{
     border-bottom: 5px solid #5f5c5c;
     border-radius: 10px;
     height: 55px;
-    line-height: 55px;
+    line-height: 45px;
     transition: all 0.3s ease-in-out;
 
 }
@@ -156,6 +186,7 @@ footer{
     border-radius: 10px;
     line-height: 55px;
     height: 55px;
+    font-size: 16px;
     font-family: 'Conv_evo_1';
 }
 .wrap-btn .btn.green{
@@ -170,6 +201,7 @@ select{
     margin-bottom: 30px;
     border-radius: 10px;
     background: #747978;
+    height: 50px;
     color: #fff;
     font-size: 20px;
     border-bottom: 5px solid #5f5c5c;

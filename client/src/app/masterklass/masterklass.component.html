@@ -43,6 +43,7 @@
             <h3 class="center">Обери свое місто</h3>
             <select class="browser-default" formControlName='city' [(ngModel)]="city">             
               <option value="Харьков">Харків</option>
+              <option value="Лозова">Лозова</option>
               <option value="Ахтырка">Охтирка</option>
               <option value="Мерефа">Мерефа</option>
               <option value="Лубны">Лубни</option>
@@ -54,7 +55,7 @@
               <option value="Покровск">Покровск</option>
           </select>
             <button type="submit" class="col s12 green submit-form modal-action btn waves-effect"
-            [disabled]="formConsult.invalid || formConsult.disabled || city == '' ">Записатись</button>      
+            [disabled]="formConsult.invalid || formConsult.disabled || city == '' ">Відправити</button>      
             </div>
           </form>
           <footer>

@@ -359,6 +359,19 @@ body{
     max-height: 450px;
   } */
 }
+
+@media only screen and (min-device-width: 330px) and (max-device-width: 375px){
+  .mobile{
+    display: block;
+    font-size: 22px;
+    z-index: 100;
+    position: relative;
+    top: -25px;
+    font-size: 21px !important;
+}
+
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
 
  #space1 #start{
