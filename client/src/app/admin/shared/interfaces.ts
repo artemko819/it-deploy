@@ -13,6 +13,7 @@ export interface MainForm{
     _id?:string,
     name:string,
     tel:string,
+    city:string,
     date:string
 }
 

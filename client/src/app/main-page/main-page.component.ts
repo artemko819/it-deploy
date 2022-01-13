@@ -48,6 +48,8 @@ export class MainPageComponent implements OnInit {
    
   }
   ngOnInit(): void {
+
+    
     this.formMain = new FormGroup({
       name: new FormControl(null, Validators.required),
       tel: new FormControl(null, [Validators.required, Validators.pattern('[- +()0-9]+')]),
@@ -58,7 +60,8 @@ export class MainPageComponent implements OnInit {
     this.formMain.disable()
     const newForm: MainForm = {
       name: this.formMain.value.name,    
-      tel: this.formMain.value.tel,     
+      tel: this.formMain.value.tel,
+      city: "Знак вапроса ? Нужна спрасить.",
       date: new Date(Date.now()).toLocaleString(),
     }
     console.log(newForm)

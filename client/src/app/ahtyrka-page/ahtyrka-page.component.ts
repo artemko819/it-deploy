@@ -27,6 +27,9 @@ export class AhtyrkaPageComponent implements OnInit {
     this.tabs = MaterialService.initTabs(this.tabsRef)
   }
   ngOnInit(): void {
+    const body = document.getElementById("app-main")
+    body.classList.add("gradient");
+
     $(".testimonial__wrapper").on('mouseover click', (e) => {
       if ($(e.target).is('img')) {
           let parentElement = $(e.target).parent().parent();
@@ -75,7 +78,8 @@ $(".header .header__nav span").on('click', function () {
     this.formMain.disable()
     const newForm: MainForm = {
       name: this.formMain.value.name,    
-      tel: this.formMain.value.tel,     
+      tel: this.formMain.value.tel,
+      city: "Ахтырка", 
       date: new Date(Date.now()).toLocaleString(),
     }
     console.log(newForm)

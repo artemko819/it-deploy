@@ -3,9 +3,13 @@
   -webkit-box-sizing: border-box;
   -msbox-sizing: border-box;
 }
+.gradient{
+  background: linear-gradient(90deg,#09a458,#4a5ca1 55%,rgb(116 59 152)) !important;
+}
 html {
   scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
 }
+
 #particles-js{
   position: absolute;
   top:0;

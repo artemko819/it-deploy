@@ -16,9 +16,29 @@ form{
     top:0;
     right: 0;
 }
+.hero__wrapper{
+    background: #feffce;
+}
+.feature__box__wrapper {
+    width: 100%;
+    padding: 1.3rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 2.5rem;
+    margin-top: 5rem;
+}
+.feature__box__wrapper h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto 3.4rem auto;
+    text-align: center;
+}
 .coupon_form .form-group input{
     padding-right: 0;
 }
+
+.feature__box .icon{
+    display: none;
+  }
 
 .coupon_form .form-group i{
     position: relative;
@@ -162,6 +182,10 @@ li.active .up{
 }
 #intro .section-heading{
     width: 100%;
+    color: #fff;
+}
+.feature__box--2, .feature__box--4{
+    margin-top: 5rem;
 }
 .header__nav-primary > li:first-child a{
     color: #15a021;
@@ -169,8 +193,52 @@ li.active .up{
 .mobile{
     display: none;
 }
+.first-t .feature__box--content{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.feature__box--content p{
+    font-weight: bold;
+}
+.feature__box--content-1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.feature__box--content-3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#sc4 span, #sc4 h2, #sc4 p{
+    color: #fff;
+}
+
+.feature__box--content-4{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+#feedback h2{
+    color: #fff;
+}
+.newsletter__wrapper {
+    width: calc(100% - 9rem);
+    background-color: #d0f3f2;
+    border-radius: 3rem;
+    padding-top: 10rem;
+    overflow: hidden;
+    margin-top: 50px;
+}
 
 @media (max-width: 991.98px){
+    #top-btn{
+        left: 0;
+        top:-25px
+    }
+    .video__background::before{
+        background: linear-gradient(
+            90deg
+            ,#09a458,#4a5ca1 55%,rgb(116 59 152)) !important;
+    }
     .clients-sec .testimonial__wrapper .client .testimonial p{
         font-size: 1.5rem;
     }
@@ -178,19 +246,20 @@ li.active .up{
         font-size: 11px;
     }
     #feature .col-lg-6:nth-child(3),
-    #feature .col-lg-6:nth-child(4),
-    #feature .col-lg-6:nth-child(5),
-    #feature .col-lg-6:nth-child(6)
+    #feature .col-lg-6:nth-child(4)
     {
         display: none;
     }
      .section-heading{
-        font-size: 22px;
+        font-size: 33px;
         width: 100%;
     }
     .desk{display: none;}
     .hero .main-heading{
         font-size: 2.3rem;
+    }
+    #intro h2{
+        margin-bottom: 10px;
     }
     .mobile{
         display: block;
@@ -199,7 +268,25 @@ li.active .up{
         position: relative;
         top: -25px;
     }
-
+    .step__box .content .paragraph {
+        width: 100%;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    .step__box .content span{
+        font-size: 1.5em;
+        margin-top: 15px;
+    }
+    .step__box .content h3{
+        margin-bottom: 1.5rem;
+    }
+    .step h2{
+        font-size: 24px;
+        margin-bottom: 20px !important;
+    }
+    .button i{
+        display: none;
+    }
     #qq {
         font-size: 1.4rem;
         line-height: 22px;
@@ -216,7 +303,7 @@ li.active .up{
     .order-1 .container-form {
         position: relative;
         transform: translate(-50%, -50%);
-        top: 425px !important; 
+        top: 435px !important; 
         left: 50% !important;
         width: 280px;
     }

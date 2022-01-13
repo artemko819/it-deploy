@@ -21,7 +21,7 @@ const routes: Routes = [
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: '/', pathMatch: 'full'},
       { path: '', component:MainPageComponent, data: {animation: 'web1'} },
-      { path: 'lozova', component:AhtyrkaPageComponent, data: {animation: 'web1'} },
+      { path: 'akhtyrka', component:AhtyrkaPageComponent, data: {animation: 'web1'} },
       { path: 'web-1', component: Web1Component, data: {animation: 'web1'} },
       { path: 'web-2', component: Web2Component, data: {animation: 'web2'} },
       { path: 'web-3', component: Web3Component, data: {animation: 'web3'} },

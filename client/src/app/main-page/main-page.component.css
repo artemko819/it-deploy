@@ -186,7 +186,9 @@ input{
     padding-top: 165px !important;
     padding: 15px;
 }
-
+.none{
+    display: none;
+}
 .oppi_finance_features_item img{
     width: 160px !important;
     margin-top: 0 !important;

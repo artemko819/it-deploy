@@ -4,6 +4,7 @@ module.exports.addForm = async function(req,res){
         const consult = new MainForm({
             name:req.body.name,
             tel:req.body.tel,
+            city:req.body.city,
             date:req.body.date
         })   
         try {
