@@ -1,0 +1,681 @@
+<p>lozova-page works!</p>
+<header class="header header-1" id="top">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo wow bounceIn" data-wow-delay="0.2s">
+          <a href="#">
+            <img src="../../assets/landing/images/logo.png" alt="logo">
+          </a>
+        </div>       
+      </div>
+    </div>
+  </header>
+<section class="hero">
+    <div class="hero__wrapper">
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h1 class="main-heading color-black">Пробне заняття в <br> школі програмування</h1>
+            <h1 class="main-heading color-black text-warning">Для дітей від 7-18 років</h1>
+            <p class="paragraph desk"><span class="text-success">IT START </span> - школа вивчення IT професій <br> <strong class="text-warning"> у місті Лозова</strong></p>
+            <p class="paragraph mobile"><span class="text-success">IT START </span> - школа вивчення IT професій  <strong class="text-warning"> у місті Лозова</strong></p>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="questions-img hero-img">
+              <div class="container-form">
+                <form  [formGroup]="formMain" 
+                (ngSubmit)="submitConsult()" 
+                class="row coupon_form "
+                >
+                <h3 class="text-light">Спробувати безкоштовно</h3>
+ 
+                 <div class="form-group">
+                     <input type="text" formControlName="name" placeholder="Ваше Ім'я"
+                            [ngClass]="{'invalid':formMain.get('name').invalid && formMain.get('name').touched}"
+                     >
+                     <label><i class="icon_profile"></i></label>
+                     
+                 </div>
+                 <span class="helper-text red-text"
+                         *ngIf="formMain.get('name').invalid && formMain.get('name').touched">
+                         <span *ngIf="formMain.get('name').errors['required']">Ім'я не може бути пустим</span>
+                 </span>
+             
+          
+                 <div class="form-group">
+                     <input type="tel" formControlName="tel"
+                             [ngClass]="{'invalid':formMain.get('tel').invalid && formMain.get('tel').touched}"
+                             placeholder="Ваш телефон">
+                     <label><i class="icon_phone"></i></label>
+                 </div>
+                 <span class="helper-text red-text"
+                         *ngIf="formMain.get('tel').invalid && formMain.get('tel').touched">
+                         <span *ngIf="formMain.get('tel').errors['required']">Телефон не може бути
+                             пустим</span>
+                         <span *ngIf="formMain.get('tel').errors['pattern']">Телефон складаеться з цифр</span>
+                     </span>
+             
+             
+                 <div class="form-group">
+                     <button type="submit" id="quiz-reg" class="oppi_dbtn restaurant_btn"
+                     [disabled]="formMain.invalid || formMain.disabled">Відправити</button>
+                 </div>
+             
+         </form>
+              
+                <div class="drops">
+                  <div class="drop drop-1"></div>
+                  <div class="drop drop-2"></div>
+                  <div class="drop drop-3"></div>
+                  <div class="drop drop-4"></div>
+                  <div class="drop drop-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--hero section end-->
+
+  <!--feature section start-->
+  <section class="feature" id="intro">
+    <div class="container">
+      <h2 class="section-heading center color-white  wow bounceIn" data-wow-delay="1.2s">Програма <br> безкоштовного уроку:</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--1  wow bounceIn" data-wow-delay="0.2s">
+            <div class="icon icon-2">
+              <i class="fad fa-lightbulb-on"></i>
+            </div>
+            <div class="feature__box__wrapper first-t">
+              <h3>Теорія та знайомство</h3>
+              <div class="feature__box--content feature__box--content-2">
+               
+                <p class="paragraph dark">
+                  Викладач познайомить з матеріалом для подальшого заняття та з етапами  розробки обраного напрямку</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--2  wow bounceIn" data-wow-delay="0.4s">
+            <div class="icon icon-1">
+              <i class="fad fa-user-astronaut"></i>
+            </div>
+            <div class="feature__box__wrapper">
+              <h3>Створення 3D-світу </h3>
+              <div class="feature__box--content feature__box--content-1">
+                
+                <p class="paragraph dark">Дитина власноруч розробить оточення 3D-моделями та наповнить потрібними текстурами та рельєфом за допомогою професійної програми моделювання</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--3  wow bounceIn" data-wow-delay="0.6s">
+            <div class="icon icon-3">
+              <i class="fad fa-solar-system"></i>
+            </div>
+            <div class="feature__box__wrapper">
+              <h3>Програмування на мові C#</h3>
+              <div class="feature__box--content feature__box--content-3">
+                
+                <p class="paragraph dark">У кожного буде можливість отримати практичні навички першого коду на мові програмування C# та впровадити у свою першу гру.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature__box feature__box--4  wow bounceIn" data-wow-delay="0.8s">
+            <div class="icon icon-4">
+              <i class="fad fa-rocket-launch"></i>
+            </div>
+            <div class="feature__box__wrapper last-t">
+              <h3> Портфоліо випускників</h3>
+              <div class="feature__box--content feature__box--content-4">
+               
+                <p class="paragraph dark">Дитина познайомиться з проєктами наших учнів, задасть цікаві питання викладачу та зрозуміє, чи хоче звʼязувати своє майбутнє з IT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--feature section end-->
+  
+  <!--video section start-->
+  <div class="video wow bounceIn" data-wow-delay="0.5s" id="video">
+    <div class="video__wrapper">
+      <div class="container">
+        <div class="video__play">
+          <button type="button" data-toggle="modal" data-target="#videoModal">
+            <i class="fad fa-play"></i>
+          </button>
+          <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-close">
+                  <button type="button" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="ytdefer yt-video" style="width: 100%; height: 100%;" data-src="k60EyKq9zu4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video__background">
+          <img src="../../assets/landing/images/video-bg-1.png" alt="image" class="texture-1">
+          <img src="../../assets/landing/images/video-img.png" alt="image" class="phone">
+          <img src="../../assets/landing/images/video-bg-2.png" alt="image" class="texture-2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--video section end-->
+
+  <!--growth section start-->
+  <section class="growth" id="feature">
+    <div class="growth__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black  wow bounceIn" data-wow-delay="0.2s">Кому буде корисно?</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="growth__box  wow bounceIn" data-wow-delay="0.2s">
+              <div class="icon">
+                <i class="fad fa-user-astronaut"></i>
+              </div>
+              <div class="content">
+                <h3>Дітям</h3>
+                <p class="paragraph dark">
+                  Які хочуть звʼязати свою майбутню професію з IT-сферою</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box  wow bounceIn" data-wow-delay="0.4s">
+              <div class="icon">
+                <i class="fad fa-solar-system"></i>
+              </div>
+              <div class="content">
+                <h3>Батькам</h3>
+                <p class="paragraph dark">
+                  Які хочуть, щоб дитина використовувала компʼютер з користю</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box  wow bounceIn" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="fad fa-lightbulb-on"></i>
+                
+              </div>
+              <div class="content">
+                <h3>Дітям</h3>
+                <p class="paragraph dark">
+                  Які мріють створити власну 3d-гру та особистий сайт з нуля</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box  wow bounceIn" data-wow-delay="0.8s">
+              <div class="icon">
+                <i class="fad fa-backpack"></i>
+              </div>
+              <div class="content">
+                <h3>Батькам</h3>
+                <p class="paragraph dark">
+                  Які прагнуть дати своїй дитині сучасну та якісну IT-освіту</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box  wow bounceIn" data-wow-delay="1s">
+              <div class="icon">
+                <i class="fad fa-rocket-launch"></i>
+              </div>
+              <div class="content">
+                <h3>Дітям</h3>
+                <p class="paragraph dark">
+                  Які прагнуть стати успішними у майбутньому</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="growth__box  wow bounceIn" data-wow-delay="1.2s">
+              <div class="icon">               
+                <i class="fad fa-file-certificate"></i>
+              </div>
+              <div class="content">
+                <h3>Батькам</h3>
+                <p class="paragraph dark">
+                  Які турбуються про майбутнє своєї дитини</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button__wrapper">
+            <a href="#top" class="button">
+              <span>Безкоштовне заняття <i class="fad fa-long-arrow-right"></i></span>
+            </a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--growth section end-->
+
+  <!--step section start-->
+  <section class="step">
+    <div class="step__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">Приєднуйся до нашої команди</h2>
+        <div id="carousel" class="carousel" #carousel>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/1.jpg" alt="feature_img" class="img-fluid">
+        </a>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/2.jpg" alt="feature_img" class="img-fluid">
+        </a>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/3.jpg" alt="feature_img" class="img-fluid">
+        </a>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/4.jpg" alt="feature_img" class="img-fluid">
+        </a>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/5.jpg" alt="feature_img" class="img-fluid">
+        </a>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/6.jpg" alt="feature_img" class="img-fluid">
+        </a>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/7.jpg" alt="feature_img" class="img-fluid">
+        </a>
+        <a class="carousel-item">
+            <img src="../../assets/landing/team/8.jpg" alt="feature_img" class="img-fluid">
+        </a>
+    </div>
+        <h2 id="orange" class="section-heading  wow  zoomIn" data-wow-delay="0.4s"> В IT-школі IT START ваша дитина:</h2>
+       
+        <div class="row wow  zoomIn" data-wow-delay="0.6s">         
+          <div class="col-lg-4">
+            <div class="step__box">
+                     
+              <div class="content">          
+                <h3> <span>Розробить</span></h3>
+                <p class="paragraph dark">Власні сайти, програми, 3D-мультфільми, чат-боти з штучним інтелектом та ігри на Unity</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="step__box">            
+              <div class="content">
+                <h3><span>Презентує</span></h3>
+                <p class="paragraph dark">У сильному оточенні однодумців, без складних правил та зазубрювання навчиться презентувати свою роботу</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="step__box">
+            
+              <div class="content">
+                <h3><span>Збере</span></h3>
+                <p class="paragraph dark">Велике портфоліо робіт від власних ботів до веб-сайту або 3D гри та захистить дипломним проєктом</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="button__wrapper">
+            <a href="#top" class="button">
+              <span>Записатись на безкоштовне заняття <i class="fad fa-long-arrow-right"></i></span>
+            </a>
+            <!-- <a href="#" class="button">
+              <span>LEARN MORE <i class="fad fa-long-arrow-right"></i></span>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--step section end-->
+  <section id="sc4" class="oppi_finance_features_area">
+    <div class="container">
+        <div class="section_title_three text-center wow rollIn" data-wow-delay="0.2s" >
+            <span>Професії майбутнього</span>
+            <h2 class="f_title">Що вивчають в IT START</h2>
+            <p>В школі IT START є можливість займатися як у групах до 10 осіб, так і індивідуально. Оберіть зручний курс для вас чи вашої дитини</p>
+        </div>
+        <div class="row flex-row-reverse">
+            <div class="d-flex">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="oppi_finance_features_item wow rollIn" data-wow-delay="0.4s"
+                             style="padding-top: 140px;background-color: #f3ff69;">
+                            <img src="../../assets/main-page/images/programing/Development/Development_boy.png" alt="" style="width: 132px; margin-top: -132px; position: unset;">
+                            <a>Програмування (C#)</a>
+                            <a href="#" style="padding-top: -108px;top: 90px;"><h4>Розробка ігор на Unity</h4></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="oppi_finance_features_item wow rollIn" data-wow-delay="0.6s"
+                            style="padding-top: 140px;background-color: #82f7ff;">
+                            <img src="../../assets/main-page/images/programing/Users/Users_girl.png" alt="" style="width: 152px; margin-top: -132px; position: unset;">
+                            <a> Figma</a>
+                            <a href="#" style="padding-top: -108px;top: 90px;"><h4>Веб-дизайн</h4></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4" >
+                        <div class="oppi_finance_features_item wow rollIn" data-wow-delay="0.8s"
+                            style="padding-top: 140px;background-color: #00af85;">
+                            <img src="../../assets/main-page/images/programing/Marketing/Marketing_boy.png" alt="" style="width: 152px; margin-top: -132px; position: unset;">
+                            <a>Програмування (JS)</a>
+                            <a href="#" style="padding-top: -108px;top: 90px;"><h4>Розробка сайтів</h4></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4" >
+                        <div class="oppi_finance_features_item wow rollIn" data-wow-delay="1s"
+                             style="padding-top: 140px;background-color: #ff5a50;">
+                            <img src="../../assets/main-page/images/programing/Design/Design_girl.png" alt="" style="width: 130px; margin-top: -132px; position: unset;">
+                            <a> Cinema 4D</a>
+                            <a href="#" style="padding-top: -108px;top: 90px;"><h4>3D-моделювання</h4></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4" >
+                        <div class="oppi_finance_features_item wow rollIn" data-wow-delay="1.2s"
+                         style="padding-top: 140px; background-color: #ffb0cd;">
+                            <img src="../../assets/main-page/images/programing/Users/Users_boy.png" alt="" style="width: 192px; margin-top: -132px; position: unset;  ">
+                            <a>Програмування (C#)</a>
+                            <a href="#" style="padding-top: -108px;top: 90px;"><h4>Створення чат-ботів</h4></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="oppi_finance_features_item wow rollIn" data-wow-delay="1.4s"
+                        style="padding-top: 140px;background-color: #ffdb59;">
+                            <img src="../../assets/main-page/images/programing/Surfing the internet/Surfing the internet_girl.png" alt="" style="width: 150px; margin-top: -132px; position: unset;">
+                            <a> Illustrator</a>
+                            <a href="#" style="padding-top: -108px;top: 90px;"><h4>Графічний дизайн</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!--client section start-->
+  <section class="clients-sec " id="feedback">
+    <div class="container">
+      <h2 class="section-heading color-black">Що про нас кажуть батьки</h2>
+      <div class="testimonial__wrapper">
+        <div class="client client-01 active">
+          <div class="image">
+            <img src="../../assets/landing/images/testimonial-img-01.png" alt="image">
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__wrapper">
+              <p>“«Ваша школа - це неймовірне місце, яке дуже гарно вплинуло на мою дитину.
+                 Мій син біжить на кожне заняття та з нетерпеннім чекає наступного. Викладач, як каже син,
+                  гарно все пояснює. Дуже рада, що потрапила саме в IT Start»”</p>
+              <h4> <span class="text-warning"> Марина </span><br>
+                мама Сергія</h4>
+            </div>
+          </div>
+        </div>
+        <div class="client client-02">
+          <div class="image">
+            <img src="../../assets/landing/images/testimonial-img-02.png" alt="image">
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__wrapper">
+              <p>“Залучила чітко викладена програма навчання, гнучкість розкладу та можливість
+                 безкоштовно відпрацьовувати заняття. Дуже сподобалася ця фішка! Приємно, 
+                 що дитина відноситься до занять програмування, як до хобі і чекає на кожен урок»”
+                </p>
+                <h4> <span class="text-warning"> Валентина  </span><br>
+                  Мама Катерини</h4>
+            </div>
+          </div>
+        </div>
+        <div class="client client-03">
+          <div class="image">
+            <img src="../../assets/landing/images/testimonial-img-03.png" alt="image">
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__wrapper">
+              <p>“Враження від школи найтепліші. Особливо подобається, що дитина не приходить додому з ватною головою,
+                 а навпаки, замотивована працювати. Також подобається, що у дитини більше простору для самовираження, 
+                 ніж у звичайній школі, дуже багато почав фантазувати”</p>
+                <h4> <span class="text-warning"> Тетяна </span><br>
+                  Мама Олексія</h4>
+            </div>
+          </div>
+        </div>
+        <div class="client client-04">
+          <div class="image">
+            <img src="../../assets/landing/images/testimonial-img-04.png" alt="image">
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__wrapper">
+              <p id="qq">“Мій син давно просив мене віддати його на комп'ютерні курси. Так як додаткова освіта має бути дитині до душі, 
+                пішли їй на зустріч і почали шукати кращий варіант. Колега по роботі сказав, що водить свою дитину в It Start і
+                 дуже задоволений якістю освіти, а головне результатом. Вирішили розглянути цей варіант. З вересня дитина стала 
+                 студентом цієї школи. Поки все подобається, дитина задоволена, дома працює самостійно з великим бажанням. 
+                 Ціна навчання приємна, аудиторії обладнані належним чином. Тільки позитивні враження!”</p>
+                <h4> <span class="text-warning"> Андрій</span><br>
+                  тато Максима</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+  <!--client section end-->
+
+  <!--questions section start-->
+  <section class="questions" id="faq">
+    <div class="questions__wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                    <h2 class="text-center sec_title wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"><br>Знайдіть відповідь на своє запитання:</h2>
+                    <div class="oppi_faq_content">
+                        <ul #tabs class="collapsible popout">
+                            <li class="wow bounceIn" data-wow-delay="0.2s">
+                              <div class="collapsible-header">
+                                <h3>   <i class="material-icons">keyboard_hide</i> Що таке розумні відпрацювання?
+                                  <div class="wrap-control right">
+                                    <i class="material-icons right up">expand_more</i>
+                                  </div>
+                                </h3>
+                              </div>
+                              <div class="collapsible-body">
+                                Одна з головних переваг нашої школи - це розумні безкоштовні відпрацювання,
+                                 якщо ваша дитина пропустила якесь заняття з будь-якої причини, то ви можете
+                                  безкоштовно прийти на урок і індивідуально або з іншими учнями відпрацювати
+                                   матеріал. На це відпрацювання можна приходити за бажанням, навіть якщо жодного заняття не пропущено, але хочеться закріпити матеріал!
+                              </div>
+                            </li>
+                            <li class="wow bounceIn" data-wow-delay="0.2s" >
+                              <div class="collapsible-header">
+                                <h3>   <i class="material-icons">laptop</i> Чи потрібно мати компʼютер для навчання?
+                                  <div class="wrap-control right">
+                                    <i class="material-icons right up">expand_more</i>
+                                  </div>
+                                </h3>
+                              </div>
+                              <div class="collapsible-body">
+                                На уроці в класі ми забезпечуємо учнів всіми необхідними речами для 
+                                продуктивних занять. 
+                                У кожного учня є особистий компʼютер та робоче місце.
+                              </div>
+                            </li>
+                            <li class="wow bounceIn" data-wow-delay="0.2s">
+                              <div class="collapsible-header">
+                                <h3>   <i class="material-icons">library_books</i> Чи отримають учні сертифікат після закінченя курсу?
+                                  <div class="wrap-control right">
+                                    <i class="material-icons right up">expand_more</i>
+                                  </div>
+                                </h3>
+                              </div>
+                              <div class="collapsible-body">
+                                Так! По закінченню курсу у кожної групи є випускне заняття, де учні захищають свої дипломні проєкти та отримують іменні сертифікати.
+                              </div>
+                            </li>
+                            <li class="wow bounceIn" data-wow-delay="0.2s">
+                              <div class="collapsible-header">
+                                <h3>   <i class="material-icons">query_builder</i>  Який розклад?
+                                  <div class="wrap-control right">
+                                    <i class="material-icons right up">expand_more</i>
+                                  </div>
+                                </h3>
+                              </div>
+                              <div class="collapsible-body">
+                                Якщо починати з графіку, то графік у кожної групи індивідуальний. Більшість груп займається 2 рази на тиждень. Тривалість 1 заняття — від 60 - 120 хв.
+                              </div>
+                            </li>
+                            <li class="wow bounceIn" data-wow-delay="0.2s">
+                                <div class="collapsible-header">
+                                  <h3>   <i class="material-icons">attach_money</i> Яка ціна?
+                                    <div class="wrap-control right">
+                                      <i class="material-icons right up">expand_more</i>
+                                    </div>
+                                  </h3>
+                                </div>
+                                <div class="collapsible-body">
+                                    Щодо ціни, то потрібно залишити заявку на навчання, і найближчим часом з вами зв'яжеться адміністратор нашої школи, щоб розрахувати для вас фінальну вартість курсу. Вона залежить від обраного напрямку та курсу який ви оберете, а також від міста, можливих пільг і поточних знижок.
+                                </div>
+                              </li>
+                              <li class="wow bounceIn" data-wow-delay="0.2s">
+                                <div class="collapsible-header">
+                                  <h3>   <i class="material-icons">assignment_ind</i> Хто викладає?
+                                    <div class="wrap-control right">
+                                      <i class="material-icons right up">expand_more</i>
+                                    </div>
+                                  </h3>
+                                </div>
+                                <div class="collapsible-body">
+                                    Викладачі нашої школи - це практикуючи спеціалсти, які проходили повний курс викладання та роботи з дітьми у нашій головній філії в Харкові
+                                </div>
+                              </li>  
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--questions section end-->
+
+  <!--newsletter section start-->
+  <section class="newsletter">
+    <div class="newsletter__wrapper">
+      <div class="container">
+
+        <div class="row align-items-lg-center">
+          <h2 class="section-heading color-black center">Остання можливість</h2>
+          <div class="col-lg-6">
+            <div class="newsletter__info">
+           
+              <div class="container-form "  id="container-form2">
+                <form  [formGroup]="formMain" 
+                (ngSubmit)="submitConsult()" 
+                class="row coupon_form "
+                >
+                <h3 class="text-light">Спробувати безкоштовно</h3>
+ 
+                 <div class="form-group">
+                     <input type="text" formControlName="name" placeholder="Ваше Ім'я"
+                            [ngClass]="{'invalid':formMain.get('name').invalid && formMain.get('name').touched}"
+                     >
+                     <label><i class="icon_profile"></i></label>
+                     
+                 </div>
+                 <span class="helper-text red-text"
+                         *ngIf="formMain.get('name').invalid && formMain.get('name').touched">
+                         <span *ngIf="formMain.get('name').errors['required']">Ім'я не може бути пустим</span>
+                 </span>
+             
+          
+                 <div class="form-group">
+                     <input type="tel" formControlName="tel"
+                             [ngClass]="{'invalid':formMain.get('tel').invalid && formMain.get('tel').touched}"
+                             placeholder="Ваш телефон">
+                     <label><i class="icon_phone"></i></label>
+                 </div>
+                 <span class="helper-text red-text"
+                         *ngIf="formMain.get('tel').invalid && formMain.get('tel').touched">
+                         <span *ngIf="formMain.get('tel').errors['required']">Телефон не може бути
+                             пустим</span>
+                         <span *ngIf="formMain.get('tel').errors['pattern']">Телефон складаеться з цифр</span>
+                     </span>
+             
+             
+                 <div class="form-group">
+                     <button type="submit" id="quiz-reg" class="oppi_dbtn restaurant_btn"
+                     [disabled]="formMain.invalid || formMain.disabled">Відправити</button>
+                 </div>
+             
+         </form>
+              
+                <div class="drops">
+                  <div class="drop drop-1"></div>
+                  <div class="drop drop-2"></div>
+                  <div class="drop drop-3"></div>
+                  <div class="drop drop-4"></div>
+                  <div class="drop drop-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="newsletter__img wow  bounceIn" data-wow-delay="0.4s">
+              <img src="../../assets/landing/images/newsletter-img.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!--newsletter section end-->
+
+  <!--footer start-->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer__info">
+                          
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="footer__content-wrapper">
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="footer__copy">
+            <h6>&copy; 2022 IT START</h6>
+            <a href="#top" id="top-btn">
+              <i class="fas fa-arrow-alt-circle-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--footer end-->
