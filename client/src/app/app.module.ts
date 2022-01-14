@@ -24,8 +24,7 @@ import { PoliticksPageComponent } from './politicks-page/politicks-page.componen
 import { OfertaPageComponent } from './oferta-page/oferta-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { AhtyrkaPageComponent } from './ahtyrka-page/ahtyrka-page.component';
-import { LozovaPageComponent } from './lozova-page/lozova-page.component';
-import { BahmytPageComponent } from './bahmyt-page/bahmyt-page.component';
+
 
 @NgModule({
   declarations: [
@@ -44,8 +43,6 @@ import { BahmytPageComponent } from './bahmyt-page/bahmyt-page.component';
     OfertaPageComponent,
     MainPageComponent,
     AhtyrkaPageComponent,
-    LozovaPageComponent,
-    BahmytPageComponent,
   ],
   imports: [
     CommonModule,

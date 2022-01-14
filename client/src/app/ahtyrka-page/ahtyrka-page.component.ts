@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MaterialInstance, MaterialService } from '../admin/shared/classes/material.service';
 import { MainForm } from '../admin/shared/interfaces';
 import { MainFormService } from '../admin/shared/services/main.service';
@@ -16,7 +17,40 @@ export class AhtyrkaPageComponent implements OnInit {
   carousel:MaterialInstance
   formMain: FormGroup
   tabs:MaterialInstance
-  constructor(  private mainFormService:MainFormService) { }
+  city:String[] = [
+    "aktyrka",
+    "lozova",
+    "bakhmut",
+    "prilyki",
+    "kharkov",
+    "merefa",
+    "сhuguiv",
+    "pokrovsk",
+    "izym",
+    "lubni",
+    "romney"
+  ]
+  cityNames:string[] = [
+    "Охтирка",
+    "Лозова",
+    "Бахмут",
+    "Прилуки",
+    "Харьків",
+    "Мерефа",
+    "Чугуїв",
+    "Покровськ",
+    "Ізюм",
+    "Лубни",
+    "Ромни"
+  ]
+  cityName:string = "";
+  redirect = true
+  cityId: any;
+  constructor(  
+    private mainFormService:MainFormService,
+    private activateRoute: ActivatedRoute,
+    private router: Router,
+    ) {  }
 
   ngAfterViewInit() {
     this.carousel = MaterialService.initCarousel(this.carouselHtml,{
@@ -27,6 +61,20 @@ export class AhtyrkaPageComponent implements OnInit {
     this.tabs = MaterialService.initTabs(this.tabsRef)
   }
   ngOnInit(): void {
+
+    this.cityId = this.activateRoute.snapshot.params['id'];
+    for(let i=0; i<this.city.length; i++){
+      if(this.city[i] === this.cityId){
+        this.cityName = this.cityNames[i] 
+        console.log(this.cityName)
+        this.redirect = false
+      }        
+    }
+    if(this.redirect === true){
+      this.router.navigate(['/404'])
+    }
+
+
     const body = document.getElementById("app-main")
     body.classList.add("gradient");
 
@@ -79,7 +127,7 @@ $(".header .header__nav span").on('click', function () {
     const newForm: MainForm = {
       name: this.formMain.value.name,    
       tel: this.formMain.value.tel,
-      city: "Ахтырка", 
+      city: this.cityName, 
       date: new Date(Date.now()).toLocaleString(),
     }
     console.log(newForm)

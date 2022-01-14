@@ -29,7 +29,10 @@ padding: 50px;
 }
 .toast{
   background-color: #333 !important;
+  font-size: 14px !important;
+  text-align: center;
 }
+
 .carousel .indicators .indicator-item{
   background-color: #888 !important;
 }
@@ -318,6 +321,15 @@ body{
 }
 #admin{
   width: 70%  !important;
+}
+#admin .collection .collection-item h4{
+  font-weight: bold;
+  font-size: 25px;
+}
+#admin .collection .collection-item p{
+  font-weight: 50;
+  font-size: 16px !important;
+  line-height: 24px;
 }
 #login-form{
   padding: 25px;
