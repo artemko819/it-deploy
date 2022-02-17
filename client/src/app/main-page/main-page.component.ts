@@ -8,6 +8,7 @@ import { MainFormService } from '../admin/shared/services/main.service';
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css'],
+  
 })
 export class MainPageComponent implements OnInit {
   @ViewChild('carousel') carouselHtml: ElementRef

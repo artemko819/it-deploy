@@ -2,7 +2,9 @@ nav{
     background: transparent;
     box-shadow: none;
 }
-
+nav a{
+    transition: none !important;
+}
 #carousel-mobile{
     display: none;
 }
